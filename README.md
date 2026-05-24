@@ -21,10 +21,17 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | `registry/drug_centric.{json,tsv}` | 100 drug-centric resources, fully annotated |
 | `registry/drug_related.{json,tsv}` | 30 indirect drug-related resources |
 | `registry/auxiliary.{json,tsv}` | 44 general biomedical resources used by drug agents |
+| **`examples/01–68_*.py`** | **68 runnable Python access scripts, one per LLM-Friendly resource** |
 | `notebooks/01_quickstart.ipynb` | Load + filter + select resources for an agent |
 | `scripts/build_registry.py` | Rebuild JSON/TSV from source files |
+| `68DrugResources.xlsx` | Source spreadsheet for the 68 example scripts (curator working copy) |
 | `docs/data_quality_report.md` | Discrepancy log between source files (v1.0) |
 | `docs/contribution_guide.md` | How to propose new resources |
+
+> The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
+> 68 of 100 drug-centric resources) with realistic access patterns:
+> download URLs, API endpoints, fallback mirrors, and minimal parsing. Use them as
+> reference implementations when wiring resources into an agent's tool registry.
 
 ---
 

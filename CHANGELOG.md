@@ -25,6 +25,10 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Quickstart Jupyter notebook (`notebooks/01_quickstart.ipynb`).
 - Build script (`scripts/build_registry.py`) for reproducible registry assembly.
 - Data-quality discrepancy report (`docs/data_quality_report.md`).
+- **68 runnable Python access example scripts** (`examples/01–68_*.py`), one per
+  LLM-Friendly drug-centric resource, demonstrating realistic download / API
+  access patterns with fallbacks. Curator source spreadsheet preserved at
+  `68DrugResources.xlsx`.
 
 ### Known issues
 - 14 source-level discrepancies detected during v1.0 build (see data quality report);
