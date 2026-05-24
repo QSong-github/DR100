@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+title: "DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems"
+message: "If you use DR100, please cite both the registry and the accompanying paper."
+type: software
+authors:
+  - family-names: Wang
+    given-names: Qing
+    email: wang.qing@ufl.edu
+    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Liu
+    given-names: Tianshi
+    affiliation: "Department of Medicine, University of Florida"
+  - family-names: Zhou
+    given-names: Minghao
+    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
+  - family-names: Wang
+    given-names: Guangyu
+    affiliation: "Center for Bioinformatics and Computational Biology, Houston Methodist Research Institute; Department of Cardiothoracic Surgery, Weill Cornell Medicine"
+  - family-names: Su
+    given-names: Jing
+    affiliation: "Department of Biostatistics and Health Data Science, Indiana University School of Medicine"
+  - family-names: Song
+    given-names: Qianqian
+    email: qsong1@ufl.edu
+    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/wq2581/DR100"
+url: "https://github.com/wq2581/DR100"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+keywords:
+  - drug discovery
+  - large language models
+  - LLM agents
+  - retrieval-augmented generation
+  - knowledge graph
+  - drug reasoning
+  - resource annotation
+  - integration pathway
+version: "1.0.0"
+date-released: "2026-05-23"
+preferred-citation:
+  type: article
+  title: "DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems"
+  authors:
+    - family-names: Wang
+      given-names: Qing
+    - family-names: Liu
+      given-names: Tianshi
+    - family-names: Zhou
+      given-names: Minghao
+    - family-names: Wang
+      given-names: Guangyu
+    - family-names: Su
+      given-names: Jing
+    - family-names: Song
+      given-names: Qianqian
+  journal: "Briefings in Bioinformatics"
+  year: 2026
+  # volume:
+  # issue:
+  # doi:
+  notes: "Companion machine-readable registry at https://github.com/wq2581/DR100"

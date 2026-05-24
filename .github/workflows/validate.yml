@@ -1,0 +1,41 @@
+name: Validate registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate JSON registries against schema
+        run: |
+          python - <<'EOF'
+          import json, sys
+          from pathlib import Path
+          from jsonschema import Draft7Validator
+
+          schema = json.loads(Path("schema/dr100_schema.json").read_text())
+          v = Draft7Validator(schema)
+          failed = 0
+          for fn in ["drug_centric", "drug_related", "auxiliary"]:
+              data = json.loads(Path(f"registry/{fn}.json").read_text())
+              for i, rec in enumerate(data):
+                  for err in v.iter_errors(rec):
+                      print(f"FAIL [{fn}/{i}] {rec.get('name')!r}: {err.message}")
+                      failed += 1
+              print(f"OK   [{fn}] {len(data)} records validated")
+          sys.exit(1 if failed else 0)
+          EOF

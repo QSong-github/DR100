@@ -1,0 +1,26 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The DR100 registry data — all files under registry/ and schema/ — are licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to:
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material for any purpose,
+          even commercially.
+
+Under the following terms:
+  Attribution — You must give appropriate credit, provide a link to the license,
+                and indicate if changes were made. You may do so in any reasonable
+                manner, but not in any way that suggests the licensor endorses you
+                or your use.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Recommended citation:
+  Wang Q., Liu T., Zhou M., Wang G., Su J., Song Q. (2026).
+  DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven
+  agent systems. Briefings in Bioinformatics.
+  https://github.com/QSong-github/DR100
+
+Note: Individual resources catalogued by DR100 retain their original licenses.
+The `access` field per record reflects each resource's own terms.

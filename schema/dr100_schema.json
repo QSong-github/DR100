@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/wq2581/DR100/raw/main/schema/dr100_schema.json",
+  "title": "DR100 Resource Record",
+  "description": "Schema for a single drug-resource record in the DR100 registry. Designed to be consumed by LLM-driven drug agents.",
+  "type": "object",
+  "required": ["name", "category", "type", "subcategory", "paradigm", "description", "link"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Canonical resource name.",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Alternative names, abbreviations, or version-specific identifiers.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "category": {
+      "type": "string",
+      "description": "Top-level resource category in DR100.",
+      "enum": ["Drug-centric", "Drug-related (indirect)", "auxiliary"]
+    },
+    "type": {
+      "type": "string",
+      "description": "Resource modality.",
+      "enum": ["DB", "Dataset", "KG"]
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Fine-grained subcategory; see docs/subcategories.md for the controlled vocabulary."
+    },
+    "paradigm": {
+      "type": "string",
+      "description": "Cognitive paradigm of agent data consumption (§2.4 of the paper).",
+      "enum": ["LLM-Friendly", "Tool-Mediated"]
+    },
+    "pathway": {
+      "type": ["string", "null"],
+      "description": "Operational integration pathway (§3.3 of the paper). Authoritatively annotated for Drug-centric resources only; null for Drug-related / auxiliary.",
+      "enum": [
+        "Direct Prompt",
+        "RAG",
+        "Graph Query",
+        "REST",
+        "Computational",
+        "Hybrid",
+        null
+      ]
+    },
+    "identifier": {
+      "type": ["string", "null"],
+      "description": "Primary drug-identifier namespace. Authoritative for Drug-centric only.",
+      "examples": [
+        "DrugBank ID", "ChEMBL ID", "PubChem CID", "RxNorm", "ATC",
+        "InChIKey", "SMILES", "CAS", "NDC", "UNII", "UMLS CUI",
+        "ChEBI ID", "MeSH UI", "KEGG ID", "TTD ID", "NSC ID",
+        "HMDB ID", "GSE ID", "LINCS ID", "UniProt", "DrugCentral ID",
+        "IUPHAR ID", "name only"
+      ]
+    },
+    "access": {
+      "type": ["string", "null"],
+      "description": "Access class (§3.4 Axis C).",
+      "enum": [
+        "Open API",
+        "Open Download",
+        "Academic API",
+        "Academic Download",
+        "Web Only",
+        "Commercial",
+        null
+      ]
+    },
+    "license": {
+      "type": ["string", "null"],
+      "description": "License class (when known). Free-text since licenses vary widely.",
+      "default": null
+    },
+    "update_cadence": {
+      "type": ["string", "null"],
+      "description": "Update pattern (§3.4 Axis D).",
+      "enum": [
+        "Continuous",
+        "Periodic Recent",
+        "Periodic Moderate",
+        "Periodic Stale",
+        "Abandoned Static",
+        null
+      ]
+    },
+    "task_tags": {
+      "type": "array",
+      "description": "Canonical drug-science tasks covered by this resource (§3.4 Axis A).",
+      "items": {
+        "type": "string",
+        "enum": [
+          "T1_identification",
+          "T2_labeling",
+          "T3_mechanism",
+          "T4_safety",
+          "T5_interaction",
+          "T6_target",
+          "T7_response",
+          "T8_repurposing",
+          "T9_combination"
+        ]
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "aim": {
+      "type": ["string", "null"],
+      "description": "Short statement of the resource's primary purpose."
+    },
+    "source": {
+      "type": ["string", "null"],
+      "description": "Underlying data sources / curation provenance."
+    },
+    "description": {
+      "type": "string",
+      "description": "Full descriptive paragraph for the resource.",
+      "minLength": 10
+    },
+    "link": {
+      "type": "string",
+      "description": "Primary URL for accessing the resource.",
+      "format": "uri"
+    },
+    "paper_link": {
+      "type": ["string", "null"],
+      "description": "DOI or URL to the canonical citation paper.",
+      "format": "uri"
+    },
+    "data_quality": {
+      "type": "string",
+      "description": "Provenance / quality flag. 'authoritative' = cross-checked between Excel and Supplementary Table; 'needs_review' = mismatch flagged in v1.0 release.",
+      "enum": ["authoritative", "needs_review"],
+      "default": "authoritative"
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free-text curator notes."
+    }
+  }
+}
