@@ -21,12 +21,42 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | `registry/drug_centric.{json,tsv}` | 100 drug-centric resources, fully annotated |
 | `registry/drug_related.{json,tsv}` | 30 indirect drug-related resources |
 | `registry/auxiliary.{json,tsv}` | 44 general biomedical resources used by drug agents |
+| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 441 typed edges across 6 relation types** |
+| 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.606) |
+| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 230 Chrome-verified evidence URLs |
+| 🌟 `rig/networkx.gpickle` | NetworkX MultiDiGraph for downstream analysis |
+| 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
+| 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
+| 🌟 `index.html` | GitHub Pages landing page (live at https://wq2581.github.io/DR100/) |
 | **`examples/01–68_*.py`** | **68 runnable Python access scripts, one per LLM-Friendly resource** |
 | `notebooks/01_quickstart.ipynb` | Load + filter + select resources for an agent |
 | `scripts/build_registry.py` | Rebuild JSON/TSV from source files |
 | `68DrugResources.xlsx` | Source spreadsheet for the 68 example scripts (curator working copy) |
 | `docs/data_quality_report.md` | Discrepancy log between source files (v1.0) |
 | `docs/contribution_guide.md` | How to propose new resources |
+
+## 🌐 Live interactive RIG visualization
+
+**[https://wq2581.github.io/DR100/](https://wq2581.github.io/DR100/)** — pan/zoom the 174-resource graph, hover for resource details, click legend entries to toggle edge types.
+
+## 🔗 Resource Interconnection Graph (RIG) at a glance
+
+The 174 DR100 resources form a **single fully-connected typed multigraph** with **441 inter-resource edges**:
+
+| Edge type | Count | What it means |
+|---|---|---|
+| `incorporates` | 162 | A integrates B's data (e.g., DRKG incorporates DrugBank, Hetionet, STRING) |
+| `derived_from` | 43 | A's content is extracted from B (e.g., SIDER from FDA SPL labels) |
+| `mirrors` | 8 | A and B are alternative interfaces to same data (e.g., openFDA mirrors DailyMed) |
+| `bridges` | 83 | A normalizes IDs across B and others (e.g., RxNorm bridges DrugBank, ATC, SNOMED) |
+| `complements` | 97 | A and B are used together for full coverage (e.g., DDInter + MecDDI) |
+| `feeds_pipeline` | 41 | A's output is B's typical input (e.g., LINCS L1000 → CLUE.io) |
+
+**Top hubs by betweenness centrality:** UMLS (0.28), PubMed Central (0.21), DailyMed (0.19), DrugBank (0.18), LINCS L1000 (0.16), ChEMBL (0.14)
+**Top hubs by eigenvector centrality:** DrugBank (0.52), Hetionet (0.24), ChEMBL (0.21), PrimeKG (0.20), DrugCentral (0.20)
+**Modularity Q = 0.606** across **11 communities** (chemoinformatics, KG aggregators, FDA labels/PV, biomedical NLP, evidence integration, identifier bridges, drug-target evidence, drug combination, disease ontology, cancer PGx, EHR-NLP)
+
+230 of 441 edges carry Chrome-verified provenance URLs to authoritative integration documentation; the remaining 211 are documented in primary source publications.
 
 > The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
 > 68 of 100 drug-centric resources) with realistic access patterns:

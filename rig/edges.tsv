@@ -1,0 +1,442 @@
+source	edge_type	target	evidence_url	confidence	notes
+DRKG	incorporates	DrugBank	https://github.com/gnn4dr/DRKG	high	1,424,790 triplets contributed (largest)
+DRKG	incorporates	Hetionet	https://github.com/gnn4dr/DRKG	high	2,250,197 triplets (Hetionet itself is also a hub)
+DRKG	incorporates	STRING	https://github.com/gnn4dr/DRKG	high	1,496,708 protein-protein triplets
+DRKG	incorporates	DGIdb	https://github.com/gnn4dr/DRKG	high	26,290 drug-gene triplets
+Hetionet	incorporates	DrugBank	https://het.io/about/	high	Compound metanode source
+Hetionet	incorporates	Disease Ontology (DO)	https://het.io/about/	high	Disease metanode source
+Hetionet	incorporates	MeSH Drug Pharmacological Actions	https://het.io/about/	high	Symptom metanode source (MeSH)
+Hetionet	incorporates	SIDER	https://het.io/about/	high	Side Effect metanode (SIDER/UMLS)
+Hetionet	incorporates	Gene Ontology (GO)	https://het.io/about/	high	BP/CC/MF metanode source
+Hetionet	incorporates	Reactome	https://het.io/about/	high	Pathway metanode source
+Hetionet	incorporates	DrugCentral	https://het.io/about/	high	Pharmacologic Class metanode source
+Hetionet	incorporates	UMLS (Unified Medical Language System)	https://het.io/about/	high	Side-effect normalization (with SIDER)
+Hetionet	incorporates	LINCS L1000	https://het.io/about/	high	Compound-gene expression signatures (consensus)
+OREGANO	incorporates	DrugBank	https://www.nature.com/articles/s41597-023-02757-0	high	Drug nodes
+OREGANO	incorporates	SIDER	https://www.nature.com/articles/s41597-023-02757-0	high	Side-effect relations
+OREGANO	incorporates	UniProt	https://www.nature.com/articles/s41597-023-02757-0	high	Protein/gene nodes
+OREGANO	incorporates	Reactome	https://www.nature.com/articles/s41597-023-02757-0	high	Pathway annotations
+OREGANO	incorporates	PharmGKB/ClinPGx	https://www.nature.com/articles/s41597-023-02757-0	high	Pharmacogenomic associations
+OREGANO	incorporates	HPO (Human Phenotype Ontology)	https://www.nature.com/articles/s41597-023-02757-0	high	Phenotype nodes
+OREGANO	incorporates	ATC/DDD	https://www.nature.com/articles/s41597-023-02757-0	high	Drug classification
+OREGANO	incorporates	UMLS (Unified Medical Language System)	https://www.nature.com/articles/s41597-023-02757-0	high	Terminology normalization
+OREGANO	incorporates	Orphanet	https://www.nature.com/articles/s41597-023-02757-0	high	Rare-disease nodes
+STITCH	incorporates	DrugBank	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Manually curated drug interactions
+STITCH	incorporates	TTD	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Therapeutic Targets Database
+STITCH	incorporates	CTD (Comparative Toxicogenomics DB)	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Curated chemical-gene interactions
+STITCH	incorporates	KEGG Drug	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Manually curated drug-target via KEGG
+STITCH	incorporates	Reactome	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Pathway-based associations
+STITCH	incorporates	ChEMBL	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Experimentally validated chemical-protein activity
+STITCH	incorporates	PDB (Protein Data Bank)	https://academic.oup.com/nar/article/44/D1/D380/2503089	high	Structure-based interactions
+Open Targets Platform	incorporates	ClinVar	https://platform-docs.opentargets.org/evidence	high	Germline + somatic variant evidence
+Open Targets Platform	incorporates	UniProt	https://platform-docs.opentargets.org/evidence	high	Literature-curated variants + functional annotation
+Open Targets Platform	incorporates	Orphanet	https://platform-docs.opentargets.org/evidence	high	Rare disease-gene associations
+Open Targets Platform	incorporates	Reactome	https://platform-docs.opentargets.org/evidence	high	Affected pathway evidence
+Open Targets Platform	incorporates	Europe PMC	https://platform-docs.opentargets.org/evidence	high	Literature co-occurrence evidence
+Open Targets Platform	incorporates	GWAS Catalog	https://platform-docs.opentargets.org/evidence	high	GWAS associations + Locus-to-Gene
+Open Targets Platform	incorporates	ChEMBL	https://platform-docs.opentargets.org/drug	high	Drug molecule + MoA backbone
+Open Targets Platform	incorporates	DrugBank	https://platform-docs.opentargets.org/drug	high	Drug filter criterion
+Open Targets Platform	incorporates	FAERS	https://platform-docs.opentargets.org/drug	high	Pharmacovigilance source
+Open Targets Platform	incorporates	PharmGKB/ClinPGx	https://platform-docs.opentargets.org/drug	high	Pharmacogenetics source
+TDC (Therapeutics Data Commons)	incorporates	BindingDB	https://tdcommons.ai/multi_pred_tasks/dti	high	DTI benchmark
+TDC (Therapeutics Data Commons)	incorporates	KIBA	https://tdcommons.ai/multi_pred_tasks/dti	high	DTI benchmark
+TDC (Therapeutics Data Commons)	incorporates	DrugBank	https://tdcommons.ai/multi_pred_tasks/ddi	high	Multi-typed DDI benchmark
+TDC (Therapeutics Data Commons)	incorporates	nSIDES	https://tdcommons.ai/multi_pred_tasks/ddi	high	TWOSIDES polypharmacy
+TDC (Therapeutics Data Commons)	incorporates	DrugComb	https://tdcommons.ai/multi_pred_tasks/drugsyn	high	Drug synergy benchmark
+TDC (Therapeutics Data Commons)	incorporates	PrimeKG	https://tdcommons.ai/multi_pred_tasks/	high	KG resource integration
+PharmacoDB	incorporates	CCLE (Cancer Cell Line Encyclopedia)	https://pharmacodb.ca/datasets	high	Cell line + drug response
+PharmacoDB	incorporates	CTRP (Cancer Therapeutics Response Portal)	https://pharmacodb.ca/datasets	high	Cell line × drug response
+PharmacoDB	incorporates	GDSC/GDSC2	https://pharmacodb.ca/datasets	high	Cell line × drug response (primary panel)
+PharmacoDB	incorporates	NCI-60	https://pharmacodb.ca/datasets	high	NCI-60 cell line × drug response
+PharmacoDB	incorporates	PRISM DepMap	https://pharmacodb.ca/datasets	high	Cell line × drug viability
+ROBOKOP	incorporates	CTD (Comparative Toxicogenomics DB)	https://github.com/RobokopU24/ORION/tree/master/parsers	high	ctd parser
+ROBOKOP	incorporates	GTEx (Genotype-Tissue Expression)	https://github.com/RobokopU24/ORION/tree/master/parsers	high	gtex parser
+ROBOKOP	incorporates	GWAS Catalog	https://github.com/RobokopU24/ORION/tree/master/parsers	high	gwascatalog parser
+ROBOKOP	incorporates	LINCS L1000	https://github.com/RobokopU24/ORION/tree/master/parsers	high	lincs parser
+ROBOKOP	incorporates	Reactome	https://github.com/RobokopU24/ORION/tree/master/parsers	high	reactome parser
+ROBOKOP	incorporates	STRING	https://github.com/RobokopU24/ORION/tree/master/parsers	high	string parser
+ROBOKOP	incorporates	ChEBI	https://github.com/RobokopU24/ORION/tree/master/parsers	high	chebi parser
+ROBOKOP	incorporates	ClinicalTrials	https://github.com/RobokopU24/ORION/tree/master/parsers	high	clinicaltrials parser
+ROBOKOP	incorporates	DrugCentral	https://github.com/RobokopU24/ORION/tree/master/parsers	high	drugcentral parser
+ROBOKOP	incorporates	DRUGMECHDB	https://github.com/RobokopU24/ORION/tree/master/parsers	high	drugmechdb parser
+ROBOKOP	incorporates	Hetionet	https://github.com/RobokopU24/ORION/tree/master/parsers	high	hetio parser
+ROBOKOP	incorporates	HMDB (Human Metabolome Database)	https://github.com/RobokopU24/ORION/tree/master/parsers	high	hmdb parser
+ROBOKOP	incorporates	IUPHAR/BPS Guide to Pharmacology	https://github.com/RobokopU24/ORION/tree/master/parsers	high	gtopdb parser (Guide To PharmacOlogy DB)
+ROBOKOP	incorporates	CORD-19	https://github.com/RobokopU24/ORION/tree/master/parsers	high	cord19 parser
+ROBOKOP	incorporates	Monarch Initiative	https://github.com/RobokopU24/ORION/tree/master/parsers	high	monarchkg parser
+PrimeKG	incorporates	CTD (Comparative Toxicogenomics DB)	https://github.com/mims-harvard/PrimeKG	high	ctd.py - chemical-disease exposure data
+PrimeKG	incorporates	DisGeNET	https://github.com/mims-harvard/PrimeKG	high	Curated gene-disease associations
+PrimeKG	incorporates	DrugBank	https://github.com/mims-harvard/PrimeKG	high	drugbank_*.py - drug-drug + drug-protein
+PrimeKG	incorporates	DrugCentral	https://github.com/mims-harvard/PrimeKG	high	drugcentral_queries.txt - drug-disease + features
+PrimeKG	incorporates	Gene Ontology (GO)	https://github.com/mims-harvard/PrimeKG	high	go.py - GO terms
+PrimeKG	incorporates	HPO (Human Phenotype Ontology)	https://github.com/mims-harvard/PrimeKG	high	hpo.py - phenotype terms
+PrimeKG	incorporates	OMIM (Online Mendelian Inheritance in Man)	https://github.com/mims-harvard/PrimeKG	high	omim_tools.py - inheritance + gene-phenotype
+PrimeKG	incorporates	Reactome	https://github.com/mims-harvard/PrimeKG	high	reactome.py - pathways
+PrimeKG	incorporates	SIDER	https://github.com/mims-harvard/PrimeKG	high	sider.py - side effects
+PrimeKG	incorporates	UMLS (Unified Medical Language System)	https://github.com/mims-harvard/PrimeKG	high	umls.py - terminology mapping
+PrimeKG	incorporates	Disease Ontology (DO)	https://github.com/mims-harvard/PrimeKG	high	Disease mapping via MONDO bridge
+BioKG	incorporates	UniProt	https://github.com/dsi-bdi/biokg	high	UniProt CC-BY-4.0 protein nodes
+BioKG	incorporates	DrugBank	https://github.com/dsi-bdi/biokg	high	DrugBank drug nodes (requires login)
+BioKG	incorporates	KEGG Drug	https://github.com/dsi-bdi/biokg	high	KEGG license source
+BioKG	incorporates	SIDER	https://github.com/dsi-bdi/biokg	high	Side-effect relations
+BioKG	incorporates	Reactome	https://github.com/dsi-bdi/biokg	high	Pathway relations
+BioKG	incorporates	CTD (Comparative Toxicogenomics DB)	https://github.com/dsi-bdi/biokg	high	Chemical-disease relations
+BioKG	incorporates	MeSH Drug Pharmacological Actions	https://github.com/dsi-bdi/biokg	high	MeSH terminology
+SPOKE	incorporates	LINCS L1000	https://spoke.ucsf.edu/	high	Compound-gene signatures
+SPOKE	incorporates	GWAS Catalog	https://spoke.ucsf.edu/	high	GWAS-trait associations
+SPOKE	incorporates	ChEMBL	https://spoke.ucsf.edu/	high	Bioactivity
+SPOKE	incorporates	DrugBank	https://spoke.ucsf.edu/	high	Drug nodes
+SPOKE	incorporates	SIDER	https://spoke.ucsf.edu/	high	Side-effect relations
+MSI (Multiscale Interactome)	incorporates	DrugBank	https://github.com/snap-stanford/multiscale-interactome	high	Drug-protein interactions backbone
+MSI (Multiscale Interactome)	incorporates	DrugCentral	https://github.com/snap-stanford/multiscale-interactome	high	Drug-disease treatments
+MSI (Multiscale Interactome)	incorporates	Gene Ontology (GO)	https://github.com/snap-stanford/multiscale-interactome	high	Biological-function hierarchy
+PubMed Knowledge Graph (PKG)	incorporates	PubMed Central Open Access Subset	https://pubmedkg.github.io/	high	36M+ PubMed papers
+PubMed Knowledge Graph (PKG)	incorporates	ClinicalTrials	https://pubmedkg.github.io/	high	0.48M+ clinical trials
+TOXRIC	incorporates	ToxCast	https://toxric.bioinforai.tech/home	high	EPA ToxCast + Tox21 (1381 assays integrated)
+TOXRIC	incorporates	Open TG-GATEs	https://toxric.bioinforai.tech/home	high	Toxicogenomics database integration
+TOXRIC	incorporates	DrugMatrix	https://toxric.bioinforai.tech/home	high	Toxicogenomics reference panels
+TOXRIC	incorporates	DILIrank 2.0	https://toxric.bioinforai.tech/home	high	Drug-induced liver injury ranking
+CCLE (Cancer Cell Line Encyclopedia)	incorporates	NCI-60	https://sites.broadinstitute.org/ccle/	high	Phase I: NCI-60 cell-line genomic + compound profiling underpins CCLE's predecessor
+LINCS L1000	incorporates	Drug Repurposing Hub	https://lincsportal.ccs.miami.edu/dcic-portal/	high	LINCS compound library substantially overlaps Drug Repurposing Hub
+PubTator3	incorporates	PubMed Central Open Access Subset	https://www.ncbi.nlm.nih.gov/research/pubtator3/	high	35M+ abstracts + 6M+ PMC full text
+PubTator3	incorporates	ChEBI	https://www.ncbi.nlm.nih.gov/research/pubtator3/	high	Chemical entity normalization
+PubTator3	incorporates	MeSH Drug Pharmacological Actions	https://www.ncbi.nlm.nih.gov/research/pubtator3/	high	MeSH-based entity normalization
+SemMedDB	incorporates	PubMed Central Open Access Subset	https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR.html	high	SemRep predications extracted from PubMed
+SemMedDB	incorporates	UMLS (Unified Medical Language System)	https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR.html	high	Concept normalization via UMLS Metathesaurus
+WebMD Drug Reviews	complements	Drug Reviews (Druglib.com)	DR100-§4.2	medium	Multiple consumer drug-review corpora sharing similar source patient feedback
+MIMIC IV	bridges	UMLS (Unified Medical Language System)	https://physionet.org/content/mimiciv/3.1/	high	ICD-9/10 codes (in UMLS) used in diagnoses_icd table
+MIMIC IV	bridges	RxNorm	https://physionet.org/content/mimiciv/3.1/	medium	MIMIC IV prescriptions use NDC codes, RxNorm provides NDC→clinical-drug mapping
+MIMIC IV	incorporates	MIMIC III	https://physionet.org/content/mimiciv/3.1/	high	MIMIC IV is the next-generation continuation of MIMIC III
+askapatient	feeds_pipeline	PsyTAR	DR100-§4.2	medium	PsyTAR uses askapatient as its primary data source for SSRI/SNRI reviews
+LINCS L1000	feeds_pipeline	DRMref	DR100-§4.5	medium	L1000 perturbation signatures feed drug-resistance-mechanism characterization
+HMDB (Human Metabolome Database)	bridges	DrugBank	DR100-§4.5	medium	Same lab (Wishart) cross-links metabolites ↔ drugs
+HMDB (Human Metabolome Database)	bridges	ChEBI	DR100-§4.5	medium	HMDB cross-refs to ChEBI via UniChem
+HMDB (Human Metabolome Database)	bridges	KEGG Drug	DR100-§4.5	medium	HMDB cross-refs to KEGG metabolites/drugs
+HMDB (Human Metabolome Database)	bridges	PubChem	DR100-§4.5	medium	HMDB cross-refs to PubChem CIDs
+KEGG Drug	bridges	PubChem	https://www.kegg.jp/kegg/drug/	medium	KEGG Drug compounds cross-referenced via PubChem CID
+KEGG Drug	bridges	ChEMBL	https://www.kegg.jp/kegg/drug/	medium	KEGG Drug ↔ ChEMBL via UniChem
+KEGG Drug	bridges	ATC/DDD	https://www.kegg.jp/kegg/drug/	medium	KEGG Drug entries carry ATC codes
+KEGG Drug	bridges	DrugBank	https://www.kegg.jp/kegg/drug/	medium	KEGG Drug ↔ DrugBank cross-references
+DGIdb	feeds_pipeline	OREGANO	https://www.nature.com/articles/s41597-023-02757-0	medium	DGIdb is among OREGANO's source databases for drug-gene relationships
+CCLE (Cancer Cell Line Encyclopedia)	complements	GDSC/GDSC2	DR100-§4.5	medium	CCLE multi-omics + GDSC drug response on overlapping cell-line panel
+CCLE (Cancer Cell Line Encyclopedia)	complements	PRISM DepMap	DR100-§4.5	medium	CCLE genomics + PRISM viability share cell-line backbone
+CCLE (Cancer Cell Line Encyclopedia)	complements	CTRP (Cancer Therapeutics Response Portal)	DR100-§4.5	medium	CCLE + CTRP overlap on cancer cell line panel
+DrugCentral	bridges	DrugBank	https://drugcentral.org/about	medium	DrugCentral cross-references DrugBank IDs for approved drugs
+DrugCentral	bridges	ChEMBL	https://drugcentral.org/about	medium	DrugCentral provides cross-references to ChEMBL bioactivity
+Open TG-GATEs	feeds_pipeline	TOXRIC	https://toxric.bioinforai.tech/home	high	Open TG-GATEs toxicogenomics → TOXRIC integration (verified at toxric.bioinforai.tech)
+ToxCast	feeds_pipeline	TOXRIC	https://toxric.bioinforai.tech/home	high	ToxCast HTS assays → TOXRIC integration (1381 assays listed)
+DrugMatrix	feeds_pipeline	TOXRIC	https://toxric.bioinforai.tech/home	high	DrugMatrix toxicogenomics → TOXRIC
+DILIrank 2.0	feeds_pipeline	TOXRIC	https://toxric.bioinforai.tech/home	high	DILIrank hepatotoxicity → TOXRIC clinical-tox category
+BLUE Benchmark	incorporates	MedSTS	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: sentence similarity (clinical)
+BLUE Benchmark	incorporates	BIOSSES	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: sentence similarity (biomedical)
+BLUE Benchmark	incorporates	BC5CDR	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: NER (BC5-disease + BC5-chemical)
+BLUE Benchmark	incorporates	DDI Corpus 2013	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: relation extraction
+BLUE Benchmark	incorporates	ChemProt	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: relation extraction
+BLUE Benchmark	incorporates	i2b2/VA 2010 Concepts/Assertions/Relations	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: relation extraction (clinical)
+BLUE Benchmark	incorporates	MedNLI	https://github.com/ncbi-nlp/BLUE_Benchmark	high	BLUE task: inference (clinical)
+BLURB Benchmark	incorporates	BC5CDR	https://microsoft.github.io/BLURB/tasks.html	high	BLURB NER tasks (BC5-Chem, BC5-Disease)
+BLURB Benchmark	incorporates	ChemProt	https://microsoft.github.io/BLURB/tasks.html	high	BLURB RE task
+BLURB Benchmark	incorporates	DDI Corpus 2013	https://microsoft.github.io/BLURB/tasks.html	high	BLURB RE task
+BLURB Benchmark	incorporates	BIOSSES	https://microsoft.github.io/BLURB/tasks.html	high	BLURB sentence similarity task
+BLURB Benchmark	incorporates	BioASQ	https://microsoft.github.io/BLURB/tasks.html	high	BLURB question-answering task
+BLURB Benchmark	incorporates	PubMedQA	https://microsoft.github.io/BLURB/tasks.html	high	BLURB question-answering task
+BLUE Benchmark	complements	BLURB Benchmark	https://github.com/ncbi-nlp/BLUE_Benchmark	high	Two comprehensive biomedical NLP benchmark suites with overlapping but distinct task selections
+TarKG	incorporates	Disease Ontology (DO)	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	Disease entity backbone
+TarKG	incorporates	MeSH Drug Pharmacological Actions	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	MeSH terminology
+TarKG	incorporates	Gene Ontology (GO)	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	Function annotation
+TarKG	incorporates	DrugBank	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	Drug entity backbone
+TarKG	incorporates	ChEMBL	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	Bioactivity
+TarKG	incorporates	PubTator3	https://academic.oup.com/bioinformatics/article/40/10/btae598/7818343	high	Literature-mined target evidence
+DrugMAP	incorporates	Orphanet	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Disease ontology mapping
+DrugMAP	incorporates	HPO (Human Phenotype Ontology)	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Phenotype mapping
+DrugMAP	incorporates	DisGeNET	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Disease-gene literature-curated associations
+DrugMAP	incorporates	KEGG Drug	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Drug-pathway integration
+DrugMAP	incorporates	TTD	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Target druggability
+DrugMAP	incorporates	PubChem	https://academic.oup.com/nar/article/53/D1/D1372/7756584	high	Chemical structure + RO5 validation
+IDG	incorporates	DrugCentral	https://druggablegenome.net/	high	IDG project develops + maintains DrugCentral as one of its digital resources
+PubMedQA	derived_from	PubMed Central Open Access Subset	DR100-§6.2	high	PubMedQA is QA pairs derived from PubMed abstracts (Jin et al. EMNLP 2019)
+BioASQ	derived_from	PubMed Central Open Access Subset	DR100-§6.2	high	BioASQ challenge tasks derived from PubMed indexed papers
+LitCovid	derived_from	PubMed Central Open Access Subset	DR100-§6.2	high	LitCovid curates COVID-19-related articles from PubMed
+MedQuAD	derived_from	MedlinePlus Drug Info	DR100-§6.2	medium	MedQuAD QA pairs sourced from NIH/MedlinePlus consumer-health pages
+CHEMDNER	derived_from	PubMed Central Open Access Subset	DR100-§6.2	high	BioCreative IV CHEMDNER chemical NER over PubMed abstracts
+EnzChemRED	derived_from	PubMed Central Open Access Subset	DR100-§6.2	medium	Enzyme-chemical relation extraction corpus over PubMed
+PHEE	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	PHEE: Pharmacovigilance Event Extraction from biomedical literature
+DrugEHRQA	derived_from	MIMIC III	DR100-§4.2	medium	DrugEHRQA: drug-related QA over MIMIC clinical notes
+MIMIC III	incorporates	MIMIC II	DR100-§6.2	high	MIMIC III extends MIMIC II with additional patients + harmonization
+MIMIC II	incorporates	MIMIC I	DR100-§6.2	high	MIMIC II is the second-generation continuation of MIMIC I
+Medical Information Mart (MIMIC-CXR)	complements	MIMIC III	DR100-§6.2	high	MIMIC-CXR is chest X-rays from same Beth Israel Deaconess patients as MIMIC III/IV
+eICU Collaborative Research DB	complements	MIMIC IV	DR100-§6.2	medium	eICU and MIMIC are sister critical-care databases from different consortia
+TCGA (The Cancer Genome Atlas)	complements	CCLE (Cancer Cell Line Encyclopedia)	DR100-§6.2	high	TCGA = patient tumor genomics; CCLE = cell-line genomics — together cover translation
+CCLE (Cancer Cell Line Encyclopedia)	bridges	TCGA (The Cancer Genome Atlas)	https://sites.broadinstitute.org/ccle/	medium	CCLE provides cell-line mappings to TCGA tumor types
+PLINDER	derived_from	PDB (Protein Data Bank)	DR100-§6.1	high	PLINDER protein-ligand interaction dataset curated from PDB structures
+PDBbind	derived_from	PDB (Protein Data Bank)	DR100-§6.1	high	PDBbind extracts binding affinity from PDB structures with affinity annotations
+NCATS Pharmaceutical Collection (NPC)	complements	Drug Repurposing Hub	https://repo-hub.broadinstitute.org/repurposing	medium	NCATS NPC + Broad Drug Repurposing Hub: largest two repurposing screening libraries (significant compound overlap)
+ReframeDB	complements	Drug Repurposing Hub	DR100-§4.7	medium	Calibr/Scripps ReframeDB + Broad Drug Repurposing Hub: parallel commercial-scale repurposing libraries
+DrugRepoBank	complements	RepoDB	DR100-§4.7	medium	Both are curated drug-disease repositioning evidence databases
+RepurposeDrugs	complements	RepoDB	DR100-§4.7	medium	Both are clinical-stage drug-disease repositioning resources
+DrugRepurposing Online	complements	Drug Repurposing Hub	DR100-§4.7	medium	Predictive repurposing portal complementary to Drug Repurposing Hub library
+EK-DRD	complements	DrugRepoBank	DR100-§4.7	low	EK-DRD: experimental-knowledge drug-repositioning DB
+TRANSCRIPT DRUG REPURPOSING DATASET	complements	LINCS L1000	DR100-§4.7	medium	Transcriptomic repurposing dataset complementary to LINCS L1000 signatures
+CancerDR	complements	DRMref	DR100-§4.7	medium	CancerDR drug resistance + DRMref drug resistance mechanism reference
+DTC (Drug Target Commons) 2.0	derived_from	ChEMBL	DR100-§4.4	high	DTC is a community-curated ChEMBL bioactivity refinement effort (Tanoli et al. 2018)
+Molecular Targets Platform	bridges	TTD	DR100-§4.4	medium	Molecular Targets Platform cross-references TTD and other target DBs
+Molecular Targets Platform	bridges	DrugBank	DR100-§4.4	medium	Molecular Targets Platform includes DrugBank drug-target data
+PROMISCUOUS 2.0	incorporates	DrugBank	DR100-§4.4	medium	PROMISCUOUS 2.0 integrates DrugBank drug-target relationships
+PROMISCUOUS 2.0	incorporates	SIDER	DR100-§4.6	medium	PROMISCUOUS 2.0 integrates side-effect annotations from SIDER
+GDKD (Genomics-Drug Knowledge DB)	complements	OncoKB	DR100-§4.4	medium	Both curate cancer variant-drug evidence
+e-Drug3D	bridges	PubChem	DR100-§4.5	medium	e-Drug3D drug 3D structures cross-linked to PubChem CID
+e-Drug3D	bridges	DrugBank	DR100-§4.5	medium	e-Drug3D provides 3D for DrugBank-approved drugs
+SuperDRUG2	bridges	DrugBank	DR100-§4.5	medium	SuperDRUG2 cross-references DrugBank approved drugs
+SuperDRUG2	bridges	ATC/DDD	DR100-§4.5	medium	SuperDRUG2 organizes drugs by ATC code
+DrugMAP	complements	DrugBank	DR100-§4.4	high	DrugMAP molecular atlas complements DrugBank with multi-omics integration
+Polaris	complements	TDC (Therapeutics Data Commons)	DR100-§4.5	medium	Polaris (Valence Discovery) is the newer ML-benchmark hub paralleling TDC
+PharmKG	incorporates	DrugBank	DR100-§5.2	medium	PharmKG drug-related entities sourced from DrugBank (Zheng et al. 2021)
+PharmKG	incorporates	STITCH	DR100-§5.2	medium	PharmKG incorporates chemical-protein from STITCH
+PharmKG	incorporates	OMIM (Online Mendelian Inheritance in Man)	DR100-§5.2	medium	PharmKG disease entities from OMIM
+OpenBioLink	incorporates	DrugBank	DR100-§6.2	medium	OpenBioLink integrates DrugBank drug-protein relations
+OpenBioLink	incorporates	Hetionet	DR100-§6.2	medium	OpenBioLink shares the Hetionet integration philosophy and overlapping sources
+OpenBioLink	incorporates	Disease Ontology (DO)	DR100-§6.2	medium	OpenBioLink disease nodes from DO
+UniD3	incorporates	DrugBank	DR100-§5.2	medium	UniD3 multi-KG aggregator includes DrugBank
+UniD3	incorporates	ChEMBL	DR100-§5.2	medium	UniD3 multi-KG aggregator includes ChEMBL
+CKG (Clinical Knowledge Graph)	incorporates	DrugBank	DR100-§6.2	medium	CKG (Santos et al. 2022) integrates DrugBank drug data
+CKG (Clinical Knowledge Graph)	incorporates	DisGeNET	DR100-§6.2	medium	CKG integrates DisGeNET disease-gene associations
+CKG (Clinical Knowledge Graph)	incorporates	Reactome	DR100-§6.2	medium	CKG integrates Reactome pathways
+CKG (Clinical Knowledge Graph)	incorporates	UMLS (Unified Medical Language System)	DR100-§6.2	medium	CKG uses UMLS for terminology normalization
+CDCDB	complements	DrugCombDB	DR100-§4.5	medium	CDCDB continuously-updated DDI combo database complements DrugCombDB
+DCDB (Drug Combination DB)	complements	DrugCombDB	DR100-§4.5	medium	DCDB historical drug-combination database complements DrugCombDB
+DCDB (Drug Combination DB)	feeds_pipeline	DrugCombDB	DR100-§4.5	medium	DCDB is one of DrugCombDB's external-database integration sources
+BioKDE	derived_from	PubMed Central Open Access Subset	DR100-§6.2	medium	BioKDE: biomedical KG discovery engine over PubMed
+BioKDE	incorporates	UMLS (Unified Medical Language System)	DR100-§6.2	medium	BioKDE uses UMLS for terminology
+GenomicKB	incorporates	GWAS Catalog	DR100-§6.2	medium	GenomicKB integrates GWAS Catalog
+GenomicKB	incorporates	ClinVar	DR100-§6.2	medium	GenomicKB integrates ClinVar variant-disease
+SemaTyP	derived_from	SemMedDB	DR100-§5.2	medium	SemaTyP uses SemRep semantic-type-based literature mining (related to SemMedDB approach)
+DrugSig	complements	LINCS L1000	DR100-§4.5	medium	DrugSig drug perturbation signatures complement LINCS L1000
+TAC 2017 ADR	derived_from	DailyMed	DR100-§4.2	medium	TAC 2017 ADR shared task: ADR annotations over FDA SPL labels from DailyMed
+MedQA	complements	PubMedQA	DR100-§6.2	high	Standard medical-QA evaluation pair (Jin et al. 2020 vs. Jin et al. 2019)
+MedQA	complements	MedMCQA	DR100-§6.2	high	USMLE (MedQA) + AIIMS/NEET-PG (MedMCQA) cover two major medical-licensing exam systems
+MedMCQA	complements	BioASQ	DR100-§6.2	medium	MedMCQA (multiple-choice) + BioASQ (open-domain) form a medical-QA evaluation suite
+ChatDoctor Dataset	complements	MedQuAD	DR100-§6.2	medium	ChatDoctor (patient-doctor dialogue) + MedQuAD (NLM consumer-health QA) cover patient-facing medical QA
+ChatDoctor Dataset	complements	MedQA	DR100-§6.2	medium	ChatDoctor dialogues + MedQA exam questions form complementary clinical-QA training corpora
+FAERS	bridges	MedDRA	DR100-§4.4	high	FAERS adverse events coded in MedDRA Preferred Terms
+SIDER	bridges	MedDRA	DR100-§4.6	high	SIDER side-effect mappings use MedDRA terminology
+VigiAccess	bridges	MedDRA	DR100-§4.4	high	VigiAccess (WHO VigiBase) codes ADRs in MedDRA
+openFDA Human Drug	bridges	MedDRA	DR100-§4.4	high	openFDA Drug AE endpoint uses MedDRA reaction codes
+STRING	incorporates	KEGG Drug	https://string-db.org/cgi/about	medium	STRING aggregates KEGG pathway-derived protein associations
+STRING	incorporates	Reactome	https://string-db.org/cgi/about	medium	STRING aggregates Reactome pathway-derived interactions
+STRING	incorporates	PDB (Protein Data Bank)	https://string-db.org/cgi/about	medium	STRING uses PDB structural context for interactions
+STRING	bridges	UniProt	https://string-db.org/cgi/about	medium	STRING protein IDs are mapped to UniProt accessions
+Open Targets Platform	incorporates	CIViC	https://platform-docs.opentargets.org/	medium	Open Targets cancer-evidence pipeline ingests CIViC variant-drug evidence
+CIViC	bridges	OncoKB	DR100-§6.1	medium	CIViC and OncoKB cross-reference oncology variant evidence
+CPIC	bridges	RxNorm	DR100-§7.1	medium	CPIC drug-gene tables map drug names to RxCUI for clinical use
+CPIC	bridges	ATC/DDD	DR100-§7.1	medium	CPIC guideline drugs typically annotated with ATC codes
+NCATS Pharmaceutical Collection (NPC)	incorporates	DailyMed	https://drugs.ncats.io/	medium	NCATS Inxight/NPC ingests DailyMed product labels (recent update April 2025)
+NCATS Pharmaceutical Collection (NPC)	incorporates	ClinicalTrials	https://drugs.ncats.io/	medium	NCATS Inxight/NPC integrates ClinicalTrials.gov data
+NCATS Pharmaceutical Collection (NPC)	bridges	DrugBank	https://drugs.ncats.io/	medium	NCATS NPC cross-references DrugBank for approved drugs
+FDA Orange Book	bridges	DrugBank	DR100-§4.4	medium	FDA Orange Book identifies approved drugs cross-referenced in DrugBank
+FDA Orange Book	bridges	RxNorm	DR100-§4.4	medium	Orange Book approved drugs normalized via RxNorm RXCUI
+MecDDI	derived_from	DrugBank	DR100-§4.4	high	MecDDI mechanism descriptions sourced from DrugBank DDI table + literature
+MecDDI	complements	DDInter	DR100-§7.4	high	MecDDI mechanism + DDInter severity — canonical DDI co-query pair
+DDInter	bridges	RxNorm	DR100-§7.4	high	DDInter drugs normalized via RxNorm for clinical use
+DDInter	derived_from	DrugBank	DR100-§4.4	medium	DDInter aggregates DDI data including DrugBank-source pairs
+CADEC	derived_from	askapatient	DR100-§4.2	high	CADEC corpus annotates SSRI/SNRI posts from askapatient and others
+CADEC	complements	PsyTAR	DR100-§4.2	high	CADEC and PsyTAR are sister annotated ADR corpora from patient forums
+PharmacoDB	complements	TCGA (The Cancer Genome Atlas)	DR100-§4.5	medium	PharmacoDB cell-line pharmacogenomics complements TCGA patient tumor data
+GDSC/GDSC2	complements	TCGA (The Cancer Genome Atlas)	DR100-§4.5	medium	GDSC IC50 + TCGA molecular profile commonly co-analyzed
+BLUE Benchmark	incorporates	BC5CDR	https://github.com/ncbi-nlp/BLUE_Benchmark	high	Already encoded; reaffirming
+Drugs.com	bridges	RxNorm	DR100-§4.2	medium	Drugs.com monographs cross-reference RxNorm for drug normalization
+Drugs.com	incorporates	DDInter	DR100-§4.2	low	Drugs.com DDI checker uses curated interaction data overlapping DDInter
+LiverTox	bridges	MedDRA	DR100-§4.6	medium	LiverTox case reports coded in MedDRA hepatotoxicity terms
+ADReCS	bridges	MedDRA	DR100-§4.6	high	ADReCS ontology is a hierarchical classification atop MedDRA PT
+ADReCS	complements	SIDER	DR100-§4.6	high	ADReCS classification + SIDER label-derived data — complementary ADR views
+ALMANAC	incorporates	NCI-60	DR100-§4.5	high	ALMANAC drug-combination screen done on NCI-60 cell line panel
+KIBA	derived_from	ChEMBL	DR100-§4.5	medium	KIBA combines kinase inhibitor binding data from ChEMBL with normalization
+KIBA	derived_from	BindingDB	DR100-§4.5	medium	KIBA aggregates BindingDB kinase Ki/Kd values
+PDBbind	bridges	BindingDB	DR100-§4.5	medium	PDBbind structural affinities cross-referenced with BindingDB binding constants
+TRANSCRIPT DRUG REPURPOSING DATASET	complements	Drug Repurposing Hub	DR100-§4.7	medium	Transcriptomic repurposing dataset complements drug-library-based Repurposing Hub
+DrugMatrix	complements	Open TG-GATEs	DR100-§4.5	high	DrugMatrix (rat toxicogenomics) + Open TG-GATEs (rat+human) — twin toxicogenomics references
+LINCS L1000	incorporates	Drug Repurposing Hub	DR100-§4.5	medium	LINCS profiles many Drug Repurposing Hub compounds (already documented Broad collaboration)
+SYNERGxDB	complements	DrugCombDB	DR100-§4.5	medium	Both are integrative drug-combination data portals with different cell-line focus
+SynergyFinder	feeds_pipeline	DrugComb	DR100-§4.5	high	SynergyFinder is the analysis frontend; computed synergy scores deposited in DrugComb
+DTC (Drug Target Commons) 2.0	complements	BindingDB	DR100-§4.4	medium	DTC curated bioactivity + BindingDB experimental affinity — sibling bioactivity sources
+EnzChemRED	complements	ChemProt	DR100-§6.2	medium	Enzyme-chemical + chemical-protein relation extraction corpora
+CHEMDNER	complements	BC5CDR	DR100-§6.2	medium	CHEMDNER + BC5CDR are sister BioCreative chemical NER benchmarks
+NLM-Chem-BC7	complements	CHEMDNER	DR100-§6.2	medium	NLM-Chem-BC7 extends BC7-track chemical entity annotation; sibling to CHEMDNER
+NLM-Chem-BC7	complements	BC5CDR	DR100-§6.2	medium	NLM-Chem-BC7 full-text + BC5CDR abstract-level chemical NER
+BioRED	complements	BC5CDR	DR100-§6.2	medium	BioRED multi-relation + BC5CDR chemical-disease NER are sister BioCreative benchmarks
+DrugProt	complements	ChemProt	DR100-§6.2	high	DrugProt is the BioCreative VII successor to ChemProt for drug-protein relation extraction
+PHEE	complements	ADE Corpus	DR100-§4.2	medium	Pharmacovigilance event extraction + adverse drug event annotation — sister NLP tasks
+DrugEHRQA	complements	MedNLI	DR100-§6.2	medium	Drug-related QA over EHR + clinical NLI — complementary clinical-LLM benchmarks
+DrugOOD	complements	MoleculeNet	DR100-§4.5	medium	Out-of-distribution drug benchmarks + classical MoleculeNet ADMET
+DrugSig	complements	GEO Drug Perturbation Signatures	DR100-§4.5	medium	Drug perturbation expression signatures — sibling resources
+TrialPanorama	derived_from	ClinicalTrials	DR100-§6.1	high	TrialPanorama is an AI-ready harmonized restructuring of ClinicalTrials.gov data
+Cochrane Library	complements	TrialPanorama	DR100-§6.1	medium	Cochrane systematic reviews + TrialPanorama harmonized trials — complementary evidence layers
+BioKDE	complements	iKraph	DR100-§6.2	medium	Two PubMed-derived biomedical knowledge discovery engines
+iKraph	complements	PubMed Knowledge Graph (PKG)	DR100-§6.2	medium	Two large-scale PubMed knowledge graphs with distinct curation approaches
+GenomicKB	incorporates	GTEx (Genotype-Tissue Expression)	DR100-§6.2	medium	GenomicKB integrates GTEx tissue expression
+GenomicKB	incorporates	TCGA (The Cancer Genome Atlas)	DR100-§6.2	medium	GenomicKB integrates TCGA cancer genomics
+M3-20M	complements	PubChem	DR100-§4.5	medium	M3-20M large multimodal molecule dataset draws from PubChem
+Polaris	complements	MoleculeNet	DR100-§4.5	medium	Polaris ML benchmark + MoleculeNet legacy ADMET — newer + classical
+e-Drug3D	bridges	ChEMBL	DR100-§4.5	medium	e-Drug3D 3D structures linked to ChEMBL parent compounds
+SemaTyP	complements	SemMedDB	DR100-§5.2	medium	SemaTyP and SemMedDB are related semantic-type/predication mining frameworks
+WHO Essential Medicines List	bridges	RxNorm	DR100-§4.1	medium	EML drug names normalize via RxNorm for clinical-system integration
+DCDB (Drug Combination DB)	derived_from	FDA Orange Book	DR100-§4.5	medium	DCDB combination data references FDA-approved combinations from Orange Book
+CDCDB	feeds_pipeline	DrugComb	DR100-§4.5	medium	Continuously updated DDI combinations may be ingested into DrugComb meta-analyses
+DrugRepurposing Online	complements	DrugRepoBank	DR100-§4.7	low	Two predictive repurposing portals
+RepurposeDrugs	complements	DrugRepoBank	DR100-§4.7	medium	Two clinical-evidence repurposing databases
+DRMref	incorporates	CCLE (Cancer Cell Line Encyclopedia)	DR100-§4.5	medium	DRMref drug resistance characterized on CCLE multi-omics cell lines
+Tahoe	complements	PRISM DepMap	DR100-§4.5	medium	Both are large-scale single-cell-resolution drug-cell screening efforts
+LitCovid	complements	CORD-19	DR100-§6.2	high	LitCovid + CORD-19 are sibling COVID-19 literature collections (NIH NLM vs. AI2)
+CORD-19	derived_from	PubMed Central Open Access Subset	DR100-§6.2	high	CORD-19 (AI2) extracts COVID-related papers primarily from PubMed Central + bioRxiv
+GTEx (Genotype-Tissue Expression)	complements	TCGA (The Cancer Genome Atlas)	DR100-§6.2	high	GTEx normal tissue expression + TCGA tumor expression — canonical baseline-vs-tumor pair
+Drug Reviews (Druglib.com)	complements	WebMD Drug Reviews	DR100-§4.2	medium	Two patient drug-review corpora widely used together
+VigiAccess	complements	openFDA Human Drug	DR100-§4.4	high	WHO VigiAccess and FDA openFDA — global vs. US pharmacovigilance complement
+Drug Repurposing Hub	incorporates	NCATS Pharmaceutical Collection (NPC)	DR100-§4.7	medium	Drug Repurposing Hub overlaps significantly with NCATS NPC compound library
+Open Targets Platform	bridges	MedDRA	https://platform-docs.opentargets.org/	medium	Open Targets pharmacovigilance evidence uses MedDRA ADR coding
+ADE Corpus	complements	TAC 2017 ADR	DR100-§4.2	medium	Both are NLP ADE annotation corpora over biomedical+label text
+SIDER	derived_from	DailyMed	DR100-§4.6	medium	Side effects extracted from FDA Structured Product Labels
+LiverTox	derived_from	DailyMed	DR100-§5.3	medium	Hepatotoxicity curated from FDA labels + clinical case reports
+DILIrank 2.0	derived_from	DailyMed	DR100-§4.6	medium	DILI risk ranking from FDA labeling boxed warnings
+UniTox	derived_from	DailyMed	DR100-§5.3	medium	Toxicity curated from FDA labels via LLM extraction
+nSIDES	derived_from	FAERS	DR100-§5.3	medium	EHR-derived disproportionality cross-validates FAERS signals
+DDI Corpus 2013	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	DDI annotations over PubMed abstracts + DrugBank
+DrugProt	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	Chemical-protein relation annotations over PubMed
+ADE Corpus	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	Adverse-drug-event sentences annotated over PubMed
+NLM-Chem-BC7	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	Chemical entities annotated in full-text PubMed
+BC5CDR	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	BioCreative chemical-disease relation NER over PubMed
+BioRED	derived_from	PubMed Central Open Access Subset	DR100-§4.2	medium	Multi-relation biomedical RE benchmark over PubMed
+Drugs.com	derived_from	DailyMed	DR100-§4.2	medium	Consumer drug monographs sourced from FDA labels + curated
+MedlinePlus Drug Info	derived_from	DailyMed	DR100-§4.2	medium	NLM consumer drug info derived from labels
+RxList Drug Descriptions	derived_from	DailyMed	DR100-§4.2	medium	Consumer monographs derived from FDA labels
+FDA Orange Book	derived_from	openFDA Human Drug	DR100-§4.4	medium	Approved drug + generic equivalence
+WHO Essential Medicines List	derived_from	ATC/DDD	Convention	medium	EML drugs classified by ATC; WHO maintains both
+CPIC	derived_from	PharmGKB/ClinPGx	DR100-§7.1	medium	CPIC guidelines built on PharmGKB evidence
+PharmGKB/ClinPGx	derived_from	PubMed Central Open Access Subset	DR100-§2.3	medium	Curated from primary pharmacogenomic literature
+PharmVar	derived_from	PharmGKB/ClinPGx	Convention	medium	Star-allele nomenclature shared with PharmGKB
+Open TG-GATEs	derived_from	DrugMatrix	DR100-§4.5	medium	Both are toxicogenomics reference panels with overlap; not strict derivation but historical lineage
+DRKG	derived_from	PubMed Central Open Access Subset	https://github.com/gnn4dr/DRKG	medium	COVID-19 bibliographic edges (84,756 triplets)
+DailyMed	mirrors	openFDA Human Drug	DR100-§4.4	medium	DailyMed dispenses SPL labels; openFDA Drug API serves the same SPL data via REST
+Drugs.com	mirrors	DailyMed	DR100-§4.2	medium	Drugs.com surfaces a curated subset of label content also in DailyMed
+MedlinePlus Drug Info	mirrors	DailyMed	DR100-§4.2	medium	NLM consumer wrapper over label content
+RxList Drug Descriptions	mirrors	DailyMed	DR100-§4.2	medium	Commercial consumer wrapper over label content
+VigiAccess	mirrors	FAERS	DR100-§4.4	medium	VigiAccess (WHO) and FAERS (FDA) are mirror regional pharmacovigilance systems
+ATC/DDD	mirrors	WHO Essential Medicines List	Convention	medium	Both maintained by WHO; EML is classified by ATC
+PharmGKB/ClinPGx	mirrors	CPIC	DR100-§7.1	medium	PharmGKB hosts CPIC guideline annotations alongside its own curation
+Drug Reviews (Druglib.com)	mirrors	Drugs.com	DR100-§4.2	medium	UCI Drug Reviews dataset derives from Druglib reviews
+RxNorm	bridges	DrugBank	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=DRUGBANK source
+RxNorm	bridges	ATC/DDD	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=ATC source
+RxNorm	bridges	MeSH Drug Pharmacological Actions	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=MSH source (until Oct 2023)
+RxNorm	bridges	NDF-RT (National Drug File)	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=VANDF + NDDF
+RxNorm	bridges	SNOMED CT	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=SNOMEDCT_US
+RxNorm	bridges	DailyMed	https://www.nlm.nih.gov/research/umls/rxnorm/overview.html	high	RxNorm SAB=MTHSPL (FDA Structured Product Labels — the SPL files DailyMed dispenses)
+ChEBI	bridges	ChEMBL	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+ChEBI	bridges	PubChem	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+ChEBI	bridges	KEGG Drug	Convention	medium	ChEBI cross-refs to KEGG compound IDs
+ChEBI	bridges	HMDB (Human Metabolome Database)	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+ChEBI	bridges	DrugBank	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	ChEMBL	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	DrugBank	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	ChEBI	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	KEGG Drug	Convention	medium	PubChem cross-link to KEGG compound IDs
+PubChem	bridges	ZINC	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	BindingDB	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	IUPHAR/BPS Guide to Pharmacology	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+PubChem	bridges	DrugCentral	https://www.ebi.ac.uk/unichem/sources	high	Bridged via UniChem (EBI)
+UMLS (Unified Medical Language System)	bridges	RxNorm	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=RXNORM
+UMLS (Unified Medical Language System)	bridges	SNOMED CT	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=SNOMEDCT_US
+UMLS (Unified Medical Language System)	bridges	MeSH Drug Pharmacological Actions	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=MSH
+UMLS (Unified Medical Language System)	bridges	ATC/DDD	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=ATC
+UMLS (Unified Medical Language System)	bridges	MedDRA	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=MDR
+UMLS (Unified Medical Language System)	bridges	OMIM (Online Mendelian Inheritance in Man)	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=OMIM
+UMLS (Unified Medical Language System)	bridges	NCI Thesaurus (NCIt)	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=NCI
+UMLS (Unified Medical Language System)	bridges	Orphanet	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=ORPHANET
+UMLS (Unified Medical Language System)	bridges	DrugBank	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=DRUGBANK
+UMLS (Unified Medical Language System)	bridges	HPO (Human Phenotype Ontology)	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=HPO
+UMLS (Unified Medical Language System)	bridges	DailyMed	https://www.nlm.nih.gov/research/umls/sourcereleasedocs/	high	UMLS SAB=MTHSPL
+DGIdb	bridges	DrugBank	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports DrugBank drug-gene
+DGIdb	bridges	ChEMBL	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports ChEMBL bioactivity
+DGIdb	bridges	TTD	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports Therapeutic Targets DB
+DGIdb	bridges	CIViC	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports CIViC variant-drug evidence
+DGIdb	bridges	OncoKB	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports OncoKB precision-oncology
+DGIdb	bridges	PharmGKB/ClinPGx	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports PharmGKB
+DGIdb	bridges	IUPHAR/BPS Guide to Pharmacology	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports GuideToPharmacology
+DGIdb	bridges	NCI Thesaurus (NCIt)	https://www.dgidb.org/browse/sources	high	DGIdb v5 imports NCIt drug categorization
+MeSH Drug Pharmacological Actions	bridges	ATC/DDD	Convention	medium	MeSH PA categories mappable to ATC
+Disease Ontology (DO)	bridges	OMIM (Online Mendelian Inheritance in Man)	Convention	medium	DO ↔ OMIM disease cross-references (via MONDO)
+Disease Ontology (DO)	bridges	HPO (Human Phenotype Ontology)	Convention	medium	DO ↔ HPO crosswalk via Monarch/MONDO
+Monarch Initiative	bridges	Disease Ontology (DO)	Convention	medium	Monarch ingests + bridges DO
+Monarch Initiative	bridges	HPO (Human Phenotype Ontology)	Convention	medium	Monarch ingests + bridges HPO
+Monarch Initiative	bridges	OMIM (Online Mendelian Inheritance in Man)	Convention	medium	Monarch ingests + bridges OMIM
+Monarch Initiative	bridges	Orphanet	Convention	medium	Monarch ingests + bridges Orphanet
+DDInter	complements	MecDDI	DR100-§7.4	medium	DDInter scores severity; MecDDI provides mechanism — pair for clinical narrative
+DDInter	complements	DrugBank	DR100-§7.4	medium	DDInter cites DrugBank interaction field; agents often cross-validate
+FAERS	complements	nSIDES	DR100-§7.2	medium	FAERS = raw signals, nSIDES = EHR-disproportionality validation
+FAERS	complements	SIDER	DR100-§7.2	medium	FAERS signals validated against SIDER label-derived baseline
+SIDER	complements	ADReCS	DR100-§4.6	medium	SIDER mappings + ADReCS hierarchical ADR classification
+FAERS	complements	VigiAccess	DR100-§4.4	medium	FAERS (US) + VigiAccess (WHO global) as regional complements
+GDSC/GDSC2	complements	CCLE (Cancer Cell Line Encyclopedia)	DR100-§4.5	medium	GDSC drug response on CCLE-multiomics cell lines
+CTRP (Cancer Therapeutics Response Portal)	complements	GDSC/GDSC2	DR100-§4.5	medium	CTRP + GDSC use overlapping cell-line panels with different drug sets
+PRISM DepMap	complements	GDSC/GDSC2	DR100-§4.5	medium	PRISM = barcoded viability across drug × cell line, complements GDSC IC50
+PharmacoDB	complements	GDSC/GDSC2	DR100-§4.5	medium	PharmacoDB harmonizes GDSC + CTRP + PRISM + CCLE + gCSI
+DRMref	complements	GDSC/GDSC2	DR100-§4.5	medium	DRMref drug-resistance mechanisms reference GDSC cell-line panels
+CancerDR	complements	GDSC/GDSC2	DR100-§4.5	medium	CancerDR resistance database complements GDSC sensitivity profiles
+RepoDB	complements	DRKG	DR100-§7.3	medium	RepoDB clinical-trial evidence; DRKG in-silico KG prediction
+RepoDB	complements	OREGANO	DR100-§7.3	medium	RepoDB historical drug-disease + OREGANO predictive KG
+Drug Repurposing Hub	complements	DRKG	DR100-§7.3	medium	Drug Repurposing Hub library + DRKG mechanistic reasoning
+DrugComb	complements	DrugCombDB	DR100-§4.5	medium	Two largest drug-combination portals
+SynergyFinder	complements	DrugComb	DR100-§4.5	medium	SynergyFinder is the analysis tool; DrugComb is the data portal
+ALMANAC	complements	DrugComb	DR100-§4.5	medium	NCI ALMANAC ingested into DrugComb
+SYNERGxDB	complements	DrugComb	DR100-§4.5	medium	Cross-portal pharmacogenomic synergy
+DDI Corpus 2013	complements	DrugProt	DR100-§4.2	medium	DDI Corpus = drug-drug; DrugProt = drug-protein — pair for full drug-NLP coverage
+ADE Corpus	complements	CADEC	DR100-§4.2	medium	Different ADE genres (clinical text + patient forum)
+n2c2 2018 Track 2	complements	ADE Corpus	DR100-§4.2	medium	Different annotation scopes
+askapatient	complements	WebMD Drug Reviews	DR100-§4.2	medium	Multiple consumer review corpora
+PsyTAR	complements	askapatient	DR100-§4.2	medium	PsyTAR uses askapatient data, focused on SSRI/SNRI
+DrugBank	complements	ChEMBL	DR100-§4.7	medium	DrugBank = clinical/text; ChEMBL = bioactivity quantitative — joint coverage
+DrugBank	complements	DrugCentral	DR100-§4.7	medium	Overlapping clinical drug DBs with different curation policies
+ChEMBL	complements	BindingDB	DR100-§4.5	medium	ChEMBL + BindingDB are largest curated bioactivity DBs
+DRUGMECHDB	complements	DRKG	DR100-§7.3	medium	DrugMechDB = pre-defined paths; DRKG = multi-hop KG search
+DRUGMECHDB	complements	OREGANO	DR100-§7.3	medium	Mechanism narrative + KG reasoning
+ToxCast	complements	Open TG-GATEs	DR100-§4.5	medium	HTS toxicity (ToxCast) + in-vivo toxicogenomics (TG-GATEs)
+LiverTox	complements	DILIrank 2.0	DR100-§4.6	medium	Narrative liver-injury cases + DILI risk ranking
+DILIrank 2.0	complements	UniTox	DR100-§4.6	medium	DILI rank + comprehensive LLM-extracted toxicity panel
+ATC/DDD	complements	MeSH Drug Pharmacological Actions	Convention	medium	Two pharmacological classification systems
+ATC/DDD	complements	NDF-RT (National Drug File)	Convention	medium	ATC + NDF-RT mechanism/physiologic-effect
+OncoKB	complements	CIViC	DR100-§6.1	medium	Two oncology variant-drug evidence curation efforts (different focus)
+ClinicalTrials	complements	TrialPanorama	DR100-§6.1	medium	Live registry + harmonized AI-ready trial dataset
+ClinicalTrials	complements	Cochrane Library	DR100-§6.1	medium	Trial registry + systematic-review evidence
+PubChem	feeds_pipeline	MoleculeNet	DR100-§4.5	medium	SMILES from PubChem → MoleculeNet ADMET datasets
+ChEMBL	feeds_pipeline	MoleculeNet	DR100-§4.5	medium	Bioactivity → benchmark
+ChEMBL	feeds_pipeline	TDC (Therapeutics Data Commons)	DR100-§4.5	medium	ChEMBL bioactivity → TDC DTI benchmark
+BindingDB	feeds_pipeline	TDC (Therapeutics Data Commons)	DR100-§4.5	medium	BindingDB Kd/Ki → TDC DTI benchmark
+DrugBank	feeds_pipeline	TDC (Therapeutics Data Commons)	DR100-§4.5	medium	DrugBank DDI → TDC DDI benchmark
+FAERS	feeds_pipeline	nSIDES	DR100-§7.2	medium	Raw FAERS reports → disproportionality (PRR/ROR) → nSIDES signals
+openFDA Human Drug	feeds_pipeline	FAERS	DR100-§4.4	medium	openFDA REST exposes FAERS endpoint; downstream consumers compute stats
+LINCS L1000	feeds_pipeline	Clue	DR100-§4.5	medium	L1000 raw signatures consumed via CLUE.io query interface
+LINCS L1000	feeds_pipeline	Drug Repurposing Hub	DR100-§7.3	medium	Signature reversal pipeline references Repurposing Hub library
+GEO Drug Perturbation Signatures	feeds_pipeline	Clue	DR100-§4.5	medium	GEO drug perturbations → CMap-style consensus signatures
+ZINC	feeds_pipeline	MoleculeNet	DR100-§4.5	medium	ZINC compounds used as screening libraries for ML benchmarks
+ZINC	feeds_pipeline	DrugOOD	DR100-§4.5	medium	ZINC subsets used in DrugOOD distribution-shift benchmarks
+PDB (Protein Data Bank)	feeds_pipeline	PDBbind	DR100-§6.1	medium	PDB structures → PDBbind affinity benchmark
+PDBbind	feeds_pipeline	BindingDB	DR100-§4.5	medium	PDBbind structural affinities cross-referenced in BindingDB
+ToxCast	feeds_pipeline	TOXRIC	DR100-§4.5	medium	ToxCast HTS assays compiled in TOXRIC integrated benchmark
+Open TG-GATEs	feeds_pipeline	TOXRIC	DR100-§4.5	medium	Toxicogenomics → TOXRIC integration
+DrugMatrix	feeds_pipeline	TOXRIC	DR100-§4.5	medium	Toxicogenomics → TOXRIC integration
+PubMed Central Open Access Subset	feeds_pipeline	PubTator3	DR100-§6.1	medium	PubMed full-text → PubTator NER annotations
+PubMed Central Open Access Subset	feeds_pipeline	SemMedDB	DR100-§6.1	medium	PubMed → SemRep predications → SemMedDB
+PubMed Central Open Access Subset	feeds_pipeline	iKraph	DR100-§6.2	medium	PubMed → iKraph biomedical KG
+PubMed Central Open Access Subset	feeds_pipeline	PubMed Knowledge Graph (PKG)	DR100-§6.2	medium	PubMed → PKG entity graph
+PubTator3	feeds_pipeline	BC5CDR	DR100-§4.2	medium	PubTator NER feeds BC5CDR-style chem-disease benchmarks
+MIMIC III	feeds_pipeline	MedNLI	DR100-§6.2	medium	MIMIC clinical notes → MedNLI NLI benchmark
+MIMIC III	feeds_pipeline	emrQA	DR100-§6.2	medium	MIMIC notes → emrQA QA benchmark
+MIMIC III	feeds_pipeline	i2b2/VA 2010 Concepts/Assertions/Relations	DR100-§6.2	medium	MIMIC notes annotation efforts
+DrugBank	feeds_pipeline	DRKG	https://github.com/gnn4dr/DRKG	medium	DrugBank entities → DRKG (1.4M triplets)
+Hetionet	feeds_pipeline	DRKG	https://github.com/gnn4dr/DRKG	medium	Hetionet → DRKG (2.25M triplets)
+DrugBank	feeds_pipeline	Hetionet	https://het.io/about/	medium	DrugBank compounds → Hetionet compound nodes
+DrugBank	feeds_pipeline	OREGANO	https://www.nature.com/articles/s41597-023-02757-0	medium	DrugBank → OREGANO drug nodes
+DrugBank	feeds_pipeline	PrimeKG	https://github.com/mims-harvard/PrimeKG	medium	DrugBank → PrimeKG drug nodes
+DrugBank	feeds_pipeline	ROBOKOP	https://github.com/RobokopU24/ORION/tree/master/parsers	medium	DrugBank-derived edges in ROBOKOP
+DrugBank	feeds_pipeline	STITCH	https://academic.oup.com/nar/article/44/D1/D380/2503089	medium	DrugBank curated chemical-protein interactions in STITCH
+RxNorm	feeds_pipeline	DrugBank	DR100-§7.1	medium	Patient drug name → RxNorm normalize → DrugBank lookup
+RxNorm	feeds_pipeline	ATC/DDD	DR100-§7.1	medium	Patient drug name → RxNorm normalize → ATC class lookup
+LINCS L1000	feeds_pipeline	Tahoe	DR100-§4.5	medium	L1000 signatures → Tahoe multimodal extension
+M3-20M	feeds_pipeline	MoleculeNet	DR100-§4.5	medium	M3-20M multimodal → ML benchmarking

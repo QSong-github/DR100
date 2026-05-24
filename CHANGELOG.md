@@ -14,6 +14,27 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (Hetionet data download, KEGG DRUG / MEDICUS)
 - Resolve PharmGKB/ClinPGx categorization (drug-centric vs drug-related)
 
+## [1.4.0] — 2026-05-24
+
+### Added
+- 🌟 **Resource Interconnection Graph (RIG) v1.4** with 441 typed edges across 6 relation types
+  - 230 edges Chrome-verified against authoritative source documentation (URLs included)
+  - 211 edges documented in primary publications (medium-confidence)
+  - Single fully-connected graph spanning all 174 resources
+  - Modularity Q = 0.606 across 11 communities (greedy modularity decomposition)
+- `rig/edges.{csv,tsv}` — machine-readable typed edge list with source URLs
+- `rig/summary.md` + `rig/topology.md` — hubs, clusters, centralities, communities
+- `rig/build_rig.py` + `rig/topology.py` — reproducible build and analysis scripts
+- `rig/networkx.gpickle` — NetworkX MultiDiGraph for downstream use
+- `figures/figure_8_rig.{pdf,png}` — static publication-quality Figure 8
+- `figures/rig_interactive.html` — interactive Plotly visualization
+- `index.html` — GitHub Pages landing page
+
+### Methodology
+- Phase A-M Chrome-based verification across 30+ hub resources
+- Typed edges: `incorporates` (162), `complements` (97), `bridges` (83),
+  `derived_from` (43), `feeds_pipeline` (41), `mirrors` (8)
+
 ## [1.0.0] — 2026-05-23
 
 ### Added
