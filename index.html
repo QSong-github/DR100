@@ -9,19 +9,27 @@
   h1 { margin: 0 0 0.2em 0; font-size: 1.4em; color: #222; }
   .sub { color: #666; font-size: 0.95em; }
   .stats { color: #444; font-size: 0.9em; margin-top: 0.6em; }
-  iframe { width: 100%; height: calc(100vh - 130px); border: none; background: white; }
+  .nav { margin-top: 0.4em; font-size: 0.85em; }
+  .nav a { margin-right: 14px; }
+  iframe { width: 100%; height: calc(100vh - 150px); border: none; background: white; }
   a { color: #1E88E5; }
 </style>
 </head>
 <body>
 <header>
-  <h1>DR100 — Resource Interconnection Graph</h1>
-  <div class="sub">Companion to <em>Wang Q. et al.</em> · DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems</div>
+  <h1>DR100 &mdash; Resource Interconnection Graph (RIG)</h1>
+  <div class="sub">Companion to <em>Wang Q. et al.</em> &middot; DR100: an integration-pathway atlas and RIG of drug-centric, drug-related, and auxiliary knowledge resources for LLM-driven agent systems</div>
   <div class="stats">
-    174 resources · 441 typed edges · single fully-connected component · modularity Q = 0.603 · 11 communities ·
+    174 resources (102 drug-centric &middot; 29 drug-related &middot; 43 auxiliary) &middot; 441 typed edges &middot; 6 edge types &middot; fully connected &middot; modularity Q = 0.606 &middot; 11 communities
+  </div>
+  <div class="nav">
+    <strong>Views:</strong>
+    <a href="figures/rig_d3_interactive.html">D3 interactive (drag &middot; zoom &middot; search)</a>
+    <a href="figures/rig_interactive.html">Plotly (static layout)</a>
+    <a href="figures/figure_8_rig.pdf">PDF (publication)</a>
     <a href="https://github.com/wq2581/DR100">GitHub repo</a>
   </div>
 </header>
-<iframe src="rig_interactive.html" title="DR100 RIG"></iframe>
+<iframe src="figures/rig_d3_interactive.html" title="DR100 RIG (D3 interactive)"></iframe>
 </body>
 </html>
