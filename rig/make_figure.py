@@ -302,7 +302,7 @@ gh_pages.write_text(f"""<!DOCTYPE html>
   <div class="sub">Companion to <em>Wang Q. et al.</em> · DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems</div>
   <div class="stats">
     174 resources · 441 typed edges · single fully-connected component · modularity Q = 0.603 · 11 communities ·
-    <a href="https://github.com/wq2581/DR100">GitHub repo</a>
+    <a href="https://github.com/QSong-github/DR100">GitHub repo</a>
   </div>
 </header>
 <iframe src="rig_interactive.html" title="DR100 RIG"></iframe>

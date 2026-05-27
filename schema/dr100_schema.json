@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/wq2581/DR100/raw/main/schema/dr100_schema.json",
+  "$id": "https://github.com/QSong-github/DR100/raw/main/schema/dr100_schema.json",
   "title": "DR100 Resource Record",
   "description": "Schema for a single drug-resource record in the DR100 registry. Designed to be consumed by LLM-driven drug agents.",
   "type": "object",

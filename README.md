@@ -27,7 +27,7 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | 🌟 `rig/networkx.gpickle` | NetworkX MultiDiGraph for downstream analysis |
 | 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
 | 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
-| 🌟 `index.html` | GitHub Pages landing page (live at https://wq2581.github.io/DR100/) |
+| 🌟 `index.html` | GitHub Pages landing page (live at https://qsong-github.github.io/DR100/) |
 | **`examples/01–68_*.py`** | **68 runnable Python access scripts, one per LLM-Friendly resource** |
 | `notebooks/01_quickstart.ipynb` | Load + filter + select resources for an agent |
 | `scripts/build_registry.py` | Rebuild JSON/TSV from source files |
@@ -37,7 +37,7 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 
 ## 🌐 Live interactive RIG visualization
 
-**[https://wq2581.github.io/DR100/](https://wq2581.github.io/DR100/)** — pan/zoom the 174-resource graph, hover for resource details, click legend entries to toggle edge types.
+**[https://qsong-github.github.io/DR100/](https://qsong-github.github.io/DR100/)** — pan/zoom the 174-resource graph, hover for resource details, click legend entries to toggle edge types.
 
 ## 🔗 Resource Interconnection Graph (RIG) at a glance
 
@@ -174,7 +174,7 @@ If you use the registry or the survey, please cite:
   author  = {Wang, Qing and Liu, Tianshi and Zhou, Minghao and Wang, Guangyu and Su, Jing and Song, Qianqian},
   journal = {Briefings in Bioinformatics},
   year    = {2026},
-  note    = {Registry: \url{https://github.com/wq2581/DR100}}
+  note    = {Registry: \url{https://github.com/QSong-github/DR100}}
 }
 ```
 

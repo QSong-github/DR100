@@ -25,8 +25,8 @@ authors:
     email: qsong1@ufl.edu
     affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
     # orcid: "https://orcid.org/0000-0000-0000-0000"
-repository-code: "https://github.com/wq2581/DR100"
-url: "https://github.com/wq2581/DR100"
+repository-code: "https://github.com/QSong-github/DR100"
+url: "https://github.com/QSong-github/DR100"
 license: CC-BY-4.0
 license-url: "https://creativecommons.org/licenses/by/4.0/"
 keywords:
@@ -61,4 +61,4 @@ preferred-citation:
   # volume:
   # issue:
   # doi:
-  notes: "Companion machine-readable registry at https://github.com/wq2581/DR100"
+  notes: "Companion machine-readable registry at https://github.com/QSong-github/DR100"
