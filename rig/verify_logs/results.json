@@ -1,0 +1,172 @@
+{
+  "verified_edges": [
+    {
+      "source": "KEGG Drug",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.kegg.jp/kegg/drug/",
+      "evidence_quote": "ATC 2026 link to whocc.no/atc_ddd_index"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "DailyMed",
+      "edge_type": "incorporates",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "ClinicalTrials",
+      "edge_type": "incorporates",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | DrugBank | https://www.drugbank.ca/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "DisGeNET",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | DisGeNET | https://www.disgenet.org/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | Reactome | https://reactome.org/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "STRING",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | STRING | https://string-db.org/"
+    },
+    {
+      "source": "OpenBioLink",
+      "target": "Disease Ontology (DO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "ontology (diseases) | DO | CC 0"
+    },
+    {
+      "source": "PharmKG",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MindRank-Biotech/PharmKG",
+      "evidence_quote": "DrugBank in Entities distribution table (Chemical entity)"
+    },
+    {
+      "source": "PharmKG",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MindRank-Biotech/PharmKG",
+      "evidence_quote": "OMIM listed in Entities distribution table (Disease and Gene)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + PRISM as integrated datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + CTRPv2 as integrated datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "NCI-60",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + NCI60 as integrated datasets"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "ChEBI",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists GDSC1 + GDSC2 + PRISM as integrated datasets"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists GDSC + CTRPv2 as integrated"
+    }
+  ]
+}

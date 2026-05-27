@@ -1,0 +1,2323 @@
+{
+  "WebMD Drug Reviews": {
+    "source_link": "https://www.kaggle.com/datasets/rohanharode07/webmd-drug-reviews-dataset",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "Drug Reviews (Druglib.com)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://archive.ics.uci.edu/dataset/461/drug+review+dataset+druglib+com",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "MIMIC IV": {
+    "source_link": "https://physionet.org/",
+    "source_paper": "https://www.nature.com/articles/s41597-022-01899-x",
+    "edges": [
+      {
+        "target": "RxNorm",
+        "edge_type": "bridges",
+        "current_evidence": "https://physionet.org/content/mimiciv/3.1/",
+        "target_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "askapatient": {
+    "source_link": "https://www.askapatient.com/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "PsyTAR",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/psytar or https://github.com/basaldella/psytarpreprocessor/blob/master/data/PsyTAR_dataset.xlsx",
+        "has_real_evidence": false
+      },
+      {
+        "target": "WebMD Drug Reviews",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.kaggle.com/datasets/rohanharode07/webmd-drug-reviews-dataset",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "LINCS L1000": {
+    "source_link": "https://lincsportal.ccs.miami.edu/signatures/home",
+    "source_paper": "https://academic.oup.com/nar/article/48/D1/D431/5614562",
+    "edges": [
+      {
+        "target": "DRMref",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://ccsm.uth.edu/DRMref/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Clue",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://clue.io/cmap",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Tahoe",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.tahoebio.ai/news/open-sourcing-tahoe-100m",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "HMDB (Human Metabolome Database)": {
+    "source_link": "https://www.hmdb.ca/",
+    "source_paper": "https://academic.oup.com/nar/article/35/suppl_1/D521/1109186",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ChEBI",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.ebi.ac.uk/chebi/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "KEGG Drug",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.genome.jp/kegg/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PubChem",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://pubchem.ncbi.nlm.nih.gov/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "KEGG Drug": {
+    "source_link": "https://www.genome.jp/kegg/",
+    "source_paper": "https://academic.oup.com/nar/article/38/suppl_1/D355/3112250?guestAccessKey=",
+    "edges": [
+      {
+        "target": "PubChem",
+        "edge_type": "bridges",
+        "current_evidence": "https://www.kegg.jp/kegg/drug/",
+        "target_link": "https://pubchem.ncbi.nlm.nih.gov/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "ChEMBL",
+        "edge_type": "bridges",
+        "current_evidence": "https://www.kegg.jp/kegg/drug/",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "ATC/DDD",
+        "edge_type": "bridges",
+        "current_evidence": "https://www.kegg.jp/kegg/drug/",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "https://www.kegg.jp/kegg/drug/",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "DGIdb": {
+    "source_link": "https://www.dgidb.org/",
+    "source_paper": "https://www.nature.com/articles/nmeth.2689",
+    "edges": [
+      {
+        "target": "OREGANO",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://www.nature.com/articles/s41597-023-02757-0",
+        "target_link": "https://gitub.u-bordeaux.fr/erias/oregano",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "CCLE (Cancer Cell Line Encyclopedia)": {
+    "source_link": "https://sites.broadinstitute.org/ccle/",
+    "source_paper": "https://doi.org/10.1038/s41586-019-1186-3",
+    "edges": [
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PRISM DepMap",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://depmap.org/repurposing/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "CTRP (Cancer Therapeutics Response Portal)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://portals.broadinstitute.org/ctrp/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TCGA (The Cancer Genome Atlas)",
+        "edge_type": "bridges",
+        "current_evidence": "https://sites.broadinstitute.org/ccle/",
+        "target_link": "https://www.cancer.gov/tcga",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "DrugCentral": {
+    "source_link": "https://drugcentral.org/",
+    "source_paper": "https://academic.oup.com/nar/article/45/D1/D932/2333938",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "https://drugcentral.org/about",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": true
+      },
+      {
+        "target": "ChEMBL",
+        "edge_type": "bridges",
+        "current_evidence": "https://drugcentral.org/about",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "MedQuAD": {
+    "source_link": "https://github.com/abachaa/MedQuAD",
+    "source_paper": "https://link.springer.com/article/10.1186/s12859-019-3119-4",
+    "edges": [
+      {
+        "target": "MedlinePlus Drug Info",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://medlineplus.gov/druginformation.html",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "EnzChemRED": {
+    "source_link": "https://github.com/ncbi-nlp/EnzChemRED",
+    "source_paper": "https://www.nature.com/articles/s41597-024-03835-7",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ChemProt",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/chemprot",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PHEE": {
+    "source_link": "https://zenodo.org/records/7689970",
+    "source_paper": "https://arxiv.org/abs/2210.12560",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ADE Corpus",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://github.com/trunghlt/AdverseDrugReaction",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugEHRQA": {
+    "source_link": "https://github.com/jayetri/DrugEHRQA-A-Question-Answering-Dataset-on-Structured-and-Unstructured-Electronic-Health-Records",
+    "source_paper": "https://aclanthology.org/2022.lrec-1.117/",
+    "edges": [
+      {
+        "target": "MIMIC III",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://physionet.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MedNLI",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://jgc128.github.io/mednli/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "eICU Collaborative Research DB": {
+    "source_link": "https://eicu-crd.mit.edu/",
+    "source_paper": "https://doi.org/10.1038/sdata.2018.178",
+    "edges": [
+      {
+        "target": "MIMIC IV",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://physionet.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "NCATS Pharmaceutical Collection (NPC)": {
+    "source_link": "https://tripod.nih.gov/npc/",
+    "source_paper": "https://www.sciencedirect.com/science/article/abs/pii/S1359644619303794",
+    "edges": [
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "complements",
+        "current_evidence": "https://repo-hub.broadinstitute.org/repurposing",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": true
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "incorporates",
+        "current_evidence": "https://drugs.ncats.io/",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": true
+      },
+      {
+        "target": "ClinicalTrials",
+        "edge_type": "incorporates",
+        "current_evidence": "https://drugs.ncats.io/",
+        "target_link": "https://clinicaltrials.gov/data-api/api",
+        "has_real_evidence": true
+      },
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "https://drugs.ncats.io/",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "ReframeDB": {
+    "source_link": "https://reframedb.org/",
+    "source_paper": "https://www.pnas.org/doi/full/10.1073/pnas.1810137115",
+    "edges": [
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugRepoBank": {
+    "source_link": "https://awi.cuhk.edu.cn/DrugRepoBank/php/index.php",
+    "source_paper": "https://academic.oup.com/database/article/doi/10.1093/database/baae051/7712639",
+    "edges": [
+      {
+        "target": "RepoDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://unmtid-shinyapps.net/shiny/repodb/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "RepurposeDrugs": {
+    "source_link": "https://repurposedrugs.org/",
+    "source_paper": "https://academic.oup.com/bib/article/25/4/bbae328/7709763",
+    "edges": [
+      {
+        "target": "RepoDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://unmtid-shinyapps.net/shiny/repodb/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugRepoBank",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://awi.cuhk.edu.cn/DrugRepoBank/php/index.php",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugRepurposing Online": {
+    "source_link": "https://drugrepurposing.info/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugRepoBank",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://awi.cuhk.edu.cn/DrugRepoBank/php/index.php",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "EK-DRD": {
+    "source_link": "http://www.idruglab.com/drd/index.php",
+    "source_paper": "https://pubs.acs.org/doi/10.1021/acs.jcim.9b00365",
+    "edges": [
+      {
+        "target": "DrugRepoBank",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://awi.cuhk.edu.cn/DrugRepoBank/php/index.php",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "TRANSCRIPT DRUG REPURPOSING DATASET": {
+    "source_link": "https://github.com/RECeSS-EU-Project/drug-repurposing-datasets",
+    "source_paper": "https://doi.org/10.5281/zenodo.7982976",
+    "edges": [
+      {
+        "target": "LINCS L1000",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://lincsportal.ccs.miami.edu/signatures/home",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Drug Repurposing Hub",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://clue.io/repurposing",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CancerDR": {
+    "source_link": "http://crdd.osdd.net/raghava/cancerdr/",
+    "source_paper": "https://www.nature.com/articles/srep01445",
+    "edges": [
+      {
+        "target": "DRMref",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://ccsm.uth.edu/DRMref/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Molecular Targets Platform": {
+    "source_link": "https://moleculartargets.ccdi.cancer.gov/api",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "TTD",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://ttd.idrblab.cn/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PROMISCUOUS 2.0": {
+    "source_link": "https://bioinf-applied.charite.de/promiscuous2/index.php",
+    "source_paper": "https://academic.oup.com/nar/article/49/D1/D1373/5983618",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "SIDER",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "http://sideeffects.embl.de/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "GDKD (Genomics-Drug Knowledge DB)": {
+    "source_link": "https://www.synapse.org/#!Synapse:syn2370773",
+    "source_paper": "https://doi.org/10.1038/nature11003",
+    "edges": [
+      {
+        "target": "OncoKB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://www.oncokb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "e-Drug3D": {
+    "source_link": "https://chemoinfo.ipmc.cnrs.fr/MOLDB/index.php",
+    "source_paper": "https://academic.oup.com/bioinformatics/article/28/11/1540/267363",
+    "edges": [
+      {
+        "target": "PubChem",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://pubchem.ncbi.nlm.nih.gov/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ChEMBL",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "SuperDRUG2": {
+    "source_link": "http://cheminfo.charite.de/superdrug2/",
+    "source_paper": "https://academic.oup.com/nar/article/46/D1/D1137/4616872",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ATC/DDD",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Polaris": {
+    "source_link": "https://polarishub.io/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "TDC (Therapeutics Data Commons)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://tdcommons.ai/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MoleculeNet",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PharmKG": {
+    "source_link": "https://github.com/MindRank-Biotech/PharmKG",
+    "source_paper": "https://academic.oup.com/bib/article/22/4/bbaa344/6042240",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "STITCH",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "http://stitch.embl.de/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "OMIM (Online Mendelian Inheritance in Man)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://www.omim.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "OpenBioLink": {
+    "source_link": "https://github.com/openbiolink/openbiolink",
+    "source_paper": "https://doi.org/10.1093/bioinformatics/btaa274",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Hetionet",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://het.io/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Disease Ontology (DO)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://disease-ontology.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "UniD3": {
+    "source_link": "https://github.com/QSong-github/UniD3",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ChEMBL",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CKG (Clinical Knowledge Graph)": {
+    "source_link": "https://github.com/MannLabs/CKG",
+    "source_paper": "https://www.nature.com/articles/s41587-023-01848-y",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DisGeNET",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.disgenet.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Reactome",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://reactome.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "UMLS (Unified Medical Language System)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.nlm.nih.gov/research/umls/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CDCDB": {
+    "source_link": "https://icc.ise.bgu.ac.il/medical_ai/CDCDB/",
+    "source_paper": "https://www.nature.com/articles/s41597-022-01360-z",
+    "edges": [
+      {
+        "target": "DrugCombDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "http://drugcombdb.denglab.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugComb",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://zenodo.org/records/11102665",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DCDB (Drug Combination DB)": {
+    "source_link": "http://www.cls.zju.edu.cn/dcdb/",
+    "source_paper": "https://academic.oup.com/database/article/doi/10.1093/database/bau124/2635579",
+    "edges": [
+      {
+        "target": "DrugCombDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "http://drugcombdb.denglab.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugCombDB",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "http://drugcombdb.denglab.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "FDA Orange Book",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.accessdata.fda.gov/scripts/cder/ob/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "BioKDE": {
+    "source_link": "https://www.biokde.com/",
+    "source_paper": "https://www.nature.com/articles/s42256-025-01014-w",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "UMLS (Unified Medical Language System)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.nlm.nih.gov/research/umls/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "iKraph",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://github.com/myinsilicom/iKraph",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "GenomicKB": {
+    "source_link": "https://gkb.dcmb.med.umich.edu/",
+    "source_paper": "https://academic.oup.com/nar/article/51/D1/D950/6786196",
+    "edges": [
+      {
+        "target": "GWAS Catalog",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.ebi.ac.uk/gwas/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ClinVar",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/clinvar/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "GTEx (Genotype-Tissue Expression)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://gtexportal.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TCGA (The Cancer Genome Atlas)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.cancer.gov/tcga",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "SemaTyP": {
+    "source_link": "https://github.com/ShengtianSang/SemaTyP",
+    "source_paper": "https://link.springer.com/article/10.1186/s12859-018-2167-5",
+    "edges": [
+      {
+        "target": "SemMedDB",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+        "has_real_evidence": false
+      },
+      {
+        "target": "SemMedDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a75.2",
+        "target_link": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugSig": {
+    "source_link": "https://biotechlab.fudan.edu.cn/database/drugsig/",
+    "source_paper": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177743",
+    "edges": [
+      {
+        "target": "LINCS L1000",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://lincsportal.ccs.miami.edu/signatures/home",
+        "has_real_evidence": false
+      },
+      {
+        "target": "GEO Drug Perturbation Signatures",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://maayanlab.cloud/Harmonizome/dataset/RummaGEO+Drug+Perturbation+Signatures",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "TAC 2017 ADR": {
+    "source_link": "https://bionlp.nlm.nih.gov/tac2017adversereactions/",
+    "source_paper": "https://tac.nist.gov/publications/2017/additional.papers/TAC2017.ADR_overview.proceedings.pdf?attredirects=0",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "MedMCQA": {
+    "source_link": "https://medmcqa.github.io/",
+    "source_paper": "https://doi.org/10.48550/arXiv.2203.14371",
+    "edges": [
+      {
+        "target": "BioASQ",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "http://bioasq.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ChatDoctor Dataset": {
+    "source_link": "https://github.com/Kent0n-Li/ChatDoctor",
+    "source_paper": "https://doi.org/10.48550/arXiv.2303.14070",
+    "edges": [
+      {
+        "target": "MedQuAD",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://github.com/abachaa/MedQuAD",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MedQA",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://github.com/jind11/MedQA",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "STRING": {
+    "source_link": "https://string-db.org/",
+    "source_paper": "https://doi.org/10.1093/nar/gkac1000",
+    "edges": [
+      {
+        "target": "KEGG Drug",
+        "edge_type": "incorporates",
+        "current_evidence": "https://string-db.org/cgi/about",
+        "target_link": "https://www.genome.jp/kegg/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "Reactome",
+        "edge_type": "incorporates",
+        "current_evidence": "https://string-db.org/cgi/about",
+        "target_link": "https://reactome.org/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "PDB (Protein Data Bank)",
+        "edge_type": "incorporates",
+        "current_evidence": "https://string-db.org/cgi/about",
+        "target_link": "https://www.rcsb.org/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "UniProt",
+        "edge_type": "bridges",
+        "current_evidence": "https://string-db.org/cgi/about",
+        "target_link": "https://www.uniprot.org/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "Open Targets Platform": {
+    "source_link": "https://platform.opentargets.org/",
+    "source_paper": "https://doi.org/10.1093/nar/gkac1046",
+    "edges": [
+      {
+        "target": "CIViC",
+        "edge_type": "incorporates",
+        "current_evidence": "https://platform-docs.opentargets.org/",
+        "target_link": "https://civicdb.org/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "MedDRA",
+        "edge_type": "bridges",
+        "current_evidence": "https://platform-docs.opentargets.org/",
+        "target_link": "https://www.meddra.org/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "CIViC": {
+    "source_link": "https://civicdb.org/",
+    "source_paper": "https://doi.org/10.1038/ng.3774",
+    "edges": [
+      {
+        "target": "OncoKB",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://www.oncokb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CPIC": {
+    "source_link": "https://cpicpgx.org/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "RxNorm",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ATC/DDD",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PharmGKB/ClinPGx",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://www.pharmgkb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "FDA Orange Book": {
+    "source_link": "https://www.accessdata.fda.gov/scripts/cder/ob/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "RxNorm",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "openFDA Human Drug",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://open.fda.gov/data/downloads/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DDInter": {
+    "source_link": "https://ddinter2.scbdd.com/server/search/",
+    "source_paper": "https://academic.oup.com/nar/article/53/D1/D1356/7740584",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MecDDI",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.4",
+        "target_link": "https://mecddi.idrblab.net/download",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugBank",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.4",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PharmacoDB": {
+    "source_link": "https://pharmacodb.ca/",
+    "source_paper": "https://academic.oup.com/nar/article/50/D1/D1348/6438034",
+    "edges": [
+      {
+        "target": "TCGA (The Cancer Genome Atlas)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancer.gov/tcga",
+        "has_real_evidence": false
+      },
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "GDSC/GDSC2": {
+    "source_link": "https://www.cancerrxgene.org/",
+    "source_paper": "https://academic.oup.com/nar/article/41/D1/D955/1059448",
+    "edges": [
+      {
+        "target": "TCGA (The Cancer Genome Atlas)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancer.gov/tcga",
+        "has_real_evidence": false
+      },
+      {
+        "target": "CCLE (Cancer Cell Line Encyclopedia)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://sites.broadinstitute.org/ccle/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Drugs.com": {
+    "source_link": "https://www.drugs.com/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "RxNorm",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DDInter",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://ddinter2.scbdd.com/server/search/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "LiverTox": {
+    "source_link": "https://www.ncbi.nlm.nih.gov/books/NBK547852/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "MedDRA",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "https://www.meddra.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a75.3",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DILIrank 2.0",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-20-dataset",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "KIBA": {
+    "source_link": "https://github.com/TangSoftwareLab/KiBA",
+    "source_paper": "https://pubs.acs.org/doi/10.1021/ci400709d",
+    "edges": [
+      {
+        "target": "ChEMBL",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "BindingDB",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.bindingdb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PDBbind": {
+    "source_link": "https://www.pdbbind-plus.org.cn/",
+    "source_paper": "https://doi.org/10.1021/jm048957q",
+    "edges": [
+      {
+        "target": "BindingDB",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.bindingdb.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "BindingDB",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.bindingdb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "SYNERGxDB": {
+    "source_link": "https://www.synergxdb.ca/",
+    "source_paper": "https://academic.oup.com/nar/article/48/W1/W494/5842189",
+    "edges": [
+      {
+        "target": "DrugCombDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "http://drugcombdb.denglab.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugComb",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://zenodo.org/records/11102665",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DTC (Drug Target Commons) 2.0": {
+    "source_link": "https://drugtargetcommons.fimm.fi/static/Excell_files/DTC_data.csv",
+    "source_paper": "https://academic.oup.com/database/article/doi/10.1093/database/bay083/5096727",
+    "edges": [
+      {
+        "target": "BindingDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://www.bindingdb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CHEMDNER": {
+    "source_link": "https://huggingface.co/datasets/bigbio/chemdner",
+    "source_paper": "https://doi.org/10.1186/1758-2946-7-S1-S2",
+    "edges": [
+      {
+        "target": "BC5CDR",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/bc5cdr",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "NLM-Chem-BC7": {
+    "source_link": "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/",
+    "source_paper": "https://academic.oup.com/database/article/doi/10.1093/database/baac102/6858529",
+    "edges": [
+      {
+        "target": "CHEMDNER",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/chemdner",
+        "has_real_evidence": false
+      },
+      {
+        "target": "BC5CDR",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/bc5cdr",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "BioRED": {
+    "source_link": "https://ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/",
+    "source_paper": "https://doi.org/10.1093/bib/bbac282",
+    "edges": [
+      {
+        "target": "BC5CDR",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/bc5cdr",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugOOD": {
+    "source_link": "https://drugood.github.io/",
+    "source_paper": "https://ojs.aaai.org/index.php/AAAI/article/view/25970",
+    "edges": [
+      {
+        "target": "MoleculeNet",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Cochrane Library": {
+    "source_link": "https://www.cochranelibrary.com/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "TrialPanorama",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://huggingface.co/datasets/TrialPanorama/TrialPanorama-database",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "iKraph": {
+    "source_link": "https://github.com/myinsilicom/iKraph",
+    "source_paper": "https://zenodo.org/records/14851275",
+    "edges": [
+      {
+        "target": "PubMed Knowledge Graph (PKG)",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://pubmedkg.github.io/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "M3-20M": {
+    "source_link": "https://github.com/bz99bz/M-3",
+    "source_paper": "https://arxiv.org/abs/2412.06847",
+    "edges": [
+      {
+        "target": "PubChem",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://pubchem.ncbi.nlm.nih.gov/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MoleculeNet",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "WHO Essential Medicines List": {
+    "source_link": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "RxNorm",
+        "edge_type": "bridges",
+        "current_evidence": "DR100-\u00a74.1",
+        "target_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ATC/DDD",
+        "edge_type": "derived_from",
+        "current_evidence": "Convention",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DRMref": {
+    "source_link": "https://ccsm.uth.edu/DRMref/",
+    "source_paper": "https://academic.oup.com/nar/article/52/D1/D1253/7438917",
+    "edges": [
+      {
+        "target": "CCLE (Cancer Cell Line Encyclopedia)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://sites.broadinstitute.org/ccle/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Tahoe": {
+    "source_link": "https://www.tahoebio.ai/news/open-sourcing-tahoe-100m",
+    "source_paper": "https://www.biorxiv.org/content/10.1101/2025.02.20.639398v1",
+    "edges": [
+      {
+        "target": "PRISM DepMap",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://depmap.org/repurposing/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Drug Reviews (Druglib.com)": {
+    "source_link": "https://archive.ics.uci.edu/dataset/461/drug+review+dataset+druglib+com",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "WebMD Drug Reviews",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.kaggle.com/datasets/rohanharode07/webmd-drug-reviews-dataset",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Drugs.com",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.drugs.com/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Drug Repurposing Hub": {
+    "source_link": "https://clue.io/repurposing",
+    "source_paper": "https://www.nature.com/articles/nm.4306",
+    "edges": [
+      {
+        "target": "NCATS Pharmaceutical Collection (NPC)",
+        "edge_type": "incorporates",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://tripod.nih.gov/npc/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DRKG",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://github.com/gnn4dr/DRKG",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ADE Corpus": {
+    "source_link": "https://github.com/trunghlt/AdverseDrugReaction",
+    "source_paper": "https://aclanthology.org/C16-1084/",
+    "edges": [
+      {
+        "target": "TAC 2017 ADR",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://bionlp.nlm.nih.gov/tac2017adversereactions/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "CADEC",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://data.csiro.au/collection/csiro:10948",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "SIDER": {
+    "source_link": "http://sideeffects.embl.de/",
+    "source_paper": "https://doi.org/10.1093/nar/gkv1075",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ADReCS",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "http://bioinf.xmu.edu.cn/ADReCS",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DILIrank 2.0": {
+    "source_link": "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-20-dataset",
+    "source_paper": "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-20-dataset",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "UniTox",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.6",
+        "target_link": "https://zenodo.org/records/11627822",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "UniTox": {
+    "source_link": "https://zenodo.org/records/11627822",
+    "source_paper": "https://doi.org/10.1101/2024.06.21.24309315",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a75.3",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "nSIDES": {
+    "source_link": "https://nsides.io/",
+    "source_paper": "https://www.science.org/doi/10.1126/scitranslmed.3003377",
+    "edges": [
+      {
+        "target": "FAERS",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a75.3",
+        "target_link": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DDI Corpus 2013": {
+    "source_link": "https://github.com/isegura/DDICorpus",
+    "source_paper": "https://www.sciencedirect.com/science/article/pii/S1532046413001123",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugProt",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://zenodo.org/records/5119892",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugProt": {
+    "source_link": "https://zenodo.org/records/5119892",
+    "source_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10683943/",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "BC5CDR": {
+    "source_link": "https://huggingface.co/datasets/bigbio/bc5cdr",
+    "source_paper": "https://doi.org/10.1093/database/baw068",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "MedlinePlus Drug Info": {
+    "source_link": "https://medlineplus.gov/druginformation.html",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "RxList Drug Descriptions": {
+    "source_link": "https://www.rxlist.com/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "DailyMed",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DailyMed",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PharmGKB/ClinPGx": {
+    "source_link": "https://www.pharmgkb.org/",
+    "source_paper": "https://academic.oup.com/nar/article/30/1/163/1332715",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a72.3",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "CPIC",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://cpicpgx.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PharmVar": {
+    "source_link": "https://www.pharmvar.org/",
+    "source_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5836850/",
+    "edges": [
+      {
+        "target": "PharmGKB/ClinPGx",
+        "edge_type": "derived_from",
+        "current_evidence": "Convention",
+        "target_link": "https://www.pharmgkb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Open TG-GATEs": {
+    "source_link": "https://www.toxicodb.ca/datasets/1",
+    "source_paper": "https://academic.oup.com/nar/article/43/D1/D921/2439524",
+    "edges": [
+      {
+        "target": "DrugMatrix",
+        "edge_type": "derived_from",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://ntp.niehs.nih.gov/data/drugmatrix",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TOXRIC",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://toxric.bioinforai.tech/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DRKG": {
+    "source_link": "https://github.com/gnn4dr/DRKG",
+    "source_paper": "https://cdn.jsdelivr.net/gh/gnn4dr/DRKG/DRKG%20Drug%20Repurposing%20Knowledge%20Graph.pdf",
+    "edges": [
+      {
+        "target": "PubMed Central Open Access Subset",
+        "edge_type": "derived_from",
+        "current_evidence": "https://github.com/gnn4dr/DRKG",
+        "target_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "DailyMed": {
+    "source_link": "https://dailymed.nlm.nih.gov/dailymed/spl-resources.cfm",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "openFDA Human Drug",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://open.fda.gov/data/downloads/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "VigiAccess": {
+    "source_link": "http://www.vigiaccess.org/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "FAERS",
+        "edge_type": "mirrors",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ATC/DDD": {
+    "source_link": "https://atcddd.fhi.no/atc_ddd_index/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "WHO Essential Medicines List",
+        "edge_type": "mirrors",
+        "current_evidence": "Convention",
+        "target_link": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MeSH Drug Pharmacological Actions",
+        "edge_type": "complements",
+        "current_evidence": "Convention",
+        "target_link": "https://www.nlm.nih.gov/mesh/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "NDF-RT (National Drug File)",
+        "edge_type": "complements",
+        "current_evidence": "Convention",
+        "target_link": "https://evsexplore.semantics.cancer.gov/evsexplore/welcome?terminology=ndfrt",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ChEBI": {
+    "source_link": "https://www.ebi.ac.uk/chebi/",
+    "source_paper": "https://academic.oup.com/nar/article/54/D1/D1768/8349173",
+    "edges": [
+      {
+        "target": "KEGG Drug",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://www.genome.jp/kegg/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PubChem": {
+    "source_link": "https://pubchem.ncbi.nlm.nih.gov/",
+    "source_paper": "https://doi.org/10.1016/S1574-1400(08)00012-1",
+    "edges": [
+      {
+        "target": "KEGG Drug",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://www.genome.jp/kegg/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MoleculeNet",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "MeSH Drug Pharmacological Actions": {
+    "source_link": "https://www.nlm.nih.gov/mesh/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "ATC/DDD",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Disease Ontology (DO)": {
+    "source_link": "https://disease-ontology.org/",
+    "source_paper": "https://doi.org/10.1093/nar/gkab1063",
+    "edges": [
+      {
+        "target": "OMIM (Online Mendelian Inheritance in Man)",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://www.omim.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "HPO (Human Phenotype Ontology)",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://hpo.jax.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Monarch Initiative": {
+    "source_link": "https://monarchinitiative.org/",
+    "source_paper": "https://doi.org/10.1093/nar/gkw1128",
+    "edges": [
+      {
+        "target": "Disease Ontology (DO)",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://disease-ontology.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "HPO (Human Phenotype Ontology)",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://hpo.jax.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "OMIM (Online Mendelian Inheritance in Man)",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://www.omim.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Orphanet",
+        "edge_type": "bridges",
+        "current_evidence": "Convention",
+        "target_link": "https://www.orpha.net/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "FAERS": {
+    "source_link": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "nSIDES",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.2",
+        "target_link": "https://nsides.io/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "SIDER",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.2",
+        "target_link": "http://sideeffects.embl.de/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "VigiAccess",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "http://www.vigiaccess.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "nSIDES",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a77.2",
+        "target_link": "https://nsides.io/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "CTRP (Cancer Therapeutics Response Portal)": {
+    "source_link": "https://portals.broadinstitute.org/ctrp/",
+    "source_paper": "https://www.sciencedirect.com/science/article/pii/S0092867413009604",
+    "edges": [
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PRISM DepMap": {
+    "source_link": "https://depmap.org/repurposing/",
+    "source_paper": "https://www.nature.com/articles/s43018-019-0018-6",
+    "edges": [
+      {
+        "target": "GDSC/GDSC2",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.cancerrxgene.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "RepoDB": {
+    "source_link": "https://unmtid-shinyapps.net/shiny/repodb/",
+    "source_paper": "https://www.nature.com/articles/sdata201729",
+    "edges": [
+      {
+        "target": "DRKG",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://github.com/gnn4dr/DRKG",
+        "has_real_evidence": false
+      },
+      {
+        "target": "OREGANO",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://gitub.u-bordeaux.fr/erias/oregano",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugComb": {
+    "source_link": "https://zenodo.org/records/11102665",
+    "source_paper": "https://academic.oup.com/nar/article/47/W1/W43/5486743",
+    "edges": [
+      {
+        "target": "DrugCombDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "http://drugcombdb.denglab.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "SynergyFinder": {
+    "source_link": "https://synergyfinder.fimm.fi/",
+    "source_paper": "https://academic.oup.com/nar/article/50/W1/W739/6586861",
+    "edges": [
+      {
+        "target": "DrugComb",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://zenodo.org/records/11102665",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ALMANAC": {
+    "source_link": "https://dtp.cancer.gov/ncialmanac",
+    "source_paper": "https://aacrjournals.org/cancerres/article/77/13/3564/617080/The-National-Cancer-Institute-ALMANAC-A",
+    "edges": [
+      {
+        "target": "DrugComb",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://zenodo.org/records/11102665",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "n2c2 2018 Track 2": {
+    "source_link": "https://huggingface.co/datasets/bigbio/n2c2_2018_track2",
+    "source_paper": "https://academic.oup.com/jamia/article-abstract/27/1/3/5581277",
+    "edges": [
+      {
+        "target": "ADE Corpus",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://github.com/trunghlt/AdverseDrugReaction",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PsyTAR": {
+    "source_link": "https://huggingface.co/datasets/bigbio/psytar or https://github.com/basaldella/psytarpreprocessor/blob/master/data/PsyTAR_dataset.xlsx",
+    "source_paper": "https://dl.acm.org/doi/10.1016/j.jbi.2018.12.005",
+    "edges": [
+      {
+        "target": "askapatient",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://www.askapatient.com/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugBank": {
+    "source_link": "https://go.drugbank.com/releases/latest",
+    "source_paper": "https://academic.oup.com/nar/article/46/D1/D1074/4602867",
+    "edges": [
+      {
+        "target": "ChEMBL",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://www.ebi.ac.uk/chembl/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugCentral",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.7",
+        "target_link": "https://drugcentral.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TDC (Therapeutics Data Commons)",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://tdcommons.ai/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DRKG",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://github.com/gnn4dr/DRKG",
+        "target_link": "https://github.com/gnn4dr/DRKG",
+        "has_real_evidence": true
+      },
+      {
+        "target": "Hetionet",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://het.io/about/",
+        "target_link": "https://het.io/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "OREGANO",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://www.nature.com/articles/s41597-023-02757-0",
+        "target_link": "https://gitub.u-bordeaux.fr/erias/oregano",
+        "has_real_evidence": true
+      },
+      {
+        "target": "PrimeKG",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://github.com/mims-harvard/PrimeKG",
+        "target_link": "https://github.com/mims-harvard/PrimeKG",
+        "has_real_evidence": true
+      },
+      {
+        "target": "ROBOKOP",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://github.com/RobokopU24/ORION/tree/master/parsers",
+        "target_link": "https://robokop.renci.org/",
+        "has_real_evidence": true
+      },
+      {
+        "target": "STITCH",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://academic.oup.com/nar/article/44/D1/D380/2503089",
+        "target_link": "http://stitch.embl.de/",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "ChEMBL": {
+    "source_link": "https://www.ebi.ac.uk/chembl/",
+    "source_paper": "https://doi.org/10.1093/nar/gkad1004",
+    "edges": [
+      {
+        "target": "BindingDB",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.bindingdb.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "MoleculeNet",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TDC (Therapeutics Data Commons)",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://tdcommons.ai/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DRUGMECHDB": {
+    "source_link": "https://github.com/SuLab/DrugMechDB",
+    "source_paper": "https://www.nature.com/articles/s41597-023-02534-z",
+    "edges": [
+      {
+        "target": "DRKG",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://github.com/gnn4dr/DRKG",
+        "has_real_evidence": false
+      },
+      {
+        "target": "OREGANO",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a77.3",
+        "target_link": "https://gitub.u-bordeaux.fr/erias/oregano",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ToxCast": {
+    "source_link": "https://www.epa.gov/comptox-tools/toxicity-forecasting-toxcast",
+    "source_paper": "https://pubs.acs.org/doi/10.1021/tx3000939",
+    "edges": [
+      {
+        "target": "Open TG-GATEs",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://www.toxicodb.ca/datasets/1",
+        "has_real_evidence": false
+      },
+      {
+        "target": "TOXRIC",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://toxric.bioinforai.tech/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "OncoKB": {
+    "source_link": "https://www.oncokb.org/",
+    "source_paper": "https://doi.org/10.1200/PO.17.00011",
+    "edges": [
+      {
+        "target": "CIViC",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://civicdb.org/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ClinicalTrials": {
+    "source_link": "https://clinicaltrials.gov/data-api/api",
+    "source_paper": "https://doi.org/10.1056/NEJMsr1611785",
+    "edges": [
+      {
+        "target": "TrialPanorama",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://huggingface.co/datasets/TrialPanorama/TrialPanorama-database",
+        "has_real_evidence": false
+      },
+      {
+        "target": "Cochrane Library",
+        "edge_type": "complements",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://www.cochranelibrary.com/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "BindingDB": {
+    "source_link": "https://www.bindingdb.org/",
+    "source_paper": "https://academic.oup.com/nar/article/53/D1/D1633/7906836",
+    "edges": [
+      {
+        "target": "TDC (Therapeutics Data Commons)",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://tdcommons.ai/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "openFDA Human Drug": {
+    "source_link": "https://open.fda.gov/data/downloads/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "FAERS",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.4",
+        "target_link": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "GEO Drug Perturbation Signatures": {
+    "source_link": "https://maayanlab.cloud/Harmonizome/dataset/RummaGEO+Drug+Perturbation+Signatures",
+    "source_paper": "https://pubmed.ncbi.nlm.nih.gov/39569206/",
+    "edges": [
+      {
+        "target": "Clue",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://clue.io/cmap",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "ZINC": {
+    "source_link": "https://zinc.docking.org/",
+    "source_paper": "https://pubs.acs.org/doi/10.1021/ci049714%2B",
+    "edges": [
+      {
+        "target": "MoleculeNet",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://moleculenet.org/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "DrugOOD",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://drugood.github.io/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PDB (Protein Data Bank)": {
+    "source_link": "https://www.rcsb.org/",
+    "source_paper": "https://academic.oup.com/nar/article/53/D1/D564/7912033",
+    "edges": [
+      {
+        "target": "PDBbind",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://www.pdbbind-plus.org.cn/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "DrugMatrix": {
+    "source_link": "https://ntp.niehs.nih.gov/data/drugmatrix",
+    "source_paper": "https://doi.org/10.1016/j.jbiotec.2005.03.022",
+    "edges": [
+      {
+        "target": "TOXRIC",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.5",
+        "target_link": "https://toxric.bioinforai.tech/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PubMed Central Open Access Subset": {
+    "source_link": "https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/",
+    "source_paper": "nan",
+    "edges": [
+      {
+        "target": "PubTator3",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "SemMedDB",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.1",
+        "target_link": "https://lhncbc.nlm.nih.gov/temp/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+        "has_real_evidence": false
+      },
+      {
+        "target": "iKraph",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://github.com/myinsilicom/iKraph",
+        "has_real_evidence": false
+      },
+      {
+        "target": "PubMed Knowledge Graph (PKG)",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://pubmedkg.github.io/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "PubTator3": {
+    "source_link": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+    "source_paper": "https://academic.oup.com/nar/article/52/W1/W540/7640526",
+    "edges": [
+      {
+        "target": "BC5CDR",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a74.2",
+        "target_link": "https://huggingface.co/datasets/bigbio/bc5cdr",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "MIMIC III": {
+    "source_link": "https://physionet.org/",
+    "source_paper": "https://www.nature.com/articles/sdata201635",
+    "edges": [
+      {
+        "target": "MedNLI",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://jgc128.github.io/mednli/",
+        "has_real_evidence": false
+      },
+      {
+        "target": "emrQA",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://github.com/panushri25/emrQA",
+        "has_real_evidence": false
+      },
+      {
+        "target": "i2b2/VA 2010 Concepts/Assertions/Relations",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a76.2",
+        "target_link": "https://www.i2b2.org/NLP/Relations/",
+        "has_real_evidence": false
+      }
+    ]
+  },
+  "Hetionet": {
+    "source_link": "https://het.io/",
+    "source_paper": "https://doi.org/10.7554/eLife.26726",
+    "edges": [
+      {
+        "target": "DRKG",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "https://github.com/gnn4dr/DRKG",
+        "target_link": "https://github.com/gnn4dr/DRKG",
+        "has_real_evidence": true
+      }
+    ]
+  },
+  "RxNorm": {
+    "source_link": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+    "source_paper": "https://academic.oup.com/jamia/article-abstract/18/4/441/734170",
+    "edges": [
+      {
+        "target": "DrugBank",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://go.drugbank.com/releases/latest",
+        "has_real_evidence": false
+      },
+      {
+        "target": "ATC/DDD",
+        "edge_type": "feeds_pipeline",
+        "current_evidence": "DR100-\u00a77.1",
+        "target_link": "https://atcddd.fhi.no/atc_ddd_index/",
+        "has_real_evidence": false
+      }
+    ]
+  }
+}
