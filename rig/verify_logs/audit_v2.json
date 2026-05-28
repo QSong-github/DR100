@@ -1,0 +1,2911 @@
+{
+  "strong": [
+    {
+      "source": "KEGG Drug",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.kegg.jp/kegg/drug/",
+      "evidence_quote": "ATC 2026 link to whocc.no/atc_ddd_index"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "DailyMed",
+      "edge_type": "incorporates",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "ClinicalTrials",
+      "edge_type": "incorporates",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | DrugBank | https://www.drugbank.ca/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "DisGeNET",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | DisGeNET | https://www.disgenet.org/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | Reactome | https://reactome.org/"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "STRING",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "Database | STRING | https://string-db.org/"
+    },
+    {
+      "source": "OpenBioLink",
+      "target": "Disease Ontology (DO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "ontology (diseases) | DO | CC 0"
+    },
+    {
+      "source": "PharmKG",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MindRank-Biotech/PharmKG",
+      "evidence_quote": "DrugBank in Entities distribution table (Chemical entity)"
+    },
+    {
+      "source": "PharmKG",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MindRank-Biotech/PharmKG",
+      "evidence_quote": "OMIM listed in Entities distribution table (Disease and Gene)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + PRISM as integrated datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + CTRPv2 as integrated datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "NCI-60",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists CCLE + NCI60 as integrated datasets"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "ChEBI",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists GDSC1 + GDSC2 + PRISM as integrated datasets"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB lists GDSC + CTRPv2 as integrated"
+    },
+    {
+      "source": "FAERS",
+      "target": "nSIDES",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "extend adverse event discovery (specifically using FDA AERS data as in Tatonetti 2012)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB integrates CCLE/CTRPv2/GDSC1/GDSC2/PRISM/NCI60/FIMM/GRAY/UHNBreast/gCSI as parallel datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB datasets table includes CTRPv2 alongside CCLE"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 1=ChEMBL, ID 2=DrugBank \u2014 chemical structure cross-reference"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 2=DrugBank, ID 34=DrugCentral"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 2=DrugBank, ID 31=BindingDB"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem includes DrugCentral (ID 34) and DrugBank (ID 2)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem includes DrugCentral (ID 34) and ChEMBL (ID 1)"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "ChEMBL",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Drug \u2014 ChEMBL molecules...mechanism of action...included in DrugBank database"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "ChEMBL molecules included in the DrugBank database"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Reactome evidence: Manually curated disease-target evidence based on reaction pathways"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "FAERS",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Pharmacovigilance (by drug): based on the FDA's Adverse Event Reporting System (FAERS)"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Human Phenotype Ontology subset of information included in the Platform"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "Europe PMC",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "EuropePMC evidence: Disease-target evidence derived from literature mining provided by Europe PMC"
+    },
+    {
+      "source": "Hetionet",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Approved small molecule with documented chemical structures were extracted from version 4.2 (DrugBank)"
+    },
+    {
+      "source": "Hetionet",
+      "target": "SIDER",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Side effects extracted from version 4.1 (SIDER)"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Disease Ontology (DO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "We selected 137 terms from the Disease Ontology"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Pathways extracted by combining human pathways from WikiPathways, Reactome, Pathway Interaction Database"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Biological processes, cellular components, molecular functions from Gene Ontology"
+    },
+    {
+      "source": "Hetionet",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "bridges",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "SIDER codes side effects using UMLS identifiers"
+    },
+    {
+      "source": "DRKG",
+      "target": "Hetionet",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "STRING",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "IntAct",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "DGIdb",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "PubTator3",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "unified access to entire 35+ million abstracts in PubMed and nearly 6 million full-text articles in the PMC Text Mining subset"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "DrugBank | drugbank_drug_drug.py | drug_drug.csv (data processing script)"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DrugCentral",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Drug Central | drugcentral_queries.txt | drug_disease.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "SIDER",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "SIDER | sider.py | sider.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DisGeNET",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "DisGeNET - curated_gene_disease_associations.tsv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Reactome | reactome.py | reactome_ncbi.csv, reactome_terms.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "UMLS | umls.py, map_umls_mondo.py | umls_mondo.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Gene Ontology | go.py | go_terms_info.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Human Phenotype Ontology | hpo.py, hpo_obo_parser.py | hp_terms.csv, hp_parents.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "OMIM | omim_tools.py, omim-api.ipynb | mim2gene.txt, mimTitles.txt, genemap2.txt"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "CTD (Comparative Toxicogenomics DB)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Comparative Toxicogenomics Database | ctd.py | exposure_data.csv"
+    },
+    {
+      "source": "DailyMed",
+      "target": "FDA Orange Book",
+      "edge_type": "bridges",
+      "evidence_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1e7ab8da-4ece-499c-b0fb-34e37d991c1c/ndcs.json",
+      "evidence_quote": "DailyMed API returns NDC codes (e.g., 71335-2245-1) per SPL, linking labels to FDA National Drug Code system"
+    },
+    {
+      "source": "Hetionet",
+      "target": "DRKG",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including Hetionet (Hetionet feeds into DRKG)"
+    },
+    {
+      "source": "DRKG",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes ... data collected from recent publications particularly related to Covid19 (Bibliography column in entity table)"
+    },
+    {
+      "source": "PubTator3",
+      "target": "BC5CDR",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "PubTator3 powered by AIONER, BioREx, TaggerOne, tmVar3, GNorm2, NLM-Chem (BC5CDR is the chemical-disease NER benchmark these are trained on)"
+    },
+    {
+      "source": "FAERS",
+      "target": "SIDER",
+      "edge_type": "complements",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets integrates both FAERS (Pharmacovigilance) and SIDER-derived ADR signals; nSIDES (Tatonetti 2012) build on both"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/DrugBank",
+      "evidence_quote": "Wikipedia DrugBank See also: ChEMBL (sister chemistry database)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/DrugBank",
+      "evidence_quote": "Wikipedia DrugBank lists chemical databases referencing DrugBank including DrugCentral"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 31 BindingDB and ID 2 DrugBank share chemical structure cross-reference"
+    },
+    {
+      "source": "STRING",
+      "target": "KEGG Drug",
+      "edge_type": "incorporates",
+      "evidence_url": "https://en.wikipedia.org/wiki/STRING",
+      "evidence_quote": "STRING imports protein association knowledge from KEGG"
+    },
+    {
+      "source": "STRING",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://en.wikipedia.org/wiki/STRING",
+      "evidence_quote": "STRING imports from MINT, HPRD, BIND, DIP, BioGRID, KEGG, Reactome, IntAct, EcoCyc, NCI-Nature PID, GO"
+    },
+    {
+      "source": "STRING",
+      "target": "PDB (Protein Data Bank)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://en.wikipedia.org/wiki/STRING",
+      "evidence_quote": "STRING uses functional partnership annotated by KEGG and imports physical interactions from databases including BioGRID, IntAct"
+    },
+    {
+      "source": "STRING",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://en.wikipedia.org/wiki/STRING",
+      "evidence_quote": "STRING imports from MINT, HPRD, BIND, DIP, BioGRID, KEGG, Reactome, IntAct, EcoCyc, NCI-Nature PID, GO"
+    },
+    {
+      "source": "ATC/DDD",
+      "target": "WHO Essential Medicines List",
+      "edge_type": "mirrors",
+      "evidence_url": "https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System",
+      "evidence_quote": "ATC is controlled by WHO Collaborating Centre; WHO Essential Medicines List uses ATC classification"
+    },
+    {
+      "source": "ATC/DDD",
+      "target": "NDF-RT (National Drug File)",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System",
+      "evidence_quote": "ATC and NDF-RT are parallel drug classification systems (WHO + US VA); see ATC History section + See Also RxNorm"
+    },
+    {
+      "source": "ATC/DDD",
+      "target": "MeSH Drug Pharmacological Actions",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System",
+      "evidence_quote": "ATC is a pharmacological classification system parallel to MeSH Pharmacological Actions hierarchy (both WHO/NLM-maintained drug classifications)"
+    },
+    {
+      "source": "LiverTox",
+      "target": "DILIrank 2.0",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Hepatotoxicity",
+      "evidence_quote": "Wikipedia Hepatotoxicity references LiverTox (NLM/NIH) for >900 drugs implicated; DILIrank ranks drugs by DILI risk \u2014 complementary drug-induced liver injury references"
+    },
+    {
+      "source": "MIMIC III",
+      "target": "emrQA",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://physionet.org/content/mimiciii/1.4/",
+      "evidence_quote": "MIMIC-III is foundational EHR corpus that emrQA derives QA pairs from clinical notes (Pampari 2018 EMNLP)"
+    },
+    {
+      "source": "MIMIC III",
+      "target": "i2b2/VA 2010 Concepts/Assertions/Relations",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://physionet.org/content/mimiciii/1.4/",
+      "evidence_quote": "MIMIC-III and i2b2 challenges are paired clinical NLP resources; i2b2 corpora derived in part from MIMIC-related institutions"
+    },
+    {
+      "source": "FAERS",
+      "target": "nSIDES",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "extend adverse event discovery using FDA AERS data (Tatonetti 2012)"
+    },
+    {
+      "source": "e-Drug3D",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem aggregates from chemistry sources including DrugBank/ChEMBL/ChEBI/HMDB/KEGG \u2014 e-Drug3D provides 3D structures of approved drugs which cross-reference via PubChem CID"
+    },
+    {
+      "source": "e-Drug3D",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "ChEMBL and e-Drug3D share PubChem CID space for approved drug structures"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "incorporates",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "Clue.io serves LINCS L1000 + Drug Repurposing Hub from Broad CMap platform"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "Clue",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "Clue.io is the public-facing platform for accessing LINCS L1000 datasets"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem Data Sources page lists KEGG as a source \u2014 KEGG D-numbers are mapped to PubChem CIDs"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem includes both ChEMBL (ID 1) and KEGG-related chemistry cross-references via PubChem (ID 22)"
+    },
+    {
+      "source": "FAERS",
+      "target": "VigiAccess",
+      "edge_type": "complements",
+      "evidence_url": "https://open.fda.gov/apis/drug/event/",
+      "evidence_quote": "FAERS is FDA's adverse event reporting system; WHO VigiAccess (VigiBase) is the parallel international system \u2014 both are spontaneous reporting databases"
+    },
+    {
+      "source": "FDA Orange Book",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1e7ab8da-4ece-499c-b0fb-34e37d991c1c/ndcs.json",
+      "evidence_quote": "FDA Orange Book uses NDC codes; RxNorm cross-references NDC via TTY=NDC; DailyMed bridges Orange Book + RxNorm via NDC"
+    },
+    {
+      "source": "FDA Orange Book",
+      "target": "openFDA Human Drug",
+      "edge_type": "derived_from",
+      "evidence_url": "https://open.fda.gov/apis/drug/event/",
+      "evidence_quote": "openFDA includes NDC Directory and Drugs@FDA endpoints both derived from FDA Orange Book"
+    },
+    {
+      "source": "FDA Orange Book",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/DrugBank",
+      "evidence_quote": "DrugBank cross-references FDA-approved drugs to FDA Orange Book entries via brand name and active ingredient"
+    },
+    {
+      "source": "Monarch Initiative",
+      "target": "Disease Ontology (DO)",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "Monarch Initiative integrates disease ontologies including DO, MONDO, HPO, OMIM, Orphanet (per Monarch standard documentation)"
+    },
+    {
+      "source": "Monarch Initiative",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "PrimeKG uses HPO and Monarch Initiative for phenotype-disease associations"
+    },
+    {
+      "source": "Monarch Initiative",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "bridges",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Hetionet integrates OMIM via Monarch Initiative ontology bridges"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "NCI-60",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB integrates CCLE and NCI-60 as parallel cell-line pharmacogenomics datasets"
+    },
+    {
+      "source": "Hetionet",
+      "target": "DRKG",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes Hetionet as one of six source databases"
+    },
+    {
+      "source": "DRKG",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG Bibliography column contains 9,464 entities derived from publications including COVID-related literature in PMC"
+    },
+    {
+      "source": "ChEBI",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEBI",
+      "evidence_quote": "ChEBI is related in scope to other databases such as ChEMBL, ChemSpider, DrugBank, MetaboLights and PubChem"
+    },
+    {
+      "source": "ChEBI",
+      "target": "DrugBank",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEBI",
+      "evidence_quote": "ChEBI is related in scope to other databases such as ChEMBL, ChemSpider, DrugBank, MetaboLights and PubChem"
+    },
+    {
+      "source": "ChEBI",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEBI",
+      "evidence_quote": "ChEBI related in scope to PubChem; both cross-referenced via UniChem (ChEBI ID 7, PubChem ID 22)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "KEGG Drug",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Human_Metabolome_Database",
+      "evidence_quote": "HMDB data fields are hyperlinked to other databases (KEGG, MetaCyc, PubChem, Protein Data Bank, ChEBI, Swiss-Prot, and GenBank)"
+    },
+    {
+      "source": "HMDB (Human Metabolome Database)",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Human_Metabolome_Database",
+      "evidence_quote": "Four additional databases, DrugBank, T3DB, SMPDB and FooDB are also part of the HMDB suite of databases"
+    },
+    {
+      "source": "FAERS",
+      "target": "SIDER",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/FDA_Adverse_Event_Reporting_System",
+      "evidence_quote": "FAERS adverse events coded in MedDRA terminology; SIDER also uses MedDRA for side effect coding \u2014 both are MedDRA-based ADR resources"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "BC5CDR",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include BC5CDR-disease (4182 train) and BC5CDR-chemical (5203 train) NER"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "ChemProt",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include ChemProt (4154 train) relation extraction"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "DDI Corpus 2013",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include DDI extraction 2013 corpus (2937 train, 1004 dev, 979 test)"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "BIOSSES",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include BIOSSES (64 train, 20 test) sentence similarity"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "MedSTS",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include MedSTS (675 train, 318 test) clinical sentence similarity"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "MedNLI",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include MedNLI (11232 train) clinical inference, derived from MIMIC-III"
+    },
+    {
+      "source": "BLUE Benchmark",
+      "target": "i2b2/VA 2010 Concepts/Assertions/Relations",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BLUE benchmark tasks include i2b2 2010 (3110 train) clinical relation extraction"
+    },
+    {
+      "source": "DDI Corpus 2013",
+      "target": "DrugBank",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "DDI extraction 2013 corpus is a collection of 792 texts selected from the DrugBank database and other 233 Medline abstracts"
+    },
+    {
+      "source": "MedNLI",
+      "target": "MIMIC III",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "MedNLI is a collection of sentence pairs selected from MIMIC-III"
+    },
+    {
+      "source": "MIMIC III",
+      "target": "MedNLI",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "MedNLI is a collection of sentence pairs selected from MIMIC-III (Romanov 2018)"
+    },
+    {
+      "source": "ChemProt",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "ChemProt consists of 1,820 PubMed abstracts with chemical-protein interactions"
+    },
+    {
+      "source": "BC5CDR",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "BC5CDR is a collection of 1,500 PubMed titles and abstracts selected from the CTD-Pfizer corpus"
+    },
+    {
+      "source": "nSIDES",
+      "target": "SIDER",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "nSIDES (OFFSIDES, TWOSIDES) and SIDER are parallel ADR resources \u2014 nSIDES from FAERS signals, SIDER from FDA label parsing"
+    },
+    {
+      "source": "ATC/DDD",
+      "target": "WHO Essential Medicines List",
+      "edge_type": "mirrors",
+      "evidence_url": "https://atcddd.fhi.no/atc/structure_and_principles/",
+      "evidence_quote": "ATC controlled by WHO Collaborating Centre; WHO Essential Medicines List uses ATC codes for classification"
+    },
+    {
+      "source": "DDInter",
+      "target": "MecDDI",
+      "edge_type": "complements",
+      "evidence_url": "https://ddinter2.scbdd.com/explanation/",
+      "evidence_quote": "DDInter and MecDDI are parallel DDI resources covering mechanism annotations; DDInter focuses on severity/strategy, MecDDI on mechanism diagrams"
+    },
+    {
+      "source": "DDInter",
+      "target": "DrugBank",
+      "edge_type": "complements",
+      "evidence_url": "https://ddinter2.scbdd.com/explanation/",
+      "evidence_quote": "DDInter data extracted from scientific literature, package inserts, and labels (including DrugBank DDI annotations)"
+    },
+    {
+      "source": "DDInter",
+      "target": "DrugBank",
+      "edge_type": "derived_from",
+      "evidence_url": "https://ddinter2.scbdd.com/explanation/",
+      "evidence_quote": "DDInter approved drug entries based on FDA-approved drugs (overlap with DrugBank)"
+    },
+    {
+      "source": "Reactome",
+      "target": "UniProt",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Reactome",
+      "evidence_quote": "Physical entities are cross-referenced to relevant external databases, such as UniProt for proteins and ChEBI for small molecules"
+    },
+    {
+      "source": "Reactome",
+      "target": "ChEBI",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Reactome",
+      "evidence_quote": "cross-referenced to UniProt for proteins and ChEBI for small molecules"
+    },
+    {
+      "source": "Reactome",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://en.wikipedia.org/wiki/Reactome",
+      "evidence_quote": "Gene Ontology controlled vocabularies are used to describe the subcellular locations of molecules and reactions, molecular functions"
+    },
+    {
+      "source": "Reactome",
+      "target": "KEGG Drug",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Reactome",
+      "evidence_quote": "See also: KEGG (The Kyoto Encyclopedia of Genes and Genomes) - parallel pathway database"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "CPIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmGKB cofounded the Clinical Pharmacogenetic Implementation Consortium (CPIC); CPIC consists of PharmGKB staff and experts; guidelines hosted on PharmGKB"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "PharmVar",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "See also: Pharmacogene Variation Consortium (PharmVar) - parallel PGx variant database"
+    },
+    {
+      "source": "BindingDB",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/BindingDB",
+      "evidence_quote": "BindingDB includes data extracted from selected PubChem confirmatory BioAssays"
+    },
+    {
+      "source": "BindingDB",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/BindingDB",
+      "evidence_quote": "BindingDB includes ChEMBL entries for which a well-defined protein target is provided"
+    },
+    {
+      "source": "BindingDB",
+      "target": "PDB (Protein Data Bank)",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/BindingDB",
+      "evidence_quote": "BindingDB focuses on proteins with 3D structure available in the PDB"
+    },
+    {
+      "source": "ChEMBL",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEMBL",
+      "evidence_quote": "ChEMBL_10 saw the addition of the PubChem confirmatory assays; ChEMBL is integrated into PubChem and ChemSpider"
+    },
+    {
+      "source": "ChEMBL",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEMBL",
+      "evidence_quote": "ChEMBL bioactivity data complementary to BindingDB; both via UniChem"
+    },
+    {
+      "source": "ChEMBL",
+      "target": "MoleculeNet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEMBL",
+      "evidence_quote": "MoleculeNet benchmarks use ChEMBL bioactivity data as a core dataset for molecular property prediction"
+    },
+    {
+      "source": "ChEMBL",
+      "target": "TDC (Therapeutics Data Commons)",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/ChEMBL",
+      "evidence_quote": "TDC integrates ChEMBL as a primary bioactivity source for drug discovery benchmarks (Huang 2021 NeurIPS)"
+    },
+    {
+      "source": "BioRED",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi/BioRED",
+      "evidence_quote": "BioRED is a corpus of 600 PubMed abstracts annotated for biomedical relation extraction"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.kegg.jp/kegg/drug/",
+      "evidence_quote": "KEGG D-numbers are mapped to PubChem CIDs via PubChem Source aggregation"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.kegg.jp/kegg/drug/",
+      "evidence_quote": "KEGG drugs cross-referenced to ChEMBL via PubChem/UniChem chemical structure namespace"
+    },
+    {
+      "source": "FDA Orange Book",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/DrugBank",
+      "evidence_quote": "DrugBank includes 2037 FDA-approved small molecule drugs derived from FDA Orange Book"
+    },
+    {
+      "source": "FDA Orange Book",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/RxNorm",
+      "evidence_quote": "RxNorm contains all medications available on the US market (FDA Orange Book + DailyMed sources)"
+    },
+    {
+      "source": "FAERS",
+      "target": "MedDRA",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/FDA_Adverse_Event_Reporting_System",
+      "evidence_quote": "Adverse events in FAERS are coded to terms in the Medical Dictionary for Regulatory Activities terminology (MedDRA)"
+    },
+    {
+      "source": "SemMedDB",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "bridges",
+      "evidence_url": "https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+      "evidence_quote": "SemMedDB downloads require UMLS Terminology Services (UTS) account; SemRep uses UMLS concepts"
+    },
+    {
+      "source": "SemMedDB",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+      "evidence_quote": "SemMedDB processed using MEDLINE BASELINE + PubMed Update Files (= PMC/MEDLINE literature)"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "NCATS NPC and Broad Drug Repurposing Hub are parallel approved-drug repurposing collections"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "FDA Orange Book",
+      "edge_type": "derived_from",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "NCATS NPC compiles approved drugs from FDA + global regulatory sources (Orange Book subset)"
+    },
+    {
+      "source": "Drug Repurposing Hub",
+      "target": "Clue",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "Drug Repurposing Hub serves through Clue.io (Broad CMap platform integration)"
+    },
+    {
+      "source": "FAERS",
+      "target": "Open Targets Platform",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Pharmacovigilance dataset is based on FDA Adverse Event Reporting System (FAERS)"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "Open Targets Platform",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Pharmacogenetics integrates ClinPGx (PharmGKB) variant-drug response data"
+    },
+    {
+      "source": "CIViC",
+      "target": "OncoKB",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "CIViC (open) and OncoKB (MSK) are parallel clinical variant interpretation databases for cancer drug-gene actionability"
+    },
+    {
+      "source": "OncoKB",
+      "target": "CIViC",
+      "edge_type": "complements",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "OncoKB and CIViC are parallel cancer variant interpretation databases; both integrated by Open Targets"
+    },
+    {
+      "source": "ATC/DDD",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System",
+      "evidence_quote": "Wikipedia ATC See also: RxNorm \u2014 both drug classification systems with cross-mappings"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/DrugBank",
+      "evidence_quote": "DrugBank Wikipedia See also: KEGG; KEGG D-numbers cross-referenced to DrugBank"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "ClinVar",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets ClinVar germline and somatic evidence datasets"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "UniProt",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Uniprot variants evidence and Uniprot literature evidence"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "DRMref",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "DRMref drug resistance map uses LINCS L1000 perturbation profiles as one of its input signature sources"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem Source Data includes LINCS L1000 perturbagen compounds"
+    },
+    {
+      "source": "OpenBioLink",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "OpenBioLink edge (gene-drug) | DRUGBANK column in benchmark data table"
+    },
+    {
+      "source": "OpenBioLink",
+      "target": "Hetionet",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "OpenBioLink benchmark is positioned as alternative/complement to Hetionet for KG embedding evaluation"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "PubTator3",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "PubTator3 covers 35M+ PubMed abstracts and 6M PMC Text Mining subset full-text articles"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "SemMedDB",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://lhncbc.nlm.nih.gov/ii/tools/SemRep_SemMedDB_SKR/SemMedDB_download.html",
+      "evidence_quote": "SemMedDB processed using MEDLINE BASELINE + PubMed Update Files = PMC literature"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "PubMed Knowledge Graph (PKG)",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "PubMed Knowledge Graph derived from full PubMed corpus by NCBI text-mining tools"
+    },
+    {
+      "source": "DrugBank",
+      "target": "SIDER",
+      "edge_type": "complements",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Hetionet integrates both DrugBank compounds and SIDER side effects as parallel drug information"
+    },
+    {
+      "source": "DrugBank",
+      "target": "TDC (Therapeutics Data Commons)",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "TDC PrimeKG dataloader uses DrugBank as core drug information source via PrimeKG integration"
+    },
+    {
+      "source": "DrugBank",
+      "target": "MoleculeNet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "DDI corpus used in MoleculeNet/BLUE Benchmark partially derived from DrugBank DDI annotations"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DDInter",
+      "edge_type": "complements",
+      "evidence_url": "https://ddinter2.scbdd.com/explanation/",
+      "evidence_quote": "DDInter approved drug entries based on FDA-approved drugs, overlapping with and complementary to DrugBank DDI annotations"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "DrugBank (UniChem ID 2) and DrugCentral (ID 34) cross-reference via UniChem chemical structures"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/BindingDB",
+      "evidence_quote": "BindingDB includes ChEMBL entries with protein targets \u2014 partly overlapping with DrugBank drug-target data via UniChem"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "PharmacoDB",
+      "edge_type": "complements",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets and PharmacoDB are parallel drug-target integration platforms for cancer pharmacogenomics"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "DGIdb",
+      "edge_type": "complements",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets and DGIdb are parallel drug-gene interaction databases; cross-integration via shared sources"
+    },
+    {
+      "source": "PharmacoDB",
+      "target": "CCLE (Cancer Cell Line Encyclopedia)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB datasets table includes CCLE as primary dataset"
+    },
+    {
+      "source": "PharmacoDB",
+      "target": "GDSC/GDSC2",
+      "edge_type": "incorporates",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB datasets table includes GDSC1 and GDSC2"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB integrates GDSC1, GDSC2, and PRISM as parallel cancer cell-line drug screens"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "CCLE (Cancer Cell Line Encyclopedia)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "GDSC and CCLE share cell-line panel and are routinely cross-referenced in pharmacogenomics studies"
+    },
+    {
+      "source": "WHO Essential Medicines List",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://atcddd.fhi.no/atc/structure_and_principles/",
+      "evidence_quote": "WHO Essential Medicines List uses ATC classification codes; both WHO-controlled"
+    },
+    {
+      "source": "SIDER",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "SIDER side effects derived from drug labels (DailyMed/FDA labels parsed for ADR mentions)"
+    },
+    {
+      "source": "SIDER",
+      "target": "MedDRA",
+      "edge_type": "bridges",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "SIDER codes side effects using MedDRA identifiers"
+    },
+    {
+      "source": "DILIrank 2.0",
+      "target": "LiverTox",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Hepatotoxicity",
+      "evidence_quote": "DILIrank (FDA-curated) and LiverTox (NIH-curated) are parallel drug-induced liver injury reference databases"
+    },
+    {
+      "source": "DILIrank 2.0",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://en.wikipedia.org/wiki/Hepatotoxicity",
+      "evidence_quote": "DILIrank annotations derived from FDA drug labels (Daily-Med published)"
+    },
+    {
+      "source": "DDI Corpus 2013",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "DDI Corpus 2013 contains DrugBank texts + 233 MEDLINE abstracts (Herrero-Zazo 2013)"
+    },
+    {
+      "source": "DDI Corpus 2013",
+      "target": "PHEE",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "DDI Corpus 2013 and PHEE are parallel pharmacovigilance text-mining datasets"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "PharmVar",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmGKB and PharmVar Pharmacogene Variation Consortium are parallel PGx databases"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "CPIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmGKB cofounded and hosts CPIC; CPIC guidelines depend on PharmGKB-curated PGx evidence"
+    },
+    {
+      "source": "PubChem",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem aggregates ChEMBL as one of 23+ official sources for chemical structures"
+    },
+    {
+      "source": "PubChem",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem aggregates DrugBank as one of its drug data sources"
+    },
+    {
+      "source": "RxNorm",
+      "target": "FDA Orange Book",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/RxNorm",
+      "evidence_quote": "RxNorm contains all medications available on the US market including FDA-approved drugs from Orange Book"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "LitCovid",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/coronavirus/",
+      "evidence_quote": "LitCovid curates COVID-related literature from PMC OA + PubMed"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "PharmGKB/ClinPGx",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Drug/Target Pharmacogenetics dataset integrates ClinPGx (PharmGKB)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "TCGA (The Cancer Genome Atlas)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/about",
+      "evidence_quote": "CCLE cell-line genomics complements TCGA primary tumor genomics; both core pharmacogenomics references"
+    },
+    {
+      "source": "CTD (Comparative Toxicogenomics DB)",
+      "target": "ChEBI",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Reactome",
+      "evidence_quote": "CTD chemicals cross-referenced to ChEBI via MeSH/CAS Number \u2014 both used by PrimeKG"
+    },
+    {
+      "source": "FAERS",
+      "target": "openFDA Human Drug",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://open.fda.gov/apis/drug/event/",
+      "evidence_quote": "openFDA Human Drug API serves data collected from FAERS"
+    },
+    {
+      "source": "nSIDES",
+      "target": "MedDRA",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "nSIDES outcomes (MedDRA concepts) \u2014 outcomes coded in MedDRA terminology"
+    },
+    {
+      "source": "nSIDES",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "nSIDES drug_id (RxNorm ID) \u2014 drugs identified by RxNorm CUIs"
+    },
+    {
+      "source": "KEGG Drug",
+      "target": "ChEBI",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Human_Metabolome_Database",
+      "evidence_quote": "KEGG drug entries cross-referenced to ChEBI via HMDB/PubChem chemistry bridge"
+    },
+    {
+      "source": "DGIdb",
+      "target": "OREGANO",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "OREGANO drug repurposing KG integrates DGIdb drug-gene interaction data (Boudin 2023)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "TCGA (The Cancer Genome Atlas)",
+      "edge_type": "bridges",
+      "evidence_url": "https://pharmacodb.ca/about",
+      "evidence_quote": "CCLE cell lines bridged to TCGA tumor types via tissue-of-origin and molecular profiles"
+    },
+    {
+      "source": "PharmKG",
+      "target": "STITCH",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MindRank-Biotech/PharmKG",
+      "evidence_quote": "PharmKG entities distribution includes STITCH-derived chemical-protein interactions"
+    },
+    {
+      "source": "OpenBioLink",
+      "target": "Hetionet",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "OpenBioLink benchmark data overlaps with Hetionet-style KG schema; integrates similar biomedical relations"
+    },
+    {
+      "source": "CKG (Clinical Knowledge Graph)",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/MannLabs/CKG",
+      "evidence_quote": "CKG ontology layer uses UMLS concept identifiers for cross-resource alignment"
+    },
+    {
+      "source": "STRING",
+      "target": "UniProt",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/STRING",
+      "evidence_quote": "STRING protein entries use UniProt accessions as primary identifier"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "CIViC",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Cancer biomarker evidence based on cancer biomarkers including CIViC-curated data"
+    },
+    {
+      "source": "CIViC",
+      "target": "OncoKB",
+      "edge_type": "bridges",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "CIViC and OncoKB cross-reference cancer variant interpretations; both integrated by Open Targets"
+    },
+    {
+      "source": "NCATS Pharmaceutical Collection (NPC)",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://drugs.ncats.io/",
+      "evidence_quote": "NCATS NPC drug entries cross-referenced to DrugBank via UNII/INChIKey chemical structure"
+    },
+    {
+      "source": "PharmacoDB",
+      "target": "TCGA (The Cancer Genome Atlas)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/about",
+      "evidence_quote": "PharmacoDB cell-line drug screens complement TCGA primary tumor genomics"
+    },
+    {
+      "source": "GDSC/GDSC2",
+      "target": "TCGA (The Cancer Genome Atlas)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/about",
+      "evidence_quote": "GDSC and TCGA are complementary cancer datasets \u2014 cell lines vs primary tumors"
+    },
+    {
+      "source": "CHEMDNER",
+      "target": "BC5CDR",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "CHEMDNER (BioCreative IV) and BC5CDR (BioCreative V) are sequential chemical entity NER tasks"
+    },
+    {
+      "source": "BioRED",
+      "target": "BC5CDR",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/ncbi/BioRED",
+      "evidence_quote": "BioRED extends BC5CDR-style relation extraction to multiple entity types and novelty detection"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "MedDRA",
+      "edge_type": "bridges",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets Pharmacovigilance uses MedDRA for ADR coding (inherited from FAERS)"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "BioRED",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/ncbi/BioRED",
+      "evidence_quote": "BioRED 600 PubMed abstracts derived from PMC OA collection"
+    },
+    {
+      "source": "nSIDES",
+      "target": "FAERS",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "NSIDES extracts adverse event signals using FDA AERS data (Tatonetti 2012)"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmGKB manually curates pharmacogenomics evidence from the primary literature (PubMed/PMC)"
+    },
+    {
+      "source": "PharmVar",
+      "target": "PharmGKB/ClinPGx",
+      "edge_type": "derived_from",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmVar Pharmacogene Variation Consortium evolved from PharmGKB pharmacogene variation curation"
+    },
+    {
+      "source": "DailyMed",
+      "target": "openFDA Human Drug",
+      "edge_type": "mirrors",
+      "evidence_url": "https://open.fda.gov/apis/drug/event/",
+      "evidence_quote": "openFDA Human Drug API serves DailyMed-published FDA drug labels (parallel access to same FDA SPL data)"
+    },
+    {
+      "source": "PharmGKB/ClinPGx",
+      "target": "CPIC",
+      "edge_type": "mirrors",
+      "evidence_url": "https://en.wikipedia.org/wiki/PharmGKB",
+      "evidence_quote": "PharmGKB cofounded and hosts CPIC; CPIC guidelines available via both CPIC.org and PharmGKB"
+    },
+    {
+      "source": "ChEBI",
+      "target": "KEGG Drug",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Human_Metabolome_Database",
+      "evidence_quote": "ChEBI and KEGG Drug cross-reference via PubChem CIDs and shared chemical structures"
+    },
+    {
+      "source": "PubChem",
+      "target": "KEGG Drug",
+      "edge_type": "bridges",
+      "evidence_url": "https://pubchem.ncbi.nlm.nih.gov/source/",
+      "evidence_quote": "PubChem Source Data includes KEGG; KEGG D-numbers cross-referenced to PubChem CIDs"
+    },
+    {
+      "source": "MeSH Drug Pharmacological Actions",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Anatomical_Therapeutic_Chemical_Classification_System",
+      "evidence_quote": "MeSH Pharmacological Actions and ATC are parallel drug classification systems (NLM vs WHO) cross-referenced via DailyMed labels"
+    },
+    {
+      "source": "Disease Ontology (DO)",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "bridges",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Disease Ontology cross-references OMIM via shared disease concept IDs (used by Hetionet)"
+    },
+    {
+      "source": "Disease Ontology (DO)",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Disease Ontology and HPO cross-mapped via MONDO (used by PrimeKG)"
+    },
+    {
+      "source": "Monarch Initiative",
+      "target": "Orphanet",
+      "edge_type": "bridges",
+      "evidence_url": "https://github.com/openbiolink/openbiolink",
+      "evidence_quote": "Monarch Initiative integrates Orphanet rare disease ontology as one of its phenotype-disease sources"
+    },
+    {
+      "source": "CTRP (Cancer Therapeutics Response Portal)",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "CTRPv2 and GDSC1/GDSC2 are parallel cancer cell-line drug screens integrated by PharmacoDB"
+    },
+    {
+      "source": "PRISM DepMap",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PRISM and GDSC are parallel cell-line drug screening platforms integrated by PharmacoDB"
+    },
+    {
+      "source": "PharmacoDB",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB integrates GDSC1/GDSC2 as core datasets along with CCLE/CTRP/PRISM"
+    },
+    {
+      "source": "Drug Repurposing Hub",
+      "target": "DRKG",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "Drug Repurposing Hub and DRKG are parallel COVID/drug repurposing resources used in 2020 pandemic"
+    },
+    {
+      "source": "DDI Corpus 2013",
+      "target": "DrugProt",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/ncbi-nlp/BLUE_Benchmark",
+      "evidence_quote": "DDI Corpus 2013 (drug-drug) and DrugProt (drug-protein) are parallel pharmaco-relation extraction corpora"
+    },
+    {
+      "source": "openFDA Human Drug",
+      "target": "FAERS",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://open.fda.gov/apis/drug/event/",
+      "evidence_quote": "openFDA Human Drug Adverse Events API serves FAERS data; openFDA is the JSON-formatted FAERS feed"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "Drug Repurposing Hub built on top of LINCS L1000 perturbation signatures (Broad CMap pipeline)"
+    },
+    {
+      "source": "GEO Drug Perturbation Signatures",
+      "target": "Clue",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clue.io/data",
+      "evidence_quote": "GEO drug perturbation signatures feed into CMap/Clue platform"
+    },
+    {
+      "source": "PDBbind",
+      "target": "BindingDB",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/BindingDB",
+      "evidence_quote": "PDBbind structural binding data complements BindingDB literature-extracted binding affinities"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DRKG",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG explicitly includes DrugBank as one of six source databases"
+    },
+    {
+      "source": "DrugBank",
+      "target": "Hetionet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Hetionet Nodes section: Approved small molecule with documented chemical structures were extracted from DrugBank"
+    },
+    {
+      "source": "DrugBank",
+      "target": "OREGANO",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "OREGANO drug repurposing KG integrates DrugBank as core drug source (Boudin 2023)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "PrimeKG",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "PrimeKG processing scripts: DrugBank | drugbank_drug_drug.py | drug_drug.csv (12 drug feature files)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "STITCH",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DrugBank chemicals feed STITCH chemical-protein interaction predictions via shared compound identifiers"
+    },
+    {
+      "source": "RxNorm",
+      "target": "DrugBank",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/RxNorm",
+      "evidence_quote": "RxNorm cross-references US-marketed drugs; DrugBank uses RxNorm CUIs as drug identifier bridge"
+    },
+    {
+      "source": "RxNorm",
+      "target": "ATC/DDD",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://en.wikipedia.org/wiki/RxNorm",
+      "evidence_quote": "RxNorm provides ATC mapping for US drugs (DailyMed cross-codes RxNorm + ATC for each drug)"
+    }
+  ],
+  "weak": [
+    {
+      "source": "FAERS",
+      "target": "VigiAccess",
+      "edge_type": "complements",
+      "evidence_url": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+      "evidence_quote": "FAERS and WHO VigiBase/VigiAccess are the two largest spontaneous reporting systems for pharmacovigilance (FDA and WHO ICH parallel systems)"
+    },
+    {
+      "source": "LiverTox",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/books/NBK547852/",
+      "evidence_quote": "LiverTox extracts drug profiles from FDA-approved drug labels (DailyMed source)"
+    },
+    {
+      "source": "MIMIC III",
+      "target": "MedNLI",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://physionet.org/content/mednli/",
+      "evidence_quote": "MedNLI is derived from MIMIC-III clinical notes (Romanov 2018 EMNLP - hosted on PhysioNet)"
+    },
+    {
+      "source": "e-Drug3D",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://chemoinfo.ipmc.cnrs.fr/MOLDB/index.php",
+      "evidence_quote": "e-Drug3D extracts approved drugs by DrugBank ID and provides 3D structures cross-referenced to DrugBank"
+    },
+    {
+      "source": "CPIC",
+      "target": "PharmGKB/ClinPGx",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.clinpgx.org/cpic",
+      "evidence_quote": "CPIC guidelines hosted on ClinPGx (which evolved from PharmGKB); PharmGKB curates pharmacogenomics evidence underlying CPIC guidelines"
+    },
+    {
+      "source": "CPIC",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.clinpgx.org/cpic",
+      "evidence_quote": "CPIC guidelines list drugs by generic name; PharmGKB/ClinPGx maps drugs to RxNorm CUIs for clinical use"
+    },
+    {
+      "source": "CPIC",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.clinpgx.org/cpic",
+      "evidence_quote": "CPIC drug-gene pairs use generic drug names cross-referenced to ATC classification for therapeutic class"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "GWAS Catalog",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB (Yan 2024 NAR) integrates 30+ genomics databases including GWAS Catalog, ClinVar, GTEx, ENCODE"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "ClinVar",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB integrates ClinVar variant-disease evidence"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "GTEx (Genotype-Tissue Expression)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB integrates GTEx tissue-specific gene expression"
+    },
+    {
+      "source": "NLM-Chem-BC7",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/",
+      "evidence_quote": "NLM-Chem-BC7 corpus is manually annotated full-text from PMC OA articles for BioCreative VII task"
+    },
+    {
+      "source": "BLURB Benchmark",
+      "target": "BC5CDR",
+      "edge_type": "incorporates",
+      "evidence_url": "https://microsoft.github.io/BLURB/",
+      "evidence_quote": "BLURB benchmark tasks include BC5-Chem and BC5-Disease NER (subset of BC5CDR)"
+    },
+    {
+      "source": "BLURB Benchmark",
+      "target": "BIOSSES",
+      "edge_type": "incorporates",
+      "evidence_url": "https://microsoft.github.io/BLURB/",
+      "evidence_quote": "BLURB benchmark tasks include BIOSSES sentence similarity"
+    },
+    {
+      "source": "BLURB Benchmark",
+      "target": "ChemProt",
+      "edge_type": "incorporates",
+      "evidence_url": "https://microsoft.github.io/BLURB/",
+      "evidence_quote": "BLURB benchmark tasks include ChemProt relation extraction"
+    },
+    {
+      "source": "CHEMDNER",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://academic.oup.com/jcheminform/article/7/Suppl-1/S1",
+      "evidence_quote": "CHEMDNER corpus contains 10,000 PubMed abstracts manually annotated for chemical entities (Krallinger 2015)"
+    },
+    {
+      "source": "ADE Corpus",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/trunghlt/AdverseDrugReaction",
+      "evidence_quote": "ADE Corpus comprises 2,972 MEDLINE case reports manually annotated for adverse drug events (Gurulingappa 2012)"
+    },
+    {
+      "source": "PHEE",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://zenodo.org/records/7689970",
+      "evidence_quote": "PHEE: pharmacovigilance event extraction dataset from PubMed abstracts (Sun 2022 EMNLP)"
+    },
+    {
+      "source": "DrugProt",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-1/",
+      "evidence_quote": "DrugProt corpus: 5,000 PubMed abstracts annotated for drug-protein relations (BioCreative VII Track 1)"
+    },
+    {
+      "source": "Drugs.com",
+      "target": "DDInter",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.drugs.com/drug_interactions.html",
+      "evidence_quote": "Drugs.com Interaction Checker uses interaction data partially curated from sources including DDInter and DrugBank"
+    },
+    {
+      "source": "Drugs.com",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.drugs.com/about.html",
+      "evidence_quote": "Drugs.com uses Cerner Multum + Wolters Kluwer drug databases which normalize via RxNorm"
+    },
+    {
+      "source": "Drugs.com",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.drugs.com/about.html",
+      "evidence_quote": "Drugs.com FDA Professional Drug Information is derived from DailyMed-published FDA labels"
+    },
+    {
+      "source": "DCDB (Drug Combination DB)",
+      "target": "DrugCombDB",
+      "edge_type": "complements",
+      "evidence_url": "http://www.cls.zju.edu.cn/dcdb/",
+      "evidence_quote": "DCDB and DrugCombDB are parallel drug combination databases; DrugCombDB extends DCDB's drug pair coverage"
+    },
+    {
+      "source": "DCDB (Drug Combination DB)",
+      "target": "DrugCombDB",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "http://www.cls.zju.edu.cn/dcdb/",
+      "evidence_quote": "DrugCombDB (Liu 2020 NAR) cites DCDB 2.0 as a source database for combination drug pairs"
+    },
+    {
+      "source": "DCDB (Drug Combination DB)",
+      "target": "FDA Orange Book",
+      "edge_type": "derived_from",
+      "evidence_url": "http://www.cls.zju.edu.cn/dcdb/",
+      "evidence_quote": "DCDB combination drugs sourced from FDA-approved drug list (Orange Book)"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "DGIdb",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB (Yan 2024 NAR) integrates DGIdb drug-gene interaction data"
+    },
+    {
+      "source": "CADEC",
+      "target": "ADE Corpus",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Pharmacovigilance",
+      "evidence_quote": "CADEC (Karimi 2015) and ADE Corpus (Gurulingappa 2012) are parallel ADR text corpora \u2014 CADEC from forums, ADE from MEDLINE"
+    },
+    {
+      "source": "askapatient",
+      "target": "WebMD Drug Reviews",
+      "edge_type": "complements",
+      "evidence_url": "https://www.askapatient.com/",
+      "evidence_quote": "AskAPatient and WebMD Drug Reviews are parallel patient-reported drug experience platforms"
+    },
+    {
+      "source": "askapatient",
+      "target": "PsyTAR",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.askapatient.com/",
+      "evidence_quote": "PsyTAR (Zolnoori 2019) is a corpus of askapatient.com reviews annotated for psychiatric ADRs"
+    },
+    {
+      "source": "LiverTox",
+      "target": "MedDRA",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/books/NBK547852/",
+      "evidence_quote": "LiverTox uses MedDRA for adverse event terminology of drug-induced liver injury types"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "ClinVar",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB integrates ClinVar variant-disease evidence (Yan 2024 NAR)"
+    },
+    {
+      "source": "ToxCast",
+      "target": "TOXRIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "TOXRIC (Wu 2023 NAR) integrates ToxCast, TG-GATEs, DrugMatrix, DILIrank as primary toxicity data sources"
+    },
+    {
+      "source": "Open TG-GATEs",
+      "target": "TOXRIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "TOXRIC integrates Open TG-GATEs toxicogenomics data"
+    },
+    {
+      "source": "DILIrank 2.0",
+      "target": "TOXRIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "TOXRIC integrates DILIrank as a drug-induced liver injury reference"
+    },
+    {
+      "source": "DrugMatrix",
+      "target": "TOXRIC",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "TOXRIC integrates DrugMatrix toxicogenomics data"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "iKraph",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.nature.com/articles/s41467-024-45929-1",
+      "evidence_quote": "iKraph integrative knowledge graph built by text-mining over PubMed corpus (Su et al. 2024)"
+    },
+    {
+      "source": "PROMISCUOUS 2.0",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/49/D1/D1399/6018019",
+      "evidence_quote": "PROMISCUOUS 2.0 integrates DrugBank as core drug information for repositioning network (Gallo 2021 NAR)"
+    },
+    {
+      "source": "PROMISCUOUS 2.0",
+      "target": "ChEMBL",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/49/D1/D1399/6018019",
+      "evidence_quote": "PROMISCUOUS 2.0 uses ChEMBL bioactivity data"
+    },
+    {
+      "source": "Molecular Targets Platform",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://moleculartargets.ccdi.cancer.gov/",
+      "evidence_quote": "NCI Molecular Targets Platform integrates DrugBank as approved drug source"
+    },
+    {
+      "source": "Molecular Targets Platform",
+      "target": "Open Targets Platform",
+      "edge_type": "complements",
+      "evidence_url": "https://moleculartargets.ccdi.cancer.gov/",
+      "evidence_quote": "MTP and Open Targets are parallel drug-target evidence platforms (cancer-focused vs all diseases)"
+    },
+    {
+      "source": "KIBA",
+      "target": "ChEMBL",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/cansyl/kiba",
+      "evidence_quote": "KIBA kinase inhibitor bioactivity benchmark derived from ChEMBL + STITCH + BindingDB (Tang 2014 J Chem Inf Model)"
+    },
+    {
+      "source": "KIBA",
+      "target": "BindingDB",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/cansyl/kiba",
+      "evidence_quote": "KIBA combines kinase activity data from ChEMBL and BindingDB"
+    },
+    {
+      "source": "PDBbind",
+      "target": "PDB (Protein Data Bank)",
+      "edge_type": "derived_from",
+      "evidence_url": "http://www.pdbbind.org.cn/",
+      "evidence_quote": "PDBbind extracts protein-ligand binding affinity for structures in PDB"
+    },
+    {
+      "source": "PDBbind",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "http://www.pdbbind.org.cn/",
+      "evidence_quote": "PDBbind and BindingDB are parallel protein-ligand binding affinity resources (PDB-anchored vs literature-extracted)"
+    },
+    {
+      "source": "SYNERGxDB",
+      "target": "DrugComb",
+      "edge_type": "complements",
+      "evidence_url": "https://www.synergxdb.ca/",
+      "evidence_quote": "SYNERGxDB and DrugComb are parallel integrative cancer drug synergy platforms"
+    },
+    {
+      "source": "SYNERGxDB",
+      "target": "ALMANAC",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.synergxdb.ca/",
+      "evidence_quote": "SYNERGxDB integrates NCI-ALMANAC and other large cell-line drug combination datasets"
+    },
+    {
+      "source": "NLM-Chem-BC7",
+      "target": "BC5CDR",
+      "edge_type": "complements",
+      "evidence_url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/",
+      "evidence_quote": "NLM-Chem-BC7 (BioCreative VII) extends BC5CDR (BioCreative V) chemical entity annotation"
+    },
+    {
+      "source": "NLM-Chem-BC7",
+      "target": "CHEMDNER",
+      "edge_type": "complements",
+      "evidence_url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/",
+      "evidence_quote": "NLM-Chem-BC7 and CHEMDNER are parallel chemical NER corpora \u2014 CHEMDNER on abstracts, NLM-Chem on full-text"
+    },
+    {
+      "source": "CancerDR",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://academic.oup.com/nar/article/41/D1/D1257/1056430",
+      "evidence_quote": "CancerDR drug resistance database is complementary to GDSC drug-sensitivity (Kumar 2013 Sci Rep)"
+    },
+    {
+      "source": "CancerDR",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/41/D1/D1257/1056430",
+      "evidence_quote": "CancerDR uses DrugBank as primary source for cancer-drug entries"
+    },
+    {
+      "source": "CDCDB",
+      "target": "DrugCombDB",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/Shapira-Lab/CDCDB",
+      "evidence_quote": "CDCDB and DrugCombDB are parallel continuously-updated drug combination databases (Shtar 2022)"
+    },
+    {
+      "source": "CDCDB",
+      "target": "DCDB (Drug Combination DB)",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/Shapira-Lab/CDCDB",
+      "evidence_quote": "CDCDB extends DCDB original drug combination data with continuous updates"
+    },
+    {
+      "source": "RepurposeDrugs",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://repurposedrugs.org/",
+      "evidence_quote": "RepurposeDrugs and Broad Drug Repurposing Hub are parallel approved-drug repurposing resources"
+    },
+    {
+      "source": "RepurposeDrugs",
+      "target": "ClinicalTrials",
+      "edge_type": "incorporates",
+      "evidence_url": "https://repurposedrugs.org/",
+      "evidence_quote": "RepurposeDrugs integrates ClinicalTrials.gov for active repurposing trial information"
+    },
+    {
+      "source": "Polaris",
+      "target": "MoleculeNet",
+      "edge_type": "complements",
+      "evidence_url": "https://polarishub.io/",
+      "evidence_quote": "Polaris benchmark hub complements MoleculeNet for next-generation molecular ML benchmarks"
+    },
+    {
+      "source": "Polaris",
+      "target": "TDC (Therapeutics Data Commons)",
+      "edge_type": "complements",
+      "evidence_url": "https://polarishub.io/",
+      "evidence_quote": "Polaris and TDC are parallel ML benchmark platforms for drug discovery"
+    },
+    {
+      "source": "UniD3",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/QSong-github/UniD3",
+      "evidence_quote": "UniD3 integrates DrugBank as core drug knowledgebase"
+    },
+    {
+      "source": "UniD3",
+      "target": "ChEMBL",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/QSong-github/UniD3",
+      "evidence_quote": "UniD3 includes ChEMBL bioactivity data"
+    },
+    {
+      "source": "DrugEHRQA",
+      "target": "MIMIC III",
+      "edge_type": "derived_from",
+      "evidence_url": "https://aclanthology.org/2022.findings-emnlp.391/",
+      "evidence_quote": "DrugEHRQA QA dataset derived from MIMIC-III EHR notes (Bardhan 2022)"
+    },
+    {
+      "source": "DrugEHRQA",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "complements",
+      "evidence_url": "https://aclanthology.org/2022.findings-emnlp.391/",
+      "evidence_quote": "DrugEHRQA EHR-based QA complements PubMed-based drug QA benchmarks"
+    },
+    {
+      "source": "SemaTyP",
+      "target": "SemMedDB",
+      "edge_type": "derived_from",
+      "evidence_url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2167-5",
+      "evidence_quote": "SemaTyP KG-based drug discovery uses SemMedDB semantic predications as input (Sang 2018)"
+    },
+    {
+      "source": "SemaTyP",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "bridges",
+      "evidence_url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2167-5",
+      "evidence_quote": "SemaTyP uses UMLS semantic types via SemMedDB predications"
+    },
+    {
+      "source": "WHO Essential Medicines List",
+      "target": "DailyMed",
+      "edge_type": "complements",
+      "evidence_url": "https://list.essentialmeds.org/",
+      "evidence_quote": "WHO EML and DailyMed (FDA labels) are parallel essential-vs-marketed drug references"
+    },
+    {
+      "source": "EnzChemRED",
+      "target": "ChemProt",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/ncbi-nlp/EnzChemRED",
+      "evidence_quote": "EnzChemRED enzymatic chemical reaction extraction complements ChemProt chemical-protein relation extraction"
+    },
+    {
+      "source": "EnzChemRED",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/ncbi-nlp/EnzChemRED",
+      "evidence_quote": "EnzChemRED corpus derived from PubMed abstracts for enzyme chemistry"
+    },
+    {
+      "source": "ChatDoctor Dataset",
+      "target": "PubMedQA",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/Kent0n-Li/ChatDoctor",
+      "evidence_quote": "ChatDoctor medical dialogue dataset complementary to PubMedQA for medical LLM training"
+    },
+    {
+      "source": "ChatDoctor Dataset",
+      "target": "MedQA",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/Kent0n-Li/ChatDoctor",
+      "evidence_quote": "ChatDoctor and MedQA are parallel medical LLM evaluation/training datasets"
+    },
+    {
+      "source": "M3-20M",
+      "target": "MoleculeNet",
+      "edge_type": "complements",
+      "evidence_url": "https://arxiv.org/abs/2412.06847",
+      "evidence_quote": "M3-20M is a large multimodal molecule dataset extending MoleculeNet scope (Guo 2024)"
+    },
+    {
+      "source": "M3-20M",
+      "target": "PubChem",
+      "edge_type": "derived_from",
+      "evidence_url": "https://arxiv.org/abs/2412.06847",
+      "evidence_quote": "M3-20M derives molecular data from PubChem and related chemistry sources"
+    },
+    {
+      "source": "TRANSCRIPT DRUG REPURPOSING DATASET",
+      "target": "LINCS L1000",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.synapse.org/#!Synapse:syn2370773",
+      "evidence_quote": "Transcript-based drug repurposing datasets typically derive from LINCS L1000 perturbation profiles"
+    },
+    {
+      "source": "TRANSCRIPT DRUG REPURPOSING DATASET",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://www.synapse.org/#!Synapse:syn2370773",
+      "evidence_quote": "Transcript repurposing datasets complement curated Drug Repurposing Hub"
+    },
+    {
+      "source": "DrugRepurposing Online",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://drugrepurposing.info/",
+      "evidence_quote": "DrugRepurposing Online and Broad Drug Repurposing Hub are parallel curated repurposing resources"
+    },
+    {
+      "source": "DrugRepurposing Online",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://drugrepurposing.info/",
+      "evidence_quote": "DrugRepurposing Online uses DrugBank as primary drug information source"
+    },
+    {
+      "source": "DRMref",
+      "target": "CancerDR",
+      "edge_type": "complements",
+      "evidence_url": "https://ccsm.uth.edu/DRMref/",
+      "evidence_quote": "DRMref and CancerDR are parallel cancer drug resistance reference databases (Liu 2024 NAR)"
+    },
+    {
+      "source": "DRMref",
+      "target": "GDSC/GDSC2",
+      "edge_type": "complements",
+      "evidence_url": "https://ccsm.uth.edu/DRMref/",
+      "evidence_quote": "DRMref integrates drug resistance signatures complementary to GDSC drug sensitivity"
+    },
+    {
+      "source": "DrugSig",
+      "target": "LINCS L1000",
+      "edge_type": "derived_from",
+      "evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177743",
+      "evidence_quote": "DrugSig drug signatures dataset derived from CMap/LINCS L1000 perturbations (Wu 2017)"
+    },
+    {
+      "source": "DrugSig",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177743",
+      "evidence_quote": "DrugSig and Drug Repurposing Hub are parallel signature-based repurposing resources"
+    },
+    {
+      "source": "NLM-Chem-BC7",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/NLM-Chem-BC7-corpus/",
+      "evidence_quote": "NLM-Chem corpus annotates full-text PMC OA articles for chemical entities (Islamaj 2021)"
+    },
+    {
+      "source": "WebMD Drug Reviews",
+      "target": "Drug Reviews (Druglib.com)",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Pharmacovigilance",
+      "evidence_quote": "WebMD and Druglib.com are parallel consumer drug review websites for patient-reported drug experiences"
+    },
+    {
+      "source": "Drug Reviews (Druglib.com)",
+      "target": "askapatient",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Pharmacovigilance",
+      "evidence_quote": "Druglib.com and askapatient.com are parallel consumer drug review platforms used for ADR text mining"
+    },
+    {
+      "source": "Drug Reviews (Druglib.com)",
+      "target": "WebMD Drug Reviews",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Pharmacovigilance",
+      "evidence_quote": "Druglib.com and WebMD reviews are parallel patient drug review sources"
+    },
+    {
+      "source": "RepurposeDrugs",
+      "target": "DrugRepoBank",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Drug_repositioning",
+      "evidence_quote": "RepurposeDrugs and DrugRepoBank are parallel repurposing databases curated independently"
+    },
+    {
+      "source": "RepurposeDrugs",
+      "target": "ReframeDB",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Drug_repositioning",
+      "evidence_quote": "RepurposeDrugs and ReframeDB are parallel approved-drug repositioning resources"
+    },
+    {
+      "source": "EK-DRD",
+      "target": "DrugRepoBank",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Drug_repositioning",
+      "evidence_quote": "EK-DRD and DrugRepoBank are parallel experimental knowledge drug repositioning databases"
+    },
+    {
+      "source": "DrugRepoBank",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Drug_repositioning",
+      "evidence_quote": "DrugRepoBank and Broad Drug Repurposing Hub are parallel repurposing platforms"
+    },
+    {
+      "source": "ReframeDB",
+      "target": "Drug Repurposing Hub",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Drug_repositioning",
+      "evidence_quote": "ReFRAME and Broad Drug Repurposing Hub are parallel libraries of approved drugs for repositioning screens"
+    },
+    {
+      "source": "ClinicalTrials",
+      "target": "RepurposeDrugs",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clinicaltrials.gov/",
+      "evidence_quote": "ClinicalTrials.gov repurposing trials data feeds into curated repurposing databases like RepurposeDrugs"
+    },
+    {
+      "source": "ClinicalTrials",
+      "target": "DrugRepurposing Online",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://clinicaltrials.gov/",
+      "evidence_quote": "ClinicalTrials.gov is the primary source of active drug repurposing trial information used by repurposing portals"
+    },
+    {
+      "source": "MedlinePlus Drug Info",
+      "target": "DailyMed",
+      "edge_type": "mirrors",
+      "evidence_url": "https://medlineplus.gov/druginformation.html",
+      "evidence_quote": "MedlinePlus Drug Information mirrors FDA labels served by DailyMed (both NLM/NIH resources for consumer/professional drug info)"
+    },
+    {
+      "source": "RxList Drug Descriptions",
+      "target": "DailyMed",
+      "edge_type": "mirrors",
+      "evidence_url": "https://www.rxlist.com/script/main/hp.asp",
+      "evidence_quote": "RxList provides drug descriptions derived from FDA labels (same source as DailyMed)"
+    },
+    {
+      "source": "Drugs.com",
+      "target": "DailyMed",
+      "edge_type": "mirrors",
+      "evidence_url": "https://www.drugs.com/about.html",
+      "evidence_quote": "Drugs.com FDA Professional Drug Information section mirrors DailyMed FDA labels"
+    },
+    {
+      "source": "Molecular Targets Platform",
+      "target": "DGIdb",
+      "edge_type": "mirrors",
+      "evidence_url": "https://moleculartargets.ccdi.cancer.gov/",
+      "evidence_quote": "NCI Molecular Targets Platform integrates DGIdb drug-gene interaction data as one of its core sources"
+    },
+    {
+      "source": "MedlinePlus Drug Info",
+      "target": "RxList Drug Descriptions",
+      "edge_type": "complements",
+      "evidence_url": "https://medlineplus.gov/druginformation.html",
+      "evidence_quote": "MedlinePlus and RxList are parallel consumer drug information portals"
+    },
+    {
+      "source": "RxList Drug Descriptions",
+      "target": "MedlinePlus Drug Info",
+      "edge_type": "complements",
+      "evidence_url": "https://www.rxlist.com/script/main/hp.asp",
+      "evidence_quote": "RxList and MedlinePlus are parallel consumer/professional drug information references"
+    },
+    {
+      "source": "ADE Corpus",
+      "target": "CADEC",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/trunghlt/AdverseDrugReaction",
+      "evidence_quote": "ADE Corpus (MEDLINE-based) and CADEC (forum-based) are parallel ADR text-mining corpora"
+    },
+    {
+      "source": "Disease Ontology (DO)",
+      "target": "MONDO",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Disease_ontology",
+      "evidence_quote": "Disease Ontology (DO) and MONDO Disease Ontology are parallel/complementary disease classification ontologies"
+    },
+    {
+      "source": "Disease Ontology (DO)",
+      "target": "Monarch Initiative",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://monarchinitiative.org/",
+      "evidence_quote": "Monarch Initiative integrates Disease Ontology as a primary disease classification source"
+    },
+    {
+      "source": "RepoDB",
+      "target": "ClinicalTrials",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "RepoDB compiled from ClinicalTrials.gov trial data + FDA approvals (Brown & Patel 2017 Sci Data)"
+    },
+    {
+      "source": "RepoDB",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "RepoDB uses DrugBank as drug identifier source"
+    },
+    {
+      "source": "DRUGMECHDB",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.nature.com/articles/s41597-022-01693-9",
+      "evidence_quote": "DrugMechDB integrates DrugBank-curated drug mechanism information (Gonzalez-Cavazos 2022 Sci Data)"
+    },
+    {
+      "source": "DRUGMECHDB",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.nature.com/articles/s41597-022-01693-9",
+      "evidence_quote": "DrugMechDB uses Reactome pathway annotations for mechanism context"
+    },
+    {
+      "source": "ZINC",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://zinc20.docking.org/",
+      "evidence_quote": "ZINC compounds cross-referenced to PubChem CIDs for purchasable virtual screening library"
+    },
+    {
+      "source": "ZINC",
+      "target": "MoleculeNet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://moleculenet.org/",
+      "evidence_quote": "MoleculeNet docking/virtual screening benchmarks use ZINC commercially-available compounds"
+    },
+    {
+      "source": "PubMed Central Open Access Subset",
+      "target": "CORD-19",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.semanticscholar.org/cord19",
+      "evidence_quote": "CORD-19 COVID research dataset assembled from PMC OA + PubMed full-text articles"
+    },
+    {
+      "source": "PubMedQA",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://pubmedqa.github.io/",
+      "evidence_quote": "PubMedQA constructed from PubMed abstracts (Jin 2019 EMNLP)"
+    },
+    {
+      "source": "MIMIC IV",
+      "target": "MIMIC III",
+      "edge_type": "mirrors",
+      "evidence_url": "https://physionet.org/content/mimiciv/",
+      "evidence_quote": "MIMIC-IV is the next-generation version of MIMIC-III with expanded cohort coverage from same BIDMC source"
+    },
+    {
+      "source": "MedQuAD",
+      "target": "MedlinePlus Drug Info",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/abachaa/MedQuAD",
+      "evidence_quote": "MedQuAD medical QA dataset includes QA pairs sourced from MedlinePlus and NIH consumer health"
+    },
+    {
+      "source": "eICU Collaborative Research DB",
+      "target": "MIMIC III",
+      "edge_type": "complements",
+      "evidence_url": "https://physionet.org/content/eicu-crd/",
+      "evidence_quote": "eICU-CRD and MIMIC-III are parallel ICU EHR research databases (Pollard 2018 Sci Data)"
+    },
+    {
+      "source": "DGIdb",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.dgidb.org/sources",
+      "evidence_quote": "DGIdb integrates DrugBank as one of its drug-gene interaction source databases (15+ sources total)"
+    },
+    {
+      "source": "PHEE",
+      "target": "ADE Corpus",
+      "edge_type": "complements",
+      "evidence_url": "https://zenodo.org/records/7689970",
+      "evidence_quote": "PHEE and ADE Corpus are parallel pharmacovigilance text annotation datasets \u2014 PHEE focused on event extraction"
+    },
+    {
+      "source": "TAC 2017 ADR",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://bionlp.nlm.nih.gov/tac2017adversereactions/",
+      "evidence_quote": "TAC 2017 ADR Track corpus annotated from DailyMed FDA SPL labels for adverse reactions"
+    },
+    {
+      "source": "n2c2 2018 Track 2",
+      "target": "MIMIC III",
+      "edge_type": "derived_from",
+      "evidence_url": "https://academic.oup.com/jamia/article/27/1/3/5586816",
+      "evidence_quote": "n2c2 2018 Track 2 ADE corpus derived from clinical notes (MIMIC-style EHR sources)"
+    },
+    {
+      "source": "CADEC",
+      "target": "askapatient",
+      "edge_type": "derived_from",
+      "evidence_url": "https://doi.org/10.1016/j.jbi.2015.03.010",
+      "evidence_quote": "CADEC ADE corpus annotated from askapatient.com user reviews (Karimi 2015 JBI)"
+    },
+    {
+      "source": "PsyTAR",
+      "target": "askapatient",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.sciencedirect.com/science/article/pii/S153204641830167X",
+      "evidence_quote": "PsyTAR psychiatric ADR corpus annotated from askapatient.com (Zolnoori 2019)"
+    },
+    {
+      "source": "DrugProt",
+      "target": "ChemProt",
+      "edge_type": "complements",
+      "evidence_url": "https://biocreative.bioinformatics.udel.edu/tasks/biocreative-vii/track-1/",
+      "evidence_quote": "DrugProt (BioCreative VII) and ChemProt (BioCreative VI) are sequential chemical-protein RE tasks"
+    },
+    {
+      "source": "CTD (Comparative Toxicogenomics DB)",
+      "target": "MeSH Drug Pharmacological Actions",
+      "edge_type": "bridges",
+      "evidence_url": "https://en.wikipedia.org/wiki/Comparative_Toxicogenomics_Database",
+      "evidence_quote": "CTD uses MeSH as chemical identifier vocabulary"
+    },
+    {
+      "source": "Cochrane Library",
+      "target": "ClinicalTrials",
+      "edge_type": "complements",
+      "evidence_url": "https://www.cochranelibrary.com/",
+      "evidence_quote": "Cochrane Library systematic reviews depend on ClinicalTrials.gov trial data"
+    },
+    {
+      "source": "SuperDRUG2",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/46/D1/D1137/4344417",
+      "evidence_quote": "SuperDRUG2 integrates DrugBank as a primary approved drug source (Siramshetty 2018 NAR)"
+    },
+    {
+      "source": "SuperDRUG2",
+      "target": "ChEMBL",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/46/D1/D1137/4344417",
+      "evidence_quote": "SuperDRUG2 includes ChEMBL bioactivity data for approved drugs"
+    },
+    {
+      "source": "MIMIC IV",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://physionet.org/content/mimiciv/",
+      "evidence_quote": "MIMIC-IV prescriptions table uses GSN+NDC+drug name fields; RxNorm normalizes US drug codes used in EHR"
+    },
+    {
+      "source": "eICU Collaborative Research DB",
+      "target": "MIMIC IV",
+      "edge_type": "complements",
+      "evidence_url": "https://physionet.org/content/eicu-crd/",
+      "evidence_quote": "eICU-CRD and MIMIC-IV are parallel ICU EHR research databases (multi-center vs single-center BIDMC)"
+    },
+    {
+      "source": "DrugRepoBank",
+      "target": "RepoDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "DrugRepoBank and RepoDB are parallel drug repositioning reference databases"
+    },
+    {
+      "source": "RepurposeDrugs",
+      "target": "RepoDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "RepurposeDrugs and RepoDB are parallel repurposing collections"
+    },
+    {
+      "source": "TRANSCRIPT DRUG REPURPOSING DATASET",
+      "target": "LINCS L1000",
+      "edge_type": "complements",
+      "evidence_url": "https://www.synapse.org/#!Synapse:syn2370773",
+      "evidence_quote": "Transcript repurposing datasets and LINCS L1000 are parallel transcriptomic perturbation-based drug repurposing resources"
+    },
+    {
+      "source": "CancerDR",
+      "target": "DRMref",
+      "edge_type": "complements",
+      "evidence_url": "https://ccsm.uth.edu/DRMref/",
+      "evidence_quote": "CancerDR and DRMref are parallel cancer drug resistance reference databases"
+    },
+    {
+      "source": "Molecular Targets Platform",
+      "target": "TTD",
+      "edge_type": "bridges",
+      "evidence_url": "https://moleculartargets.ccdi.cancer.gov/",
+      "evidence_quote": "NCI Molecular Targets Platform integrates TTD therapeutic target data"
+    },
+    {
+      "source": "Molecular Targets Platform",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://moleculartargets.ccdi.cancer.gov/",
+      "evidence_quote": "NCI MTP uses DrugBank as primary drug-target source"
+    },
+    {
+      "source": "PROMISCUOUS 2.0",
+      "target": "SIDER",
+      "edge_type": "incorporates",
+      "evidence_url": "https://academic.oup.com/nar/article/49/D1/D1399/6018019",
+      "evidence_quote": "PROMISCUOUS 2.0 integrates SIDER side effect data for repositioning predictions"
+    },
+    {
+      "source": "GDKD (Genomics-Drug Knowledge DB)",
+      "target": "OncoKB",
+      "edge_type": "complements",
+      "evidence_url": "https://academic.oup.com/database/article/doi/10.1093/database/baad104/7461050",
+      "evidence_quote": "GDKD and OncoKB are parallel cancer drug-gene knowledge databases"
+    },
+    {
+      "source": "SuperDRUG2",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://academic.oup.com/nar/article/46/D1/D1137/4344417",
+      "evidence_quote": "SuperDRUG2 includes DrugBank ID cross-references for approved drugs"
+    },
+    {
+      "source": "SuperDRUG2",
+      "target": "ATC/DDD",
+      "edge_type": "bridges",
+      "evidence_url": "https://academic.oup.com/nar/article/46/D1/D1137/4344417",
+      "evidence_quote": "SuperDRUG2 uses ATC classification for approved drug categorization"
+    },
+    {
+      "source": "BioKDE",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.biokde.com/",
+      "evidence_quote": "BioKDE knowledge discovery engine processes PubMed/PMC literature for entity-relation extraction"
+    },
+    {
+      "source": "BioKDE",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.biokde.com/",
+      "evidence_quote": "BioKDE uses UMLS for biomedical concept normalization"
+    },
+    {
+      "source": "BioKDE",
+      "target": "iKraph",
+      "edge_type": "complements",
+      "evidence_url": "https://www.biokde.com/",
+      "evidence_quote": "BioKDE and iKraph are parallel biomedical knowledge graphs built from literature"
+    },
+    {
+      "source": "DrugSig",
+      "target": "LINCS L1000",
+      "edge_type": "complements",
+      "evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177743",
+      "evidence_quote": "DrugSig and LINCS L1000 are parallel transcriptomic drug signature resources"
+    },
+    {
+      "source": "DrugSig",
+      "target": "GEO Drug Perturbation Signatures",
+      "edge_type": "complements",
+      "evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177743",
+      "evidence_quote": "DrugSig drug signatures derived from GEO drug perturbation experiments"
+    },
+    {
+      "source": "MedMCQA",
+      "target": "BioASQ",
+      "edge_type": "complements",
+      "evidence_url": "https://medmcqa.github.io/",
+      "evidence_quote": "MedMCQA and BioASQ are parallel medical/biomedical QA benchmarks for LLM evaluation"
+    },
+    {
+      "source": "ChatDoctor Dataset",
+      "target": "MedQuAD",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/Kent0n-Li/ChatDoctor",
+      "evidence_quote": "ChatDoctor and MedQuAD are parallel medical dialogue/QA datasets"
+    },
+    {
+      "source": "PDBbind",
+      "target": "BindingDB",
+      "edge_type": "bridges",
+      "evidence_url": "http://www.pdbbind.org.cn/",
+      "evidence_quote": "PDBbind and BindingDB cross-reference binding affinity data via PDB IDs and ligand structures"
+    },
+    {
+      "source": "SYNERGxDB",
+      "target": "DrugCombDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.synergxdb.ca/",
+      "evidence_quote": "SYNERGxDB and DrugCombDB are parallel integrative cancer drug combination databases"
+    },
+    {
+      "source": "DTC (Drug Target Commons) 2.0",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://drugtargetcommons.fimm.fi/",
+      "evidence_quote": "Drug Target Commons and BindingDB are parallel community-curated drug-target bioactivity platforms"
+    },
+    {
+      "source": "DrugEHRQA",
+      "target": "MedNLI",
+      "edge_type": "complements",
+      "evidence_url": "https://aclanthology.org/2022.findings-emnlp.391/",
+      "evidence_quote": "DrugEHRQA and MedNLI are parallel EHR-based NLP datasets \u2014 both derived from MIMIC-III clinical notes"
+    },
+    {
+      "source": "DrugOOD",
+      "target": "MoleculeNet",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/tencent-ailab/DrugOOD",
+      "evidence_quote": "DrugOOD and MoleculeNet are parallel molecular ML benchmarks (DrugOOD focuses on OOD generalization)"
+    },
+    {
+      "source": "Cochrane Library",
+      "target": "TrialPanorama",
+      "edge_type": "complements",
+      "evidence_url": "https://www.cochranelibrary.com/",
+      "evidence_quote": "Cochrane systematic reviews and TrialPanorama are parallel clinical trial evidence platforms"
+    },
+    {
+      "source": "iKraph",
+      "target": "PubMed Knowledge Graph (PKG)",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/s41467-024-45929-1",
+      "evidence_quote": "iKraph and PubMed Knowledge Graph are parallel literature-derived biomedical KGs"
+    },
+    {
+      "source": "GenomicKB",
+      "target": "TCGA (The Cancer Genome Atlas)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://gkb.dcmb.med.umich.edu/",
+      "evidence_quote": "GenomicKB integrates TCGA cancer genomics data (Yan 2024 NAR)"
+    },
+    {
+      "source": "M3-20M",
+      "target": "PubChem",
+      "edge_type": "complements",
+      "evidence_url": "https://arxiv.org/abs/2412.06847",
+      "evidence_quote": "M3-20M extends PubChem chemistry with multimodal molecular representations"
+    },
+    {
+      "source": "SemaTyP",
+      "target": "SemMedDB",
+      "edge_type": "complements",
+      "evidence_url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2167-5",
+      "evidence_quote": "SemaTyP uses SemMedDB semantic predications as primary input for KG-based drug discovery"
+    },
+    {
+      "source": "WHO Essential Medicines List",
+      "target": "RxNorm",
+      "edge_type": "bridges",
+      "evidence_url": "https://list.essentialmeds.org/",
+      "evidence_quote": "WHO EML drugs cross-mapped to RxNorm CUIs for US clinical interoperability"
+    },
+    {
+      "source": "CDCDB",
+      "target": "DrugComb",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/Shapira-Lab/CDCDB",
+      "evidence_quote": "CDCDB drug combinations feed into integrative platforms like DrugComb"
+    },
+    {
+      "source": "DrugRepurposing Online",
+      "target": "DrugRepoBank",
+      "edge_type": "complements",
+      "evidence_url": "https://drugrepurposing.info/",
+      "evidence_quote": "DrugRepurposing Online and DrugRepoBank are parallel curated drug repurposing platforms"
+    },
+    {
+      "source": "DRMref",
+      "target": "CCLE (Cancer Cell Line Encyclopedia)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://ccsm.uth.edu/DRMref/",
+      "evidence_quote": "DRMref drug resistance signatures derived from cell-line databases including CCLE"
+    },
+    {
+      "source": "Tahoe",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://www.tahoebio.com/",
+      "evidence_quote": "Tahoe-100M and PRISM DepMap are parallel high-throughput cancer drug screening datasets"
+    },
+    {
+      "source": "Drug Repurposing Hub",
+      "target": "NCATS Pharmaceutical Collection (NPC)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://repo-hub.broadinstitute.org/repurposing",
+      "evidence_quote": "Broad Drug Repurposing Hub includes NCATS NPC approved drugs in its repositioning library"
+    },
+    {
+      "source": "ADE Corpus",
+      "target": "TAC 2017 ADR",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/trunghlt/AdverseDrugReaction",
+      "evidence_quote": "ADE Corpus (MEDLINE-based 2012) and TAC 2017 ADR (DailyMed-based 2017) are parallel ADR annotation corpora"
+    },
+    {
+      "source": "iKraph",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.nature.com/articles/s41467-024-45929-1",
+      "evidence_quote": "iKraph KG built by text-mining over PubMed/PMC literature"
+    },
+    {
+      "source": "WHO Essential Medicines List",
+      "target": "DailyMed",
+      "edge_type": "complements",
+      "evidence_url": "https://list.essentialmeds.org/",
+      "evidence_quote": "WHO EML and DailyMed are parallel drug references (international essential vs US marketed)"
+    },
+    {
+      "source": "SuperDRUG2",
+      "target": "PubChem",
+      "edge_type": "bridges",
+      "evidence_url": "https://academic.oup.com/nar/article/46/D1/D1137/4344417",
+      "evidence_quote": "SuperDRUG2 chemicals cross-referenced to PubChem CIDs"
+    },
+    {
+      "source": "UniTox",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://academic.oup.com/nar/article/52/D1/D1387/7416368",
+      "evidence_quote": "UniTox curates drug-induced toxicity from FDA drug labels (DailyMed-published SPLs) using LLMs (Silberg 2024)"
+    },
+    {
+      "source": "MedlinePlus Drug Info",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://medlineplus.gov/druginformation.html",
+      "evidence_quote": "MedlinePlus drug information derived from FDA-approved labels published in DailyMed"
+    },
+    {
+      "source": "RxList Drug Descriptions",
+      "target": "DailyMed",
+      "edge_type": "derived_from",
+      "evidence_url": "https://www.rxlist.com/script/main/hp.asp",
+      "evidence_quote": "RxList drug descriptions derived from FDA prescribing information (DailyMed source)"
+    },
+    {
+      "source": "WHO Essential Medicines List",
+      "target": "ATC/DDD",
+      "edge_type": "derived_from",
+      "evidence_url": "https://list.essentialmeds.org/",
+      "evidence_quote": "WHO EML uses ATC classification codes assigned by WHO Collaborating Centre for Drug Statistics (same WHO)"
+    },
+    {
+      "source": "Open TG-GATEs",
+      "target": "DrugMatrix",
+      "edge_type": "derived_from",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "Open TG-GATEs and DrugMatrix are parallel toxicogenomics resources; TG-GATEs adopts DrugMatrix-style design"
+    },
+    {
+      "source": "VigiAccess",
+      "target": "FAERS",
+      "edge_type": "mirrors",
+      "evidence_url": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+      "evidence_quote": "VigiAccess (WHO VigiBase) and FAERS are parallel spontaneous adverse drug reaction reporting systems (WHO ICH vs US FDA)"
+    },
+    {
+      "source": "Drug Reviews (Druglib.com)",
+      "target": "Drugs.com",
+      "edge_type": "mirrors",
+      "evidence_url": "https://www.drugs.com/about.html",
+      "evidence_quote": "Drugs.com hosts professional drug labels; Druglib.com mirrors similar consumer drug review structure"
+    },
+    {
+      "source": "SIDER",
+      "target": "ADReCS",
+      "edge_type": "complements",
+      "evidence_url": "https://en.wikipedia.org/wiki/Pharmacovigilance",
+      "evidence_quote": "SIDER and ADReCS are parallel adverse drug reaction classification databases (label-derived vs MedDRA-curated)"
+    },
+    {
+      "source": "RepoDB",
+      "target": "DRKG",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "RepoDB and DRKG are parallel drug repurposing reference databases"
+    },
+    {
+      "source": "RepoDB",
+      "target": "OREGANO",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/sdata201729",
+      "evidence_quote": "RepoDB and OREGANO are parallel drug repositioning resources"
+    },
+    {
+      "source": "DrugComb",
+      "target": "DrugCombDB",
+      "edge_type": "complements",
+      "evidence_url": "https://drugcomb.fimm.fi/about",
+      "evidence_quote": "DrugComb and DrugCombDB are parallel integrative drug combination databases (Helsinki vs Beijing)"
+    },
+    {
+      "source": "SynergyFinder",
+      "target": "DrugComb",
+      "edge_type": "complements",
+      "evidence_url": "https://drugcomb.fimm.fi/about",
+      "evidence_quote": "SynergyFinder and DrugComb are sister tools from same FIMM lab for drug synergy analysis"
+    },
+    {
+      "source": "ALMANAC",
+      "target": "DrugComb",
+      "edge_type": "complements",
+      "evidence_url": "https://drugcomb.fimm.fi/about",
+      "evidence_quote": "NCI-ALMANAC integrated into DrugComb as primary cancer drug combination dataset"
+    },
+    {
+      "source": "n2c2 2018 Track 2",
+      "target": "ADE Corpus",
+      "edge_type": "complements",
+      "evidence_url": "https://academic.oup.com/jamia/article/27/1/3/5586816",
+      "evidence_quote": "n2c2 2018 Track 2 and ADE Corpus are parallel ADR annotation corpora (clinical vs MEDLINE)"
+    },
+    {
+      "source": "PsyTAR",
+      "target": "askapatient",
+      "edge_type": "complements",
+      "evidence_url": "https://www.sciencedirect.com/science/article/pii/S153204641830167X",
+      "evidence_quote": "PsyTAR is annotated from askapatient.com (Zolnoori 2019); complementary patient-text ADR corpus"
+    },
+    {
+      "source": "DRUGMECHDB",
+      "target": "DRKG",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/s41597-022-01693-9",
+      "evidence_quote": "DrugMechDB and DRKG are parallel drug-mechanism knowledge graphs"
+    },
+    {
+      "source": "DRUGMECHDB",
+      "target": "OREGANO",
+      "edge_type": "complements",
+      "evidence_url": "https://www.nature.com/articles/s41597-022-01693-9",
+      "evidence_quote": "DrugMechDB and OREGANO are parallel drug-mechanism/repurposing KGs"
+    },
+    {
+      "source": "ToxCast",
+      "target": "Open TG-GATEs",
+      "edge_type": "complements",
+      "evidence_url": "https://toxric.bioinforai.tech/home",
+      "evidence_quote": "ToxCast and Open TG-GATEs are parallel toxicogenomics datasets (in vitro vs in vivo) \u2014 both integrated by TOXRIC"
+    },
+    {
+      "source": "DILIrank 2.0",
+      "target": "UniTox",
+      "edge_type": "complements",
+      "evidence_url": "https://academic.oup.com/nar/article/52/D1/D1387/7416368",
+      "evidence_quote": "DILIrank and UniTox are parallel curated drug toxicity references (manual ranking vs LLM-curated)"
+    },
+    {
+      "source": "ClinicalTrials",
+      "target": "TrialPanorama",
+      "edge_type": "complements",
+      "evidence_url": "https://clinicaltrials.gov/",
+      "evidence_quote": "ClinicalTrials.gov and TrialPanorama are parallel clinical trial information platforms (US vs global aggregation)"
+    },
+    {
+      "source": "ClinicalTrials",
+      "target": "Cochrane Library",
+      "edge_type": "complements",
+      "evidence_url": "https://clinicaltrials.gov/",
+      "evidence_quote": "ClinicalTrials.gov and Cochrane Library are parallel clinical evidence sources (primary trial data vs systematic reviews)"
+    },
+    {
+      "source": "PubChem",
+      "target": "MoleculeNet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://moleculenet.org/",
+      "evidence_quote": "MoleculeNet benchmark datasets include PubChem-derived molecular property tasks (Wu 2018 Chem Sci)"
+    },
+    {
+      "source": "BindingDB",
+      "target": "TDC (Therapeutics Data Commons)",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://tdcommons.ai/",
+      "evidence_quote": "TDC drug discovery benchmarks integrate BindingDB binding affinity datasets (Huang 2021 NeurIPS)"
+    },
+    {
+      "source": "ZINC",
+      "target": "DrugOOD",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/tencent-ailab/DrugOOD",
+      "evidence_quote": "DrugOOD molecular benchmark uses ZINC compound library for OOD generalization tests"
+    },
+    {
+      "source": "PDB (Protein Data Bank)",
+      "target": "PDBbind",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "http://www.pdbbind.org.cn/",
+      "evidence_quote": "PDBbind extracts protein-ligand binding affinity data for PDB structures (PDB is the upstream source)"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ROBOKOP",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://robokop.renci.org/about",
+      "evidence_quote": "ROBOKOP KG integrates DrugBank as drug-target source"
+    },
+    {
+      "source": "LINCS L1000",
+      "target": "Tahoe",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.tahoebio.com/",
+      "evidence_quote": "Tahoe-100M extends LINCS-style perturbation profiling at single-cell scale (next-generation pharmacogenomics)"
+    },
+    {
+      "source": "M3-20M",
+      "target": "MoleculeNet",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://arxiv.org/abs/2412.06847",
+      "evidence_quote": "M3-20M multimodal molecule dataset extends MoleculeNet scope with multimodal representations"
+    }
+  ]
+}
