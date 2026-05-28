@@ -31,12 +31,12 @@ STITCH,incorporates,PDB (Protein Data Bank),https://academic.oup.com/nar/article
 Open Targets Platform,incorporates,ClinVar,https://platform-docs.opentargets.org/evidence,high,Germline + somatic variant evidence
 Open Targets Platform,incorporates,UniProt,https://platform-docs.opentargets.org/evidence,high,Literature-curated variants + functional annotation
 Open Targets Platform,incorporates,Orphanet,https://platform-docs.opentargets.org/evidence,high,Rare disease-gene associations
-Open Targets Platform,incorporates,Reactome,https://platform-docs.opentargets.org/evidence,high,Affected pathway evidence
-Open Targets Platform,incorporates,Europe PMC,https://platform-docs.opentargets.org/evidence,high,Literature co-occurrence evidence
+Open Targets Platform,incorporates,Reactome,https://platform.opentargets.org/downloads,high,Affected pathway evidence | Chrome verify: Reactome evidence: Manually curated disease-target evidence based on reaction pathways
+Open Targets Platform,incorporates,Europe PMC,https://platform.opentargets.org/downloads,high,Literature co-occurrence evidence | Chrome verify: EuropePMC evidence: Disease-target evidence derived from literature mining provided by Europe PMC
 Open Targets Platform,incorporates,GWAS Catalog,https://platform-docs.opentargets.org/evidence,high,GWAS associations + Locus-to-Gene
-Open Targets Platform,incorporates,ChEMBL,https://platform-docs.opentargets.org/drug,high,Drug molecule + MoA backbone
-Open Targets Platform,incorporates,DrugBank,https://platform-docs.opentargets.org/drug,high,Drug filter criterion
-Open Targets Platform,incorporates,FAERS,https://platform-docs.opentargets.org/drug,high,Pharmacovigilance source
+Open Targets Platform,incorporates,ChEMBL,https://platform.opentargets.org/downloads,high,Drug molecule + MoA backbone | Chrome verify: Drug — ChEMBL molecules...mechanism of action...included in DrugBank database
+Open Targets Platform,incorporates,DrugBank,https://platform.opentargets.org/downloads,high,Drug filter criterion | Chrome verify: ChEMBL molecules included in the DrugBank database
+Open Targets Platform,incorporates,FAERS,https://platform.opentargets.org/downloads,high,Pharmacovigilance source | Chrome verify: Pharmacovigilance (by drug): based on the FDA's Adverse Event Reporting System (FAERS)
 Open Targets Platform,incorporates,PharmGKB/ClinPGx,https://platform-docs.opentargets.org/drug,high,Pharmacogenetics source
 TDC (Therapeutics Data Commons),incorporates,BindingDB,https://tdcommons.ai/multi_pred_tasks/dti,high,DTI benchmark
 TDC (Therapeutics Data Commons),incorporates,KIBA,https://tdcommons.ai/multi_pred_tasks/dti,high,DTI benchmark
@@ -109,20 +109,20 @@ MIMIC IV,bridges,RxNorm,https://physionet.org/content/mimiciv/3.1/,medium,"MIMIC
 MIMIC IV,incorporates,MIMIC III,https://physionet.org/content/mimiciv/3.1/,high,MIMIC IV is the next-generation continuation of MIMIC III
 askapatient,feeds_pipeline,PsyTAR,DR100-§4.2,medium,PsyTAR uses askapatient as its primary data source for SSRI/SNRI reviews
 LINCS L1000,feeds_pipeline,DRMref,DR100-§4.5,medium,L1000 perturbation signatures feed drug-resistance-mechanism characterization
-HMDB (Human Metabolome Database),bridges,DrugBank,https://www.ebi.ac.uk/unichem/sources,high,Same lab (Wishart) cross-links metabolites ↔ drugs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
-HMDB (Human Metabolome Database),bridges,ChEBI,https://www.ebi.ac.uk/unichem/sources,high,HMDB cross-refs to ChEBI via UniChem | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
+HMDB (Human Metabolome Database),bridges,DrugBank,https://www.ebi.ac.uk/unichem/sources,high,Same lab (Wishart) cross-links metabolites ↔ drugs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
+HMDB (Human Metabolome Database),bridges,ChEBI,https://www.ebi.ac.uk/unichem/sources,high,HMDB cross-refs to ChEBI via UniChem | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
 HMDB (Human Metabolome Database),bridges,KEGG Drug,DR100-§4.5,medium,HMDB cross-refs to KEGG metabolites/drugs
-HMDB (Human Metabolome Database),bridges,PubChem,https://www.ebi.ac.uk/unichem/sources,high,HMDB cross-refs to PubChem CIDs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
+HMDB (Human Metabolome Database),bridges,PubChem,https://www.ebi.ac.uk/unichem/sources,high,HMDB cross-refs to PubChem CIDs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
 KEGG Drug,bridges,PubChem,https://www.kegg.jp/kegg/drug/,medium,KEGG Drug compounds cross-referenced via PubChem CID
 KEGG Drug,bridges,ChEMBL,https://www.kegg.jp/kegg/drug/,medium,KEGG Drug ↔ ChEMBL via UniChem
-KEGG Drug,bridges,ATC/DDD,https://www.kegg.jp/kegg/drug/,high,KEGG Drug entries carry ATC codes | Chrome verify: ATC 2026 link to whocc.no/atc_ddd_index
+KEGG Drug,bridges,ATC/DDD,https://www.kegg.jp/kegg/drug/,high,KEGG Drug entries carry ATC codes | Chrome verify: ATC 2026 link to whocc.no/atc_ddd_index | Chrome verify: ATC 2026 link to whocc.no/atc_ddd_index | Chrome verify: ATC 2026 link to whocc.no/atc_ddd_index
 KEGG Drug,bridges,DrugBank,https://www.kegg.jp/kegg/drug/,medium,KEGG Drug ↔ DrugBank cross-references
 DGIdb,feeds_pipeline,OREGANO,https://www.nature.com/articles/s41597-023-02757-0,medium,DGIdb is among OREGANO's source databases for drug-gene relationships
-CCLE (Cancer Cell Line Encyclopedia),complements,GDSC/GDSC2,https://pharmacodb.ca/datasets,high,CCLE multi-omics + GDSC drug response on overlapping cell-line panel | Chrome verify: PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence)
-CCLE (Cancer Cell Line Encyclopedia),complements,PRISM DepMap,https://pharmacodb.ca/datasets,high,CCLE genomics + PRISM viability share cell-line backbone | Chrome verify: PharmacoDB lists CCLE + PRISM as integrated datasets
-CCLE (Cancer Cell Line Encyclopedia),complements,CTRP (Cancer Therapeutics Response Portal),https://pharmacodb.ca/datasets,high,CCLE + CTRP overlap on cancer cell line panel | Chrome verify: PharmacoDB lists CCLE + CTRPv2 as integrated datasets
-DrugCentral,bridges,DrugBank,https://www.ebi.ac.uk/unichem/sources,high,DrugCentral cross-references DrugBank IDs for approved drugs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
-DrugCentral,bridges,ChEMBL,https://www.ebi.ac.uk/unichem/sources,high,DrugCentral provides cross-references to ChEMBL bioactivity | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
+CCLE (Cancer Cell Line Encyclopedia),complements,GDSC/GDSC2,https://pharmacodb.ca/datasets,high,CCLE multi-omics + GDSC drug response on overlapping cell-line panel | Chrome verify: PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence) | Chrome verify: PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence) | Chrome verify: PharmacoDB lists CCLE + GDSC1 + GDSC2 as integrated datasets (third-party integration evidence)
+CCLE (Cancer Cell Line Encyclopedia),complements,PRISM DepMap,https://pharmacodb.ca/datasets,high,CCLE genomics + PRISM viability share cell-line backbone | Chrome verify: PharmacoDB lists CCLE + PRISM as integrated datasets | Chrome verify: PharmacoDB integrates CCLE/CTRPv2/GDSC1/GDSC2/PRISM/NCI60/FIMM/GRAY/UHNBreast/gCSI as parallel datasets | Chrome verify: PharmacoDB integrates CCLE/CTRPv2/GDSC1/GDSC2/PRISM/NCI60/FIMM/GRAY/UHNBreast/gCSI as parallel datasets
+CCLE (Cancer Cell Line Encyclopedia),complements,CTRP (Cancer Therapeutics Response Portal),https://pharmacodb.ca/datasets,high,CCLE + CTRP overlap on cancer cell line panel | Chrome verify: PharmacoDB lists CCLE + CTRPv2 as integrated datasets | Chrome verify: PharmacoDB datasets table includes CTRPv2 alongside CCLE | Chrome verify: PharmacoDB datasets table includes CTRPv2 alongside CCLE
+DrugCentral,bridges,DrugBank,https://www.ebi.ac.uk/unichem/sources,high,DrugCentral cross-references DrugBank IDs for approved drugs | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem includes DrugCentral (ID 34) and DrugBank (ID 2) | Chrome verify: UniChem includes DrugCentral (ID 34) and DrugBank (ID 2)
+DrugCentral,bridges,ChEMBL,https://www.ebi.ac.uk/unichem/sources,high,DrugCentral provides cross-references to ChEMBL bioactivity | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem includes DrugCentral (ID 34) and ChEMBL (ID 1) | Chrome verify: UniChem includes DrugCentral (ID 34) and ChEMBL (ID 1)
 Open TG-GATEs,feeds_pipeline,TOXRIC,https://toxric.bioinforai.tech/home,high,Open TG-GATEs toxicogenomics → TOXRIC integration (verified at toxric.bioinforai.tech)
 ToxCast,feeds_pipeline,TOXRIC,https://toxric.bioinforai.tech/home,high,ToxCast HTS assays → TOXRIC integration (1381 assays listed)
 DrugMatrix,feeds_pipeline,TOXRIC,https://toxric.bioinforai.tech/home,high,DrugMatrix toxicogenomics → TOXRIC
@@ -190,17 +190,17 @@ SuperDRUG2,bridges,DrugBank,DR100-§4.5,medium,SuperDRUG2 cross-references DrugB
 SuperDRUG2,bridges,ATC/DDD,DR100-§4.5,medium,SuperDRUG2 organizes drugs by ATC code
 DrugMAP,complements,DrugBank,DR100-§4.4,high,DrugMAP molecular atlas complements DrugBank with multi-omics integration
 Polaris,complements,TDC (Therapeutics Data Commons),DR100-§4.5,medium,Polaris (Valence Discovery) is the newer ML-benchmark hub paralleling TDC
-PharmKG,incorporates,DrugBank,https://github.com/MindRank-Biotech/PharmKG,high,PharmKG drug-related entities sourced from DrugBank (Zheng et al. 2021) | Chrome verify: DrugBank in Entities distribution table (Chemical entity)
+PharmKG,incorporates,DrugBank,https://github.com/MindRank-Biotech/PharmKG,high,PharmKG drug-related entities sourced from DrugBank (Zheng et al. 2021) | Chrome verify: DrugBank in Entities distribution table (Chemical entity) | Chrome verify: DrugBank in Entities distribution table (Chemical entity) | Chrome verify: DrugBank in Entities distribution table (Chemical entity)
 PharmKG,incorporates,STITCH,DR100-§5.2,medium,PharmKG incorporates chemical-protein from STITCH
-PharmKG,incorporates,OMIM (Online Mendelian Inheritance in Man),https://github.com/MindRank-Biotech/PharmKG,high,PharmKG disease entities from OMIM | Chrome verify: OMIM listed in Entities distribution table (Disease and Gene)
+PharmKG,incorporates,OMIM (Online Mendelian Inheritance in Man),https://github.com/MindRank-Biotech/PharmKG,high,PharmKG disease entities from OMIM | Chrome verify: OMIM listed in Entities distribution table (Disease and Gene) | Chrome verify: OMIM listed in Entities distribution table (Disease and Gene) | Chrome verify: OMIM listed in Entities distribution table (Disease and Gene)
 OpenBioLink,incorporates,DrugBank,DR100-§6.2,medium,OpenBioLink integrates DrugBank drug-protein relations
 OpenBioLink,incorporates,Hetionet,DR100-§6.2,medium,OpenBioLink shares the Hetionet integration philosophy and overlapping sources
-OpenBioLink,incorporates,Disease Ontology (DO),https://github.com/openbiolink/openbiolink,high,OpenBioLink disease nodes from DO | Chrome verify: ontology (diseases) | DO | CC 0
+OpenBioLink,incorporates,Disease Ontology (DO),https://github.com/openbiolink/openbiolink,high,OpenBioLink disease nodes from DO | Chrome verify: ontology (diseases) | DO | CC 0 | Chrome verify: ontology (diseases) | DO | CC 0 | Chrome verify: ontology (diseases) | DO | CC 0
 UniD3,incorporates,DrugBank,DR100-§5.2,medium,UniD3 multi-KG aggregator includes DrugBank
 UniD3,incorporates,ChEMBL,DR100-§5.2,medium,UniD3 multi-KG aggregator includes ChEMBL
-CKG (Clinical Knowledge Graph),incorporates,DrugBank,https://github.com/MannLabs/CKG,high,CKG (Santos et al. 2022) integrates DrugBank drug data | Chrome verify: Database | DrugBank | https://www.drugbank.ca/
-CKG (Clinical Knowledge Graph),incorporates,DisGeNET,https://github.com/MannLabs/CKG,high,CKG integrates DisGeNET disease-gene associations | Chrome verify: Database | DisGeNET | https://www.disgenet.org/
-CKG (Clinical Knowledge Graph),incorporates,Reactome,https://github.com/MannLabs/CKG,high,CKG integrates Reactome pathways | Chrome verify: Database | Reactome | https://reactome.org/
+CKG (Clinical Knowledge Graph),incorporates,DrugBank,https://github.com/MannLabs/CKG,high,CKG (Santos et al. 2022) integrates DrugBank drug data | Chrome verify: Database | DrugBank | https://www.drugbank.ca/ | Chrome verify: Database | DrugBank | https://www.drugbank.ca/ | Chrome verify: Database | DrugBank | https://www.drugbank.ca/
+CKG (Clinical Knowledge Graph),incorporates,DisGeNET,https://github.com/MannLabs/CKG,high,CKG integrates DisGeNET disease-gene associations | Chrome verify: Database | DisGeNET | https://www.disgenet.org/ | Chrome verify: Database | DisGeNET | https://www.disgenet.org/ | Chrome verify: Database | DisGeNET | https://www.disgenet.org/
+CKG (Clinical Knowledge Graph),incorporates,Reactome,https://github.com/MannLabs/CKG,high,CKG integrates Reactome pathways | Chrome verify: Database | Reactome | https://reactome.org/ | Chrome verify: Database | Reactome | https://reactome.org/ | Chrome verify: Database | Reactome | https://reactome.org/
 CKG (Clinical Knowledge Graph),incorporates,UMLS (Unified Medical Language System),DR100-§6.2,medium,CKG uses UMLS for terminology normalization
 CDCDB,complements,DrugCombDB,DR100-§4.5,medium,CDCDB continuously-updated DDI combo database complements DrugCombDB
 DCDB (Drug Combination DB),complements,DrugCombDB,DR100-§4.5,medium,DCDB historical drug-combination database complements DrugCombDB
@@ -229,8 +229,8 @@ Open Targets Platform,incorporates,CIViC,https://platform-docs.opentargets.org/,
 CIViC,bridges,OncoKB,DR100-§6.1,medium,CIViC and OncoKB cross-reference oncology variant evidence
 CPIC,bridges,RxNorm,DR100-§7.1,medium,CPIC drug-gene tables map drug names to RxCUI for clinical use
 CPIC,bridges,ATC/DDD,DR100-§7.1,medium,CPIC guideline drugs typically annotated with ATC codes
-NCATS Pharmaceutical Collection (NPC),incorporates,DailyMed,https://drugs.ncats.io/,high,"NCATS Inxight/NPC ingests DailyMed product labels (recent update April 2025) | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
-NCATS Pharmaceutical Collection (NPC),incorporates,ClinicalTrials,https://drugs.ncats.io/,high,"NCATS Inxight/NPC integrates ClinicalTrials.gov data | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+NCATS Pharmaceutical Collection (NPC),incorporates,DailyMed,https://drugs.ncats.io/,high,"NCATS Inxight/NPC ingests DailyMed product labels (recent update April 2025) | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
+NCATS Pharmaceutical Collection (NPC),incorporates,ClinicalTrials,https://drugs.ncats.io/,high,"NCATS Inxight/NPC integrates ClinicalTrials.gov data | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials | Chrome verify: fresh downloads from DailyMed, FDA Animal Drugs, FDA Excipients, and Clinical Trials"
 NCATS Pharmaceutical Collection (NPC),bridges,DrugBank,https://drugs.ncats.io/,medium,NCATS NPC cross-references DrugBank for approved drugs
 FDA Orange Book,bridges,DrugBank,DR100-§4.4,medium,FDA Orange Book identifies approved drugs cross-referenced in DrugBank
 FDA Orange Book,bridges,RxNorm,DR100-§4.4,medium,Orange Book approved drugs normalized via RxNorm RXCUI
@@ -369,7 +369,7 @@ Monarch Initiative,bridges,OMIM (Online Mendelian Inheritance in Man),Convention
 Monarch Initiative,bridges,Orphanet,Convention,medium,Monarch ingests + bridges Orphanet
 DDInter,complements,MecDDI,DR100-§7.4,medium,DDInter scores severity; MecDDI provides mechanism — pair for clinical narrative
 DDInter,complements,DrugBank,DR100-§7.4,medium,DDInter cites DrugBank interaction field; agents often cross-validate
-FAERS,complements,nSIDES,DR100-§7.2,medium,"FAERS = raw signals, nSIDES = EHR-disproportionality validation"
+FAERS,complements,nSIDES,https://github.com/tatonetti-lab/nsides-release,high,"FAERS = raw signals, nSIDES = EHR-disproportionality validation | Chrome verify: extend adverse event discovery (specifically using FDA AERS data as in Tatonetti 2012) | Chrome verify: extend adverse event discovery (specifically using FDA AERS data as in Tatonetti 2012)"
 FAERS,complements,SIDER,DR100-§7.2,medium,FAERS signals validated against SIDER label-derived baseline
 SIDER,complements,ADReCS,DR100-§4.6,medium,SIDER mappings + ADReCS hierarchical ADR classification
 FAERS,complements,VigiAccess,DR100-§4.4,medium,FAERS (US) + VigiAccess (WHO global) as regional complements
@@ -391,8 +391,8 @@ ADE Corpus,complements,CADEC,DR100-§4.2,medium,Different ADE genres (clinical t
 n2c2 2018 Track 2,complements,ADE Corpus,DR100-§4.2,medium,Different annotation scopes
 askapatient,complements,WebMD Drug Reviews,DR100-§4.2,medium,Multiple consumer review corpora
 PsyTAR,complements,askapatient,DR100-§4.2,medium,"PsyTAR uses askapatient data, focused on SSRI/SNRI"
-DrugBank,complements,ChEMBL,https://www.ebi.ac.uk/unichem/sources,high,DrugBank = clinical/text; ChEMBL = bioactivity quantitative — joint coverage | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
-DrugBank,complements,DrugCentral,https://www.ebi.ac.uk/unichem/sources,high,Overlapping clinical drug DBs with different curation policies | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence)
+DrugBank,complements,ChEMBL,https://www.ebi.ac.uk/unichem/sources,high,"DrugBank = clinical/text; ChEMBL = bioactivity quantitative — joint coverage | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem Source ID 1=ChEMBL, ID 2=DrugBank — chemical structure cross-reference | Chrome verify: UniChem Source ID 1=ChEMBL, ID 2=DrugBank — chemical structure cross-reference"
+DrugBank,complements,DrugCentral,https://www.ebi.ac.uk/unichem/sources,high,"Overlapping clinical drug DBs with different curation policies | Chrome verify: UniChem (EBI) cross-references all these as chemistry source databases (third-party integration evidence) | Chrome verify: UniChem Source ID 2=DrugBank, ID 34=DrugCentral | Chrome verify: UniChem Source ID 2=DrugBank, ID 34=DrugCentral"
 ChEMBL,complements,BindingDB,DR100-§4.5,medium,ChEMBL + BindingDB are largest curated bioactivity DBs
 DRUGMECHDB,complements,DRKG,DR100-§7.3,medium,DrugMechDB = pre-defined paths; DRKG = multi-hop KG search
 DRUGMECHDB,complements,OREGANO,DR100-§7.3,medium,Mechanism narrative + KG reasoning

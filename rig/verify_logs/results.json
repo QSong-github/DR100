@@ -167,6 +167,104 @@
       "edge_type": "complements",
       "evidence_url": "https://pharmacodb.ca/datasets",
       "evidence_quote": "PharmacoDB lists GDSC + CTRPv2 as integrated"
+    },
+    {
+      "source": "FAERS",
+      "target": "nSIDES",
+      "edge_type": "complements",
+      "evidence_url": "https://github.com/tatonetti-lab/nsides-release",
+      "evidence_quote": "extend adverse event discovery (specifically using FDA AERS data as in Tatonetti 2012)"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "PRISM DepMap",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB integrates CCLE/CTRPv2/GDSC1/GDSC2/PRISM/NCI60/FIMM/GRAY/UHNBreast/gCSI as parallel datasets"
+    },
+    {
+      "source": "CCLE (Cancer Cell Line Encyclopedia)",
+      "target": "CTRP (Cancer Therapeutics Response Portal)",
+      "edge_type": "complements",
+      "evidence_url": "https://pharmacodb.ca/datasets",
+      "evidence_quote": "PharmacoDB datasets table includes CTRPv2 alongside CCLE"
+    },
+    {
+      "source": "DrugBank",
+      "target": "ChEMBL",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 1=ChEMBL, ID 2=DrugBank \u2014 chemical structure cross-reference"
+    },
+    {
+      "source": "DrugBank",
+      "target": "DrugCentral",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 2=DrugBank, ID 34=DrugCentral"
+    },
+    {
+      "source": "DrugBank",
+      "target": "BindingDB",
+      "edge_type": "complements",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem Source ID 2=DrugBank, ID 31=BindingDB"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "DrugBank",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem includes DrugCentral (ID 34) and DrugBank (ID 2)"
+    },
+    {
+      "source": "DrugCentral",
+      "target": "ChEMBL",
+      "edge_type": "bridges",
+      "evidence_url": "https://www.ebi.ac.uk/unichem/sources",
+      "evidence_quote": "UniChem includes DrugCentral (ID 34) and ChEMBL (ID 1)"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "ChEMBL",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Drug \u2014 ChEMBL molecules...mechanism of action...included in DrugBank database"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "ChEMBL molecules included in the DrugBank database"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Reactome evidence: Manually curated disease-target evidence based on reaction pathways"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "FAERS",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Pharmacovigilance (by drug): based on the FDA's Adverse Event Reporting System (FAERS)"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Human Phenotype Ontology subset of information included in the Platform"
+    },
+    {
+      "source": "Open Targets Platform",
+      "target": "Europe PMC",
+      "edge_type": "incorporates",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "EuropePMC evidence: Disease-target evidence derived from literature mining provided by Europe PMC"
     }
   ]
 }
