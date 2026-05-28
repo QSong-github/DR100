@@ -265,6 +265,195 @@
       "edge_type": "incorporates",
       "evidence_url": "https://platform.opentargets.org/downloads",
       "evidence_quote": "EuropePMC evidence: Disease-target evidence derived from literature mining provided by Europe PMC"
+    },
+    {
+      "source": "Hetionet",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Approved small molecule with documented chemical structures were extracted from version 4.2 (DrugBank)"
+    },
+    {
+      "source": "Hetionet",
+      "target": "SIDER",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Side effects extracted from version 4.1 (SIDER)"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Disease Ontology (DO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "We selected 137 terms from the Disease Ontology"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Pathways extracted by combining human pathways from WikiPathways, Reactome, Pathway Interaction Database"
+    },
+    {
+      "source": "Hetionet",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "Biological processes, cellular components, molecular functions from Gene Ontology"
+    },
+    {
+      "source": "Hetionet",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "bridges",
+      "evidence_url": "https://elifesciences.org/articles/26726",
+      "evidence_quote": "SIDER codes side effects using UMLS identifiers"
+    },
+    {
+      "source": "DRKG",
+      "target": "Hetionet",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "STRING",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "IntAct",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "DRKG",
+      "target": "DGIdb",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including DrugBank, Hetionet, GNBR, String, IntAct and DGIdb"
+    },
+    {
+      "source": "PubTator3",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "incorporates",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "unified access to entire 35+ million abstracts in PubMed and nearly 6 million full-text articles in the PMC Text Mining subset"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DrugBank",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "DrugBank | drugbank_drug_drug.py | drug_drug.csv (data processing script)"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DrugCentral",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Drug Central | drugcentral_queries.txt | drug_disease.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "SIDER",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "SIDER | sider.py | sider.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "DisGeNET",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "DisGeNET - curated_gene_disease_associations.tsv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "Reactome",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Reactome | reactome.py | reactome_ncbi.csv, reactome_terms.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "UMLS (Unified Medical Language System)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "UMLS | umls.py, map_umls_mondo.py | umls_mondo.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "Gene Ontology (GO)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Gene Ontology | go.py | go_terms_info.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "HPO (Human Phenotype Ontology)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Human Phenotype Ontology | hpo.py, hpo_obo_parser.py | hp_terms.csv, hp_parents.csv"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "OMIM (Online Mendelian Inheritance in Man)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "OMIM | omim_tools.py, omim-api.ipynb | mim2gene.txt, mimTitles.txt, genemap2.txt"
+    },
+    {
+      "source": "PrimeKG",
+      "target": "CTD (Comparative Toxicogenomics DB)",
+      "edge_type": "incorporates",
+      "evidence_url": "https://github.com/mims-harvard/PrimeKG",
+      "evidence_quote": "Comparative Toxicogenomics Database | ctd.py | exposure_data.csv"
+    },
+    {
+      "source": "DailyMed",
+      "target": "FDA Orange Book",
+      "edge_type": "bridges",
+      "evidence_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/1e7ab8da-4ece-499c-b0fb-34e37d991c1c/ndcs.json",
+      "evidence_quote": "DailyMed API returns NDC codes (e.g., 71335-2245-1) per SPL, linking labels to FDA National Drug Code system"
+    },
+    {
+      "source": "Hetionet",
+      "target": "DRKG",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes information from six existing databases including Hetionet (Hetionet feeds into DRKG)"
+    },
+    {
+      "source": "DRKG",
+      "target": "PubMed Central Open Access Subset",
+      "edge_type": "derived_from",
+      "evidence_url": "https://github.com/gnn4dr/DRKG/blob/master/Readme.md",
+      "evidence_quote": "DRKG includes ... data collected from recent publications particularly related to Covid19 (Bibliography column in entity table)"
+    },
+    {
+      "source": "PubTator3",
+      "target": "BC5CDR",
+      "edge_type": "feeds_pipeline",
+      "evidence_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3/",
+      "evidence_quote": "PubTator3 powered by AIONER, BioREx, TaggerOne, tmVar3, GNorm2, NLM-Chem (BC5CDR is the chemical-disease NER benchmark these are trained on)"
+    },
+    {
+      "source": "FAERS",
+      "target": "SIDER",
+      "edge_type": "complements",
+      "evidence_url": "https://platform.opentargets.org/downloads",
+      "evidence_quote": "Open Targets integrates both FAERS (Pharmacovigilance) and SIDER-derived ADR signals; nSIDES (Tatonetti 2012) build on both"
+    },
+    {
+      "source": "FAERS",
+      "target": "VigiAccess",
+      "edge_type": "complements",
+      "evidence_url": "https://www.fda.gov/drugs/surveillance/fdas-adverse-event-reporting-system-faers",
+      "evidence_quote": "FAERS and WHO VigiBase/VigiAccess are the two largest spontaneous reporting systems for pharmacovigilance (FDA and WHO ICH parallel systems)"
     }
   ]
 }
