@@ -435,3 +435,7 @@ RxNorm,feeds_pipeline,DrugBank,https://en.wikipedia.org/wiki/RxNorm,high,Patient
 RxNorm,feeds_pipeline,ATC/DDD,https://en.wikipedia.org/wiki/RxNorm,high,Patient drug name → RxNorm normalize → ATC class lookup | Chrome verify: RxNorm provides ATC mapping for US drugs (DailyMed cross-codes RxNorm + ATC for each drug),1
 LINCS L1000,feeds_pipeline,Tahoe,https://www.tahoebio.com/,high,L1000 signatures → Tahoe multimodal extension | Chrome verify: Tahoe-100M extends LINCS-style perturbation profiling at single-cell scale (next-generation pharmacogenomics),2
 M3-20M,feeds_pipeline,MoleculeNet,https://arxiv.org/abs/2412.06847,high,M3-20M multimodal → ML benchmarking | Chrome verify: M3-20M multimodal molecule dataset extends MoleculeNet scope with multimodal representations,2
+Cell Painting Gallery,incorporates,JUMP-Cell Painting,https://github.com/broadinstitute/cellpainting-gallery,high,"Cell Painting Gallery (AWS Open Data, CC0) hosts the JUMP cpg0016 Cell Painting dataset",1
+JUMP-Cell Painting,complements,LINCS L1000,DR100-§4.5,high,"Morphological (Cell Painting) and transcriptomic (L1000) perturbation profiling are orthogonal, cross-validating modalities for MoA and repurposing",2
+RxRx3,complements,JUMP-Cell Painting,DR100-§4.5,high,Two large image-based phenomics maps; parallel morphological-profiling resources,2
+JUMP-Cell Painting,complements,Drug Repurposing Hub,DR100-§4.5,high,JUMP profiles compounds overlapping the Drug Repurposing Hub; pairs morphology with repurposing annotations,2

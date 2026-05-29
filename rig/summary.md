@@ -1,18 +1,18 @@
 # DR100 Resource Interconnection Graph (RIG) — v1.0 Summary
 
-**Nodes**: 174 resources (102 drug-centric + 29 drug-related + 43 auxiliary)
-**Edges**: 436 typed edges (after validation)
+**Nodes**: 177 resources (105 drug-centric + 29 drug-related + 43 auxiliary)
+**Edges**: 440 typed edges (after validation)
 
 ## Edge type distribution
 
 | Edge type | Count | %  |
 |---|---|---|
-| incorporates | 162 | 37.2% |
-| derived_from | 43 | 9.9% |
+| incorporates | 163 | 37.0% |
+| derived_from | 43 | 9.8% |
 | mirrors | 8 | 1.8% |
-| bridges | 83 | 19.0% |
-| complements | 97 | 22.2% |
-| feeds_pipeline | 43 | 9.9% |
+| bridges | 83 | 18.9% |
+| complements | 100 | 22.7% |
+| feeds_pipeline | 43 | 9.8% |
 
 ## Top 20 hub resources (by total degree)
 
@@ -31,11 +31,11 @@
 | 11 | PrimeKG | 2 | 11 | 13 | drug_related |
 | 12 | Open Targets Platform | 0 | 12 | 12 | drug_centric |
 | 13 | ATC/DDD | 9 | 3 | 12 | drug_centric |
-| 14 | KEGG Drug | 7 | 4 | 11 | drug_centric |
-| 15 | SIDER | 8 | 3 | 11 | drug_centric |
-| 16 | DRKG | 5 | 5 | 10 | drug_centric |
-| 17 | TDC (Therapeutics Data Commons) | 4 | 6 | 10 | drug_centric |
-| 18 | LINCS L1000 | 5 | 5 | 10 | drug_centric |
+| 14 | LINCS L1000 | 6 | 5 | 11 | drug_centric |
+| 15 | KEGG Drug | 7 | 4 | 11 | drug_centric |
+| 16 | SIDER | 8 | 3 | 11 | drug_centric |
+| 17 | DRKG | 5 | 5 | 10 | drug_centric |
+| 18 | TDC (Therapeutics Data Commons) | 4 | 6 | 10 | drug_centric |
 | 19 | DGIdb | 1 | 9 | 10 | drug_centric |
 | 20 | STITCH | 2 | 7 | 9 | drug_centric |
 
@@ -78,7 +78,7 @@
 
 | Source cat → Target cat | Edges |
 |---|---|
-| drug_centric → drug_centric | 214 |
+| drug_centric → drug_centric | 218 |
 | auxiliary → auxiliary | 45 |
 | drug_related → auxiliary | 36 |
 | drug_related → drug_centric | 35 |
@@ -368,4 +368,8 @@
 ### Drug Repurposing Hub (1 integrations)
 
 - NCATS Pharmaceutical Collection (NPC)
+
+### Cell Painting Gallery (1 integrations)
+
+- JUMP-Cell Painting
 

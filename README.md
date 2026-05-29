@@ -7,7 +7,7 @@ DR100 is the companion machine-readable registry for the survey
 of drug-centric knowledge resources for LLM-driven agent systems** (under review,
 *Briefings in Bioinformatics*).
 
-The registry annotates **174 resources** (100 drug-centric + 30 drug-related + 44
+The registry annotates **177 resources** (105 drug-centric + 29 drug-related + 43
 auxiliary) along 10 fields that an LLM-agent engineer actually needs at build time:
 integration pathway, identifier vocabulary, access class, update cadence, and more.
 
@@ -21,9 +21,9 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | `registry/drug_centric.{json,tsv}` | 100 drug-centric resources, fully annotated |
 | `registry/drug_related.{json,tsv}` | 30 indirect drug-related resources |
 | `registry/auxiliary.{json,tsv}` | 44 general biomedical resources used by drug agents |
-| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 436 typed edges across 6 relation types** |
-| 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.606) |
-| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 325 Tier 1 web-verified evidence URLs |
+| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 440 typed edges across 6 relation types** |
+| 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.608) |
+| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 326 Tier 1 web-verified evidence URLs |
 | 🌟 `rig/networkx.gpickle` | NetworkX MultiDiGraph for downstream analysis |
 | 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
 | 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
@@ -37,11 +37,11 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 
 ## 🌐 Live interactive RIG visualization
 
-**[https://qsong-github.github.io/DR100/](https://qsong-github.github.io/DR100/)** — pan/zoom the 174-resource graph, hover for resource details, click legend entries to toggle edge types.
+**[https://qsong-github.github.io/DR100/](https://qsong-github.github.io/DR100/)** — pan/zoom the 177-resource graph, hover for resource details, click legend entries to toggle edge types.
 
 ## 🔗 Resource Interconnection Graph (RIG) at a glance
 
-The 174 DR100 resources form a **single fully-connected typed multigraph** with **436 inter-resource edges**:
+The 177 DR100 resources form a **single fully-connected typed multigraph** with **440 inter-resource edges**:
 
 | Edge type | Count | What it means |
 |---|---|---|
@@ -54,9 +54,9 @@ The 174 DR100 resources form a **single fully-connected typed multigraph** with 
 
 **Top hubs by betweenness centrality:** UMLS (0.28), PubMed Central (0.21), DailyMed (0.19), DrugBank (0.18), LINCS L1000 (0.16), ChEMBL (0.14)
 **Top hubs by eigenvector centrality:** DrugBank (0.52), Hetionet (0.24), ChEMBL (0.21), PrimeKG (0.20), DrugCentral (0.20)
-**Modularity Q = 0.606** across **11 communities** (chemoinformatics, KG aggregators, FDA labels/PV, biomedical NLP, evidence integration, identifier bridges, drug-target evidence, drug combination, disease ontology, cancer PGx, EHR-NLP)
+**Modularity Q = 0.608** across **11 communities** (chemoinformatics, KG aggregators, FDA labels/PV, biomedical NLP, evidence integration, identifier bridges, drug-target evidence, drug combination, disease ontology, cancer PGx, EHR-NLP)
 
-325 of 436 edges carry directly-fetched (Tier 1) provenance URLs to authoritative integration documentation; the remaining 111 (Tier 2) are panel-curated over primary source publications.
+326 of 440 edges carry directly-fetched (Tier 1) provenance URLs to authoritative integration documentation; the remaining 114 (Tier 2) are panel-curated over primary source publications.
 
 > The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
 > 68 of 100 drug-centric resources) with realistic access patterns:
@@ -142,7 +142,7 @@ Full taxonomy and decision tree: see §3.3 and Figure 6 of the paper.
 
 | Version | Scope |
 |---|---|
-| **v1.0 (this release)** | 100 drug-centric + 30 drug-related + 44 auxiliary; pathway/identifier/access/update authoritative for drug-centric |
+| **v1.0 (this release)** | 105 drug-centric + 29 drug-related + 43 auxiliary; pathway/identifier/access/update authoritative for drug-centric |
 | v1.1 (planned) | Resolve `needs_review` records; add `license` per resource; add `task_tags` |
 | v1.x (quarterly) | Community-contributed additions via pull requests |
 | v2.0 | Expanded catalog beyond the inaugural 100; DR-Bench integration |

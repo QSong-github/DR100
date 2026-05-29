@@ -435,3 +435,7 @@ RxNorm	feeds_pipeline	DrugBank	DR100-§7.1	medium	Patient drug name → RxNorm n
 RxNorm	feeds_pipeline	ATC/DDD	DR100-§7.1	medium	Patient drug name → RxNorm normalize → ATC class lookup
 LINCS L1000	feeds_pipeline	Tahoe	DR100-§4.5	medium	L1000 signatures → Tahoe multimodal extension
 M3-20M	feeds_pipeline	MoleculeNet	DR100-§4.5	medium	M3-20M multimodal → ML benchmarking
+Cell Painting Gallery	incorporates	JUMP-Cell Painting	https://github.com/broadinstitute/cellpainting-gallery	high	Cell Painting Gallery (AWS Open Data, CC0) hosts the JUMP cpg0016 Cell Painting dataset
+JUMP-Cell Painting	complements	LINCS L1000	DR100-§4.5	high	Morphological (Cell Painting) and transcriptomic (L1000) perturbation profiling are orthogonal, cross-validating modalities for MoA and repurposing
+RxRx3	complements	JUMP-Cell Painting	DR100-§4.5	high	Two large image-based phenomics maps; parallel morphological-profiling resources
+JUMP-Cell Painting	complements	Drug Repurposing Hub	DR100-§4.5	high	JUMP profiles compounds overlapping the Drug Repurposing Hub; pairs morphology with repurposing annotations
