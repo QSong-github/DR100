@@ -1318,6 +1318,23 @@ for e in EDGES:
     if src_ok and tgt_ok and src != tgt:
         valid_edges.append(e)
 
+# Deduplicate exact (source, edge_type, target) triples — keep first occurrence.
+# (Several edges were appended in two sections; a typed multigraph still allows
+#  multiple DIFFERENT edge types per pair, but not identical duplicates.)
+_seen_keys = set()
+_deduped = []
+_n_dup = 0
+for e in valid_edges:
+    key = (e[0], e[1], e[2])
+    if key in _seen_keys:
+        _n_dup += 1
+        continue
+    _seen_keys.add(key)
+    _deduped.append(e)
+if _n_dup:
+    print(f"Deduplicated {_n_dup} exact duplicate edge(s)")
+valid_edges = _deduped
+
 if unknown:
     print(f"\n=== UNKNOWN NAMES ({len(unknown)} cases) ===")
     seen = set()

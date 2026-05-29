@@ -17,9 +17,9 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [1.4.0] — 2026-05-24
 
 ### Added
-- 🌟 **Resource Interconnection Graph (RIG) v1.4** with 441 typed edges across 6 relation types
-  - 230 edges Chrome-verified against authoritative source documentation (URLs included)
-  - 211 edges documented in primary publications (medium-confidence)
+- 🌟 **Resource Interconnection Graph (RIG) v1.4** with 436 typed edges across 6 relation types
+  - 325 edges Tier 1 web-verified against authoritative source documentation (URLs included)
+  - 111 edges Tier 2 panel-curated over primary publications
   - Single fully-connected graph spanning all 174 resources
   - Modularity Q = 0.606 across 11 communities (greedy modularity decomposition)
 - `rig/edges.{csv,tsv}` — machine-readable typed edge list with source URLs

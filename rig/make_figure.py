@@ -164,7 +164,7 @@ ax.legend(handles=edge_legend, loc="lower left", fontsize=11,
 # Title + subtitle
 ax.set_title(
     "Figure 8.  DR100 Resource Interconnection Graph (RIG v1.4)\n"
-    "174 resources · 441 typed edges · single fully-connected component · Q = 0.603 · 11 communities",
+    "174 resources · 436 typed edges · single fully-connected component · Q = 0.606 · 11 communities",
     fontsize=15, fontweight="bold", pad=18,
 )
 
@@ -260,7 +260,7 @@ fig_int = go.Figure(data=edge_traces + [node_trace])
 fig_int.update_layout(
     title=dict(
         text="<b>DR100 Resource Interconnection Graph (RIG v1.4)</b><br>"
-             "<span style='font-size:14px'>174 resources · 441 typed edges · single fully-connected component · Q = 0.603 · 11 communities</span><br>"
+             "<span style='font-size:14px'>174 resources · 436 typed edges · single fully-connected component · Q = 0.606 · 11 communities</span><br>"
              "<span style='font-size:11px;color:#555'>Hover for resource details · click legend to toggle edge types</span>",
         x=0.02, xanchor="left",
     ),
@@ -301,7 +301,7 @@ gh_pages.write_text(f"""<!DOCTYPE html>
   <h1>DR100 — Resource Interconnection Graph</h1>
   <div class="sub">Companion to <em>Wang Q. et al.</em> · DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems</div>
   <div class="stats">
-    174 resources · 441 typed edges · single fully-connected component · modularity Q = 0.603 · 11 communities ·
+    174 resources · 436 typed edges · single fully-connected component · modularity Q = 0.606 · 11 communities ·
     <a href="https://github.com/QSong-github/DR100">GitHub repo</a>
   </div>
 </header>

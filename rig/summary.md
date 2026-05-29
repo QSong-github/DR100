@@ -1,18 +1,18 @@
 # DR100 Resource Interconnection Graph (RIG) — v1.0 Summary
 
-**Nodes**: 174 resources (100 drug-centric + 30 drug-related + 44 auxiliary)
-**Edges**: 441 typed edges (after validation)
+**Nodes**: 174 resources (102 drug-centric + 29 drug-related + 43 auxiliary)
+**Edges**: 436 typed edges (after validation)
 
 ## Edge type distribution
 
 | Edge type | Count | %  |
 |---|---|---|
-| incorporates | 164 | 37.2% |
-| derived_from | 43 | 9.8% |
+| incorporates | 162 | 37.2% |
+| derived_from | 43 | 9.9% |
 | mirrors | 8 | 1.8% |
-| bridges | 83 | 18.8% |
-| complements | 97 | 22.0% |
-| feeds_pipeline | 46 | 10.4% |
+| bridges | 83 | 19.0% |
+| complements | 97 | 22.2% |
+| feeds_pipeline | 43 | 9.9% |
 
 ## Top 20 hub resources (by total degree)
 
@@ -31,13 +31,13 @@
 | 11 | PrimeKG | 2 | 11 | 13 | drug_related |
 | 12 | Open Targets Platform | 0 | 12 | 12 | drug_centric |
 | 13 | ATC/DDD | 9 | 3 | 12 | drug_centric |
-| 14 | TOXRIC | 7 | 4 | 11 | drug_centric |
-| 15 | LINCS L1000 | 5 | 6 | 11 | drug_centric |
-| 16 | KEGG Drug | 7 | 4 | 11 | drug_centric |
-| 17 | SIDER | 8 | 3 | 11 | drug_centric |
-| 18 | DRKG | 5 | 5 | 10 | drug_centric |
-| 19 | TDC (Therapeutics Data Commons) | 4 | 6 | 10 | drug_centric |
-| 20 | DGIdb | 1 | 9 | 10 | drug_centric |
+| 14 | KEGG Drug | 7 | 4 | 11 | drug_centric |
+| 15 | SIDER | 8 | 3 | 11 | drug_centric |
+| 16 | DRKG | 5 | 5 | 10 | drug_centric |
+| 17 | TDC (Therapeutics Data Commons) | 4 | 6 | 10 | drug_centric |
+| 18 | LINCS L1000 | 5 | 5 | 10 | drug_centric |
+| 19 | DGIdb | 1 | 9 | 10 | drug_centric |
+| 20 | STITCH | 2 | 7 | 9 | drug_centric |
 
 ## Top 10 incorporators (out-degree of `incorporates` edges)
 
@@ -48,9 +48,9 @@
 | 3 | PrimeKG | 11 |
 | 4 | Hetionet | 9 |
 | 5 | OREGANO | 9 |
-| 6 | BLUE Benchmark | 8 |
-| 7 | STITCH | 7 |
-| 8 | BioKG | 7 |
+| 6 | STITCH | 7 |
+| 7 | BioKG | 7 |
+| 8 | BLUE Benchmark | 7 |
 | 9 | TDC (Therapeutics Data Commons) | 6 |
 | 10 | BLURB Benchmark | 6 |
 
@@ -65,7 +65,7 @@
 | 5 | DrugCentral | 5 | drug_centric |
 | 6 | ChEMBL | 5 | drug_centric |
 | 7 | Disease Ontology (DO) | 4 | auxiliary |
-| 8 | MeSH Drug Pharmacological Actions | 4 | auxiliary |
+| 8 | MeSH Drug Pharmacological Actions | 4 | drug_centric |
 | 9 | Gene Ontology (GO) | 4 | auxiliary |
 | 10 | CTD (Comparative Toxicogenomics DB) | 4 | drug_related |
 | 11 | KEGG Drug | 4 | drug_centric |
@@ -78,15 +78,15 @@
 
 | Source cat → Target cat | Edges |
 |---|---|
-| drug_centric → drug_centric | 209 |
+| drug_centric → drug_centric | 214 |
 | auxiliary → auxiliary | 45 |
-| drug_related → auxiliary | 41 |
-| drug_centric → auxiliary | 35 |
-| drug_centric → drug_related | 33 |
-| drug_related → drug_centric | 31 |
-| drug_related → drug_related | 23 |
-| auxiliary → drug_related | 13 |
-| auxiliary → drug_centric | 11 |
+| drug_related → auxiliary | 36 |
+| drug_related → drug_centric | 35 |
+| drug_centric → auxiliary | 33 |
+| drug_centric → drug_related | 29 |
+| drug_related → drug_related | 22 |
+| auxiliary → drug_related | 12 |
+| auxiliary → drug_centric | 10 |
 
 ## Major aggregator details
 
@@ -160,17 +160,6 @@
 - UMLS (Unified Medical Language System)
 - Orphanet
 
-### BLUE Benchmark (8 integrations)
-
-- MedSTS
-- BIOSSES
-- BC5CDR
-- DDI Corpus 2013
-- ChemProt
-- i2b2/VA 2010 Concepts/Assertions/Relations
-- MedNLI
-- BC5CDR
-
 ### STITCH (7 integrations)
 
 - DrugBank
@@ -190,6 +179,16 @@
 - Reactome
 - CTD (Comparative Toxicogenomics DB)
 - MeSH Drug Pharmacological Actions
+
+### BLUE Benchmark (7 integrations)
+
+- MedSTS
+- BIOSSES
+- BC5CDR
+- DDI Corpus 2013
+- ChemProt
+- i2b2/VA 2010 Concepts/Assertions/Relations
+- MedNLI
 
 ### TDC (Therapeutics Data Commons) (6 integrations)
 
@@ -306,11 +305,6 @@
 - PubMed Central Open Access Subset
 - ClinicalTrials
 
-### LINCS L1000 (2 integrations)
-
-- Drug Repurposing Hub
-- Drug Repurposing Hub
-
 ### SemMedDB (2 integrations)
 
 - PubMed Central Open Access Subset
@@ -334,6 +328,10 @@
 ### CCLE (Cancer Cell Line Encyclopedia) (1 integrations)
 
 - NCI-60
+
+### LINCS L1000 (1 integrations)
+
+- Drug Repurposing Hub
 
 ### MIMIC IV (1 integrations)
 

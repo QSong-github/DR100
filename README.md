@@ -21,9 +21,9 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | `registry/drug_centric.{json,tsv}` | 100 drug-centric resources, fully annotated |
 | `registry/drug_related.{json,tsv}` | 30 indirect drug-related resources |
 | `registry/auxiliary.{json,tsv}` | 44 general biomedical resources used by drug agents |
-| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 441 typed edges across 6 relation types** |
+| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 436 typed edges across 6 relation types** |
 | 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.606) |
-| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 230 Chrome-verified evidence URLs |
+| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 325 Tier 1 web-verified evidence URLs |
 | 🌟 `rig/networkx.gpickle` | NetworkX MultiDiGraph for downstream analysis |
 | 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
 | 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
@@ -41,7 +41,7 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 
 ## 🔗 Resource Interconnection Graph (RIG) at a glance
 
-The 174 DR100 resources form a **single fully-connected typed multigraph** with **441 inter-resource edges**:
+The 174 DR100 resources form a **single fully-connected typed multigraph** with **436 inter-resource edges**:
 
 | Edge type | Count | What it means |
 |---|---|---|
@@ -56,7 +56,7 @@ The 174 DR100 resources form a **single fully-connected typed multigraph** with 
 **Top hubs by eigenvector centrality:** DrugBank (0.52), Hetionet (0.24), ChEMBL (0.21), PrimeKG (0.20), DrugCentral (0.20)
 **Modularity Q = 0.606** across **11 communities** (chemoinformatics, KG aggregators, FDA labels/PV, biomedical NLP, evidence integration, identifier bridges, drug-target evidence, drug combination, disease ontology, cancer PGx, EHR-NLP)
 
-230 of 441 edges carry Chrome-verified provenance URLs to authoritative integration documentation; the remaining 211 are documented in primary source publications.
+325 of 436 edges carry directly-fetched (Tier 1) provenance URLs to authoritative integration documentation; the remaining 111 (Tier 2) are panel-curated over primary source publications.
 
 > The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
 > 68 of 100 drug-centric resources) with realistic access patterns:

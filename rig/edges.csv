@@ -242,7 +242,6 @@ CADEC,derived_from,askapatient,DR100-§4.2,high,CADEC corpus annotates SSRI/SNRI
 CADEC,complements,PsyTAR,DR100-§4.2,high,CADEC and PsyTAR are sister annotated ADR corpora from patient forums
 PharmacoDB,complements,TCGA (The Cancer Genome Atlas),DR100-§4.5,medium,PharmacoDB cell-line pharmacogenomics complements TCGA patient tumor data
 GDSC/GDSC2,complements,TCGA (The Cancer Genome Atlas),DR100-§4.5,medium,GDSC IC50 + TCGA molecular profile commonly co-analyzed
-BLUE Benchmark,incorporates,BC5CDR,https://github.com/ncbi-nlp/BLUE_Benchmark,high,Already encoded; reaffirming
 Drugs.com,bridges,RxNorm,DR100-§4.2,medium,Drugs.com monographs cross-reference RxNorm for drug normalization
 Drugs.com,incorporates,DDInter,DR100-§4.2,low,Drugs.com DDI checker uses curated interaction data overlapping DDInter
 LiverTox,bridges,MedDRA,DR100-§4.6,medium,LiverTox case reports coded in MedDRA hepatotoxicity terms
@@ -254,7 +253,6 @@ KIBA,derived_from,BindingDB,DR100-§4.5,medium,KIBA aggregates BindingDB kinase 
 PDBbind,bridges,BindingDB,DR100-§4.5,medium,PDBbind structural affinities cross-referenced with BindingDB binding constants
 TRANSCRIPT DRUG REPURPOSING DATASET,complements,Drug Repurposing Hub,DR100-§4.7,medium,Transcriptomic repurposing dataset complements drug-library-based Repurposing Hub
 DrugMatrix,complements,Open TG-GATEs,DR100-§4.5,high,DrugMatrix (rat toxicogenomics) + Open TG-GATEs (rat+human) — twin toxicogenomics references
-LINCS L1000,incorporates,Drug Repurposing Hub,DR100-§4.5,medium,LINCS profiles many Drug Repurposing Hub compounds (already documented Broad collaboration)
 SYNERGxDB,complements,DrugCombDB,DR100-§4.5,medium,Both are integrative drug-combination data portals with different cell-line focus
 SynergyFinder,feeds_pipeline,DrugComb,DR100-§4.5,high,SynergyFinder is the analysis frontend; computed synergy scores deposited in DrugComb
 DTC (Drug Target Commons) 2.0,complements,BindingDB,DR100-§4.4,medium,DTC curated bioactivity + BindingDB experimental affinity — sibling bioactivity sources
@@ -418,9 +416,6 @@ ZINC,feeds_pipeline,MoleculeNet,DR100-§4.5,medium,ZINC compounds used as screen
 ZINC,feeds_pipeline,DrugOOD,DR100-§4.5,medium,ZINC subsets used in DrugOOD distribution-shift benchmarks
 PDB (Protein Data Bank),feeds_pipeline,PDBbind,DR100-§6.1,medium,PDB structures → PDBbind affinity benchmark
 PDBbind,feeds_pipeline,BindingDB,DR100-§4.5,medium,PDBbind structural affinities cross-referenced in BindingDB
-ToxCast,feeds_pipeline,TOXRIC,DR100-§4.5,medium,ToxCast HTS assays compiled in TOXRIC integrated benchmark
-Open TG-GATEs,feeds_pipeline,TOXRIC,DR100-§4.5,medium,Toxicogenomics → TOXRIC integration
-DrugMatrix,feeds_pipeline,TOXRIC,DR100-§4.5,medium,Toxicogenomics → TOXRIC integration
 PubMed Central Open Access Subset,feeds_pipeline,PubTator3,DR100-§6.1,medium,PubMed full-text → PubTator NER annotations
 PubMed Central Open Access Subset,feeds_pipeline,SemMedDB,DR100-§6.1,medium,PubMed → SemRep predications → SemMedDB
 PubMed Central Open Access Subset,feeds_pipeline,iKraph,DR100-§6.2,medium,PubMed → iKraph biomedical KG
