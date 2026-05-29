@@ -1,5 +1,5 @@
 """
-Generate Figure 8 (the RIG visualization) in two formats:
+Generate Figure 6 (the RIG visualization) in two formats:
 
   (a) High-quality static PDF + PNG via matplotlib + NetworkX
       Output: main/figures/figure_8_rig.pdf  +  .png
@@ -163,7 +163,7 @@ ax.legend(handles=edge_legend, loc="lower left", fontsize=11,
 
 # Title + subtitle
 ax.set_title(
-    "Figure 8.  DR100 Resource Interconnection Graph (RIG v1.4)\n"
+    "Figure 6.  DR100 Resource Interconnection Graph (RIG v1.4)\n"
     "174 resources · 436 typed edges · single fully-connected component · Q = 0.606 · 11 communities",
     fontsize=15, fontweight="bold", pad=18,
 )
