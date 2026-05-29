@@ -13,3 +13,9 @@ node_modules/
 build/
 dist/
 *.egg-info/
+
+# Manuscript / paper — keep LOCAL only, never track or push to GitHub
+DR100_main*.docx
+DR100_supplementary*.docx
+*_KeyPointsMoved.docx
+~$*.docx
