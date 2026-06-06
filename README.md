@@ -1,10 +1,9 @@
 # DR100
 
-**An integration-pathway atlas of 100 drug-centric knowledge resources for LLM-driven agent systems.**
+**A review of 177 drug-relevant data resources (105 drug-centric, 29 drug-related, 43 auxiliary) for large language model agents, organized by integration pathway with a Resource Interconnection Graph.**
 
 DR100 is the companion machine-readable registry for the survey
-*Wang Q., Liu T., Zhou M., Wang G., Su J., Song Q.* — **DR100: a systematic atlas
-of drug-centric knowledge resources for LLM-driven agent systems** (under review,
+*Wang Q., Liu T., Zhou M., Wang G., Su J., Song Q.* — **DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents** (under review,
 *Briefings in Bioinformatics*).
 
 The registry annotates **177 resources** (105 drug-centric + 29 drug-related + 43
@@ -18,9 +17,9 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | Path | What it is |
 |---|---|
 | `schema/dr100_schema.json` | JSON Schema 7 specification for a single resource record |
-| `registry/drug_centric.{json,tsv}` | 100 drug-centric resources, fully annotated |
-| `registry/drug_related.{json,tsv}` | 30 indirect drug-related resources |
-| `registry/auxiliary.{json,tsv}` | 44 general biomedical resources used by drug agents |
+| `registry/drug_centric.{json,tsv}` | 105 drug-centric resources, fully annotated |
+| `registry/drug_related.{json,tsv}` | 29 indirect drug-related resources |
+| `registry/auxiliary.{json,tsv}` | 43 general biomedical resources used by drug agents |
 | 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 440 typed edges across 6 relation types** |
 | 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.608) |
 | 🌟 `rig/build_rig.py` | Reproducible RIG construction with 326 Tier 1 web-verified evidence URLs |
@@ -59,7 +58,7 @@ The 177 DR100 resources form a **single fully-connected typed multigraph** with 
 326 of 440 edges carry directly-fetched (Tier 1) provenance URLs to authoritative integration documentation; the remaining 114 (Tier 2) are panel-curated over primary source publications.
 
 > The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
-> 68 of 100 drug-centric resources) with realistic access patterns:
+> 70 of 105 drug-centric resources) with realistic access patterns:
 > download URLs, API endpoints, fallback mirrors, and minimal parsing. Use them as
 > reference implementations when wiring resources into an agent's tool registry.
 
@@ -77,7 +76,7 @@ from pathlib import Path
 
 registry = json.loads(Path("registry/drug_centric.json").read_text())
 
-# All 100 drug-centric resources
+# All 105 drug-centric resources
 print(f"{len(registry)} resources")
 
 # Filter: agent needs Drug-Drug Interaction tools with Open API access,
@@ -110,10 +109,10 @@ Each resource record carries:
 
 **Categorical** &nbsp;`category` (drug-centric / related / auxiliary), `type` (DB / Dataset / KG), `subcategory` (15 / 9 / 8 controlled values)
 
-**Cognitive paradigm** &nbsp;`paradigm`: **LLM-Friendly** (68 of 100 drug-centric) vs **Tool-Mediated** (32 of 100)
+**Cognitive paradigm** &nbsp;`paradigm`: **LLM-Friendly** (70 of 105 drug-centric) vs **Tool-Mediated** (35 of 105)
 
 **Operational integration pathway** &nbsp;`pathway`: one of
-&nbsp;&nbsp; **Direct Prompt** (5) · **RAG** (20) · **Graph Query** (9) · **REST** (14) · **Computational** (35) · **Hybrid** (17)
+&nbsp;&nbsp; **Direct Prompt** (6) · **RAG** (21) · **Graph Query** (9) · **REST** (14) · **Computational** (38) · **Hybrid** (17)
 
 **Implementation axes** &nbsp;`identifier`, `access`, `update_cadence`, `license`, `task_tags` (T1-T9)
 
@@ -170,7 +169,7 @@ If you use the registry or the survey, please cite:
 
 ```bibtex
 @article{wang2026dr100,
-  title   = {DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems},
+  title   = {DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents},
   author  = {Wang, Qing and Liu, Tianshi and Zhou, Minghao and Wang, Guangyu and Su, Jing and Song, Qianqian},
   journal = {Briefings in Bioinformatics},
   year    = {2026},

@@ -39,9 +39,9 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - Initial release of the DR100 machine-readable registry.
-- 100 drug-centric resources with full annotation across 6 integration pathways.
-- 30 drug-related (indirect) resources with base annotation.
-- 44 auxiliary biomedical resources with base annotation.
+- 105 drug-centric resources with full annotation across 6 integration pathways.
+- 29 drug-related (indirect) resources with base annotation.
+- 43 auxiliary biomedical resources with base annotation.
 - JSON Schema 7 specification (`schema/dr100_schema.json`).
 - Quickstart Jupyter notebook (`notebooks/01_quickstart.ipynb`).
 - Build script (`scripts/build_registry.py`) for reproducible registry assembly.

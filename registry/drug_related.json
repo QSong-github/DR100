@@ -315,7 +315,7 @@
     "source": "SNOMED International, clinical expert review",
     "description": "SNOMED CT (Systematized Nomenclature of Medicine – Clinical Terms) is the most comprehensive clinical terminology system providing a consistent way to index, store, retrieve, and aggregate clinical data across specialties and sites of care.",
     "link": "https://www.snomed.org/",
-    "paper_link": null,
+    "paper_link": "https://pubmed.ncbi.nlm.nih.gov/17095826/",
     "data_quality": "needs_review",
     "notes": null
   },
@@ -335,7 +335,7 @@
     "source": "ICH, regulatory agencies, pharmaceutical industry",
     "description": "MedDRA (Medical Dictionary for Regulatory Activities) is a standardized medical terminology used in regulatory submissions and pharmacovigilance, providing a hierarchical coding system for adverse events and medical conditions.",
     "link": "https://www.meddra.org/",
-    "paper_link": null,
+    "paper_link": "https://doi.org/10.2165/00002018-199920020-00002",
     "data_quality": "needs_review",
     "notes": null
   },
@@ -535,7 +535,7 @@
     "source": "NCI expert curation",
     "description": "The NCI Thesaurus (NCIt) is a reference terminology and biomedical ontology for cancer and related biomedical research, providing descriptions for >170,000 concepts including drugs, diseases, biological processes, and anatomy.",
     "link": "https://ncithesaurus.nci.nih.gov/",
-    "paper_link": null,
+    "paper_link": "https://doi.org/10.1016/j.jbi.2006.02.013",
     "data_quality": "needs_review",
     "notes": null
   },
@@ -577,26 +577,6 @@
     "link": "https://www.pharmvar.org/",
     "paper_link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5836850/",
     "data_quality": "authoritative",
-    "notes": null
-  },
-  {
-    "name": "PharmGKB/ClinPGx",
-    "category": "Drug-related (indirect)",
-    "type": "DB",
-    "subcategory": "Pharmacogenomics",
-    "paradigm": "LLM-Friendly",
-    "pathway": null,
-    "identifier": null,
-    "access": null,
-    "license": null,
-    "update_cadence": null,
-    "task_tags": [],
-    "aim": "Pharmacogenomics knowledge curation",
-    "source": "Literature curation, FDA PGx labeling, CPIC",
-    "description": "PharmGKB (Pharmacogenomics Knowledgebase) curates pharmacogenomics relationships between genetic variants and drug response phenotypes, providing gene-drug summaries and pathways. ClinPGx extends this to clinical implementation.",
-    "link": "https://www.pharmgkb.org/",
-    "paper_link": "https://academic.oup.com/nar/article/30/1/163/1332715",
-    "data_quality": "needs_review",
     "notes": null
   }
 ]

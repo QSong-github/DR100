@@ -1406,7 +1406,7 @@ for s, t, tg, *_ in valid_edges:
 SUM_PATH = OUT_DIR / "rig_summary.md"
 with open(SUM_PATH, "w") as f:
     f.write("# DR100 Resource Interconnection Graph (RIG) — v1.0 Summary\n\n")
-    f.write(f"**Nodes**: {len(ALL_NAMES)} resources (100 drug-centric + 30 drug-related + 44 auxiliary)\n")
+    f.write(f"**Nodes**: {len(ALL_NAMES)} resources (105 drug-centric + 29 drug-related + 43 auxiliary)\n")
     f.write(f"**Edges**: {len(valid_edges)} typed edges (after validation)\n\n")
 
     f.write("## Edge type distribution\n\n")

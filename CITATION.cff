@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems"
+title: "DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents"
 message: "If you use DR100, please cite both the registry and the accompanying paper."
 type: software
 authors:
@@ -42,7 +42,7 @@ version: "1.0.0"
 date-released: "2026-05-23"
 preferred-citation:
   type: article
-  title: "DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems"
+  title: "DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents"
   authors:
     - family-names: Wang
       given-names: Qing

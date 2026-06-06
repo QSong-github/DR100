@@ -575,7 +575,7 @@
     "source": "Integrated from 26 databases (proteomics focus)",
     "description": "CKG (Clinical Knowledge Graph) is an open-source platform for biomarker interpretation, integrating 26 databases into a graph of diseases, drugs, proteins, and clinical data to support proteomics-based biomarker discovery.",
     "link": "https://github.com/MannLabs/CKG",
-    "paper_link": "https://www.nature.com/articles/s41587-023-01848-y",
+    "paper_link": "https://doi.org/10.1038/s41587-021-01145-6",
     "data_quality": "needs_review",
     "notes": null
   },
@@ -856,26 +856,6 @@
     "description": "The PDB (Protein Data Bank) is the global archive for 3D structural data of large biological molecules including proteins, nucleic acids, and complex assemblies, determined by X-ray crystallography, NMR, and cryo-EM.",
     "link": "https://www.rcsb.org/",
     "paper_link": "https://academic.oup.com/nar/article/53/D1/D564/7912033",
-    "data_quality": "needs_review",
-    "notes": null
-  },
-  {
-    "name": "MeSH Drug Pharmacological Actions",
-    "category": "auxiliary",
-    "type": "KG",
-    "subcategory": "Biomedical Ontology/KG",
-    "paradigm": "LLM-Friendly",
-    "pathway": "RAG",
-    "identifier": "name only",
-    "access": "Open Download",
-    "license": null,
-    "update_cadence": "Periodic Moderate",
-    "task_tags": [],
-    "aim": "Drug pharmacological action classification",
-    "source": "NLM MeSH hierarchy curation",
-    "description": "MeSH (Medical Subject Headings) Drug Pharmacological Actions provides a hierarchical classification of pharmacological actions of drugs used for indexing biomedical literature, supporting systematic drug classification.",
-    "link": "https://www.nlm.nih.gov/mesh/",
-    "paper_link": null,
     "data_quality": "needs_review",
     "notes": null
   }

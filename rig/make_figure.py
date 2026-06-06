@@ -299,7 +299,7 @@ gh_pages.write_text(f"""<!DOCTYPE html>
 <body>
 <header>
   <h1>DR100 — Resource Interconnection Graph</h1>
-  <div class="sub">Companion to <em>Wang Q. et al.</em> · DR100: a systematic atlas of drug-centric knowledge resources for LLM-driven agent systems</div>
+  <div class="sub">Companion to <em>Wang Q. et al.</em> · DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents</div>
   <div class="stats">
     177 resources · 440 typed edges · single fully-connected component · modularity Q = 0.608 · 11 communities ·
     <a href="https://github.com/QSong-github/DR100">GitHub repo</a>
