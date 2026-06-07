@@ -3,7 +3,7 @@
 **A review of 177 drug-relevant data resources (105 drug-centric, 29 drug-related, 43 auxiliary) for large language model agents, organized by integration pathway with a Resource Interconnection Graph.**
 
 DR100 is the companion machine-readable registry for the survey
-*Wang Q., Liu T., Zhou M., Wang G., Su J., Song Q.* — **DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents** (under review,
+*Wang Q., Tang D., Liang J., Wang G., Su J., Song Q.* — **DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents** (under review,
 *Briefings in Bioinformatics*).
 
 The registry annotates **177 resources** (105 drug-centric + 29 drug-related + 43
@@ -170,7 +170,7 @@ If you use the registry or the survey, please cite:
 ```bibtex
 @article{wang2026dr100,
   title   = {DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents},
-  author  = {Wang, Qing and Liu, Tianshi and Zhou, Minghao and Wang, Guangyu and Su, Jing and Song, Qianqian},
+  author  = {Wang, Qing and Tang, Dingyi and Liang, Jialu and Wang, Guangyu and Su, Jing and Song, Qianqian},
   journal = {Briefings in Bioinformatics},
   year    = {2026},
   note    = {Registry: \url{https://github.com/QSong-github/DR100}}
