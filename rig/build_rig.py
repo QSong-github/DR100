@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 from collections import Counter, defaultdict
 
-OUT_DIR = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs")
+OUT_DIR = Path.home() / "Desktop/DrugResource100/main/rig_outputs"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 NAMES_FILE = OUT_DIR / "resource_names.json"
 

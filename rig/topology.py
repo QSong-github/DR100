@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 
 import networkx as nx
 
-ROOT = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs")
+ROOT = Path.home() / "Desktop/DrugResource100/main/rig_outputs"
 GPICKLE = ROOT / "rig_networkx.gpickle"
 OUT = ROOT / "rig_topology.md"
 

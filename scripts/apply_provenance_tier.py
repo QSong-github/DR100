@@ -15,8 +15,8 @@ URL confirmation vs which are field-expert consensus.
 import csv, json, shutil
 from pathlib import Path
 
-LOG = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs/verify_logs/results.json")
-CSV = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs/rig_edges_v1.csv")
+LOG = Path.home() / "Desktop/DrugResource100/main/rig_outputs/verify_logs/results.json"
+CSV = Path.home() / "Desktop/DrugResource100/main/rig_outputs/rig_edges_v1.csv"
 BAK = Path(str(CSV) + ".pre_tier.bak")
 shutil.copy(CSV, BAK)
 print(f"Backup: {BAK.name}")

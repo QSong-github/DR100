@@ -2,9 +2,6 @@
 
 **A review of 177 drug-relevant data resources (105 drug-centric, 29 drug-related, 43 auxiliary) for large language model agents, organized by integration pathway with a Resource Interconnection Graph.**
 
-DR100 is the companion machine-readable registry for the survey
-*Wang Q., Tang D., Liang J., Wang G., Su J., Song Q.* — **DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents**.
-
 The registry annotates **177 resources** (105 drug-centric + 29 drug-related + 43
 auxiliary) along 10 fields that an LLM-agent engineer actually needs at build time:
 integration pathway, identifier vocabulary, access class, update cadence, and more.

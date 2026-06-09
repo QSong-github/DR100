@@ -9,8 +9,8 @@ Backup: main/rig_outputs/rig_edges_v1.csv.pre_verify.bak
 import csv, json, shutil
 from pathlib import Path
 
-LOG = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs/verify_logs/results.json")
-CSV = Path("/Users/efgabc/Desktop/DrugResource100/main/rig_outputs/rig_edges_v1.csv")
+LOG = Path.home() / "Desktop/DrugResource100/main/rig_outputs/verify_logs/results.json"
+CSV = Path.home() / "Desktop/DrugResource100/main/rig_outputs/rig_edges_v1.csv"
 BAK = Path(str(CSV) + ".pre_verify.bak")
 
 shutil.copy(CSV, BAK)

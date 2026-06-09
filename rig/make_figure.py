@@ -1,5 +1,5 @@
 """
-Generate Figure 6 (the RIG visualization) in two formats:
+Generate the RIG visualization in two formats:
 
   (a) High-quality static PDF + PNG via matplotlib + NetworkX
       Output: main/figures/figure_8_rig.pdf  +  .png
@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.lines import Line2D
 
-ROOT = Path("/Users/efgabc/Desktop/DrugResource100/main")
+ROOT = Path.home() / "Desktop" / "DrugResource100" / "main"
 GPK = ROOT / "rig_outputs/rig_networkx.gpickle"
 OUT_DIR = ROOT / "figures"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -163,7 +163,7 @@ ax.legend(handles=edge_legend, loc="lower left", fontsize=11,
 
 # Title + subtitle
 ax.set_title(
-    "Figure 6.  DR100 Resource Interconnection Graph (RIG v1.4)\n"
+    "DR100 Resource Interconnection Graph (RIG)\n"
     "177 resources · 440 typed edges · single fully-connected component · Q = 0.608 · 11 communities",
     fontsize=15, fontweight="bold", pad=18,
 )
@@ -252,14 +252,14 @@ node_trace = go.Scatter(
     textfont=dict(size=9, color="black", family="Helvetica"),
     hovertext=node_text,
     hoverinfo="text",
-    name="Resources (174)",
+    name="Resources (177)",
     showlegend=False,
 )
 
 fig_int = go.Figure(data=edge_traces + [node_trace])
 fig_int.update_layout(
     title=dict(
-        text="<b>DR100 Resource Interconnection Graph (RIG v1.4)</b><br>"
+        text="<b>DR100 Resource Interconnection Graph (RIG)</b><br>"
              "<span style='font-size:14px'>177 resources · 440 typed edges · single fully-connected component · Q = 0.608 · 11 communities</span><br>"
              "<span style='font-size:11px;color:#555'>Hover for resource details · click legend to toggle edge types</span>",
         x=0.02, xanchor="left",
