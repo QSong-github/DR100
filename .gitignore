@@ -14,6 +14,11 @@ build/
 dist/
 *.egg-info/
 
+# Secrets — never track (bench scripts read code/api_keys.json at runtime)
+api_keys.json
+*.key
+.env
+
 # Manuscript / paper — keep LOCAL only, never track or push to GitHub
 DR100_main*.docx
 DR100_supplementary*.docx
