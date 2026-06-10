@@ -23,7 +23,7 @@ integration pathway, identifier vocabulary, access class, update cadence, and mo
 | 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
 | 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
 | 🌟 `index.html` | GitHub Pages landing page (live at https://qsong-github.github.io/DR100/) |
-| **`examples/01–68_*.py`** | **68 runnable Python access scripts, one per LLM-Friendly resource** |
+| **`examples/01–68_*.py`** | **68 runnable Python access scripts for LLM-Friendly resources** |
 | `notebooks/01_quickstart.ipynb` | Load + filter + select resources for an agent |
 | `scripts/build_registry.py` | Rebuild JSON/TSV from source files |
 | `68DrugResources.xlsx` | Source spreadsheet for the 68 example scripts (curator working copy) |
@@ -129,7 +129,7 @@ See [`schema/dr100_schema.json`](schema/dr100_schema.json) for the formal spec.
 | **Computational** | Cheminformatics / ML pipelines, out-of-process tools | SMILES libraries, bioactivity matrices, signatures |
 | **Hybrid** | Provides multiple of the above in one resource | DrugBank, ChEMBL, PharmGKB |
 
-Full taxonomy and decision tree: see §3.3 and Figure 6 of the paper.
+Full taxonomy and decision tree: see §2.3 and Figure 3 (decision tree: Supplementary Figure SF3) of the paper.
 
 ---
 
