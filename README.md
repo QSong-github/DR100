@@ -133,19 +133,6 @@ Full taxonomy and decision tree: see §3.3 and Figure 6 of the paper.
 
 ---
 
-## Versioning & roadmap
-
-| Version | Scope |
-|---|---|
-| **v1.0 (this release)** | 105 drug-centric + 29 drug-related + 43 auxiliary; pathway/identifier/access/update authoritative for drug-centric |
-| v1.1 (planned) | Resolve `needs_review` records; add `license` per resource; add `task_tags` |
-| v1.x (quarterly) | Community-contributed additions via pull requests |
-| v2.0 | Expanded catalog beyond the inaugural 100; DR-Bench integration |
-
-Update cadence: **quarterly** releases tagged with semantic versioning.
-
----
-
 ## Contributing
 
 We welcome PRs that:
