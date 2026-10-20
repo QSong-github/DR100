@@ -1,6 +1,6 @@
 """
 OREGANO - Drug Repurposing Knowledge Graph
-Category: Drug-centric | Type: DB | Subcategory: Drug Repurposing
+Category: Drug-centric | Type: KG | Subcategory: Drug Repurposing
 Link: https://gitub.u-bordeaux.fr/erias/oregano
 Paper: https://www.nature.com/articles/s41597-023-02757-0
 

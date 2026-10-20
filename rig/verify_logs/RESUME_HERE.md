@@ -1,5 +1,8 @@
 # Verification Progress — Resume Notes for Next Session
 
+> Historical working notes from May 2026, written for the 441-edge draft of the RIG. They are kept with the
+> checking logs cited in the Review; the current graph has 440 relationships (see README).
+
 ## Current state (as of session 2026-05-28 round 2)
 
 - **228/441 edges verified (52%)** — up from 208/441 (47%) at session start

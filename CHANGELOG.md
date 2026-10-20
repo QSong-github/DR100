@@ -1,12 +1,32 @@
 # Changelog
 
-All notable changes to the DR100 registry are documented in this file.
+All notable changes to the DR100 repository are documented in this file. Entries before 1.5.0
+describe earlier drafts; their counts, names, and terms may differ from the Review.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 No changes yet.
+
+## [1.5.1] — 2026-10-20
+
+### Changed
+- Text aligned with the current Review: primary-category definitions (README, schema, issue template, contribution
+  guide), knowledge-interface names, evidence-reference counts for both relationship files, and the note that
+  23 weak log entries correspond to 22 distinct relationships.
+- RIG overview figure and interactive views: Review terminology and values (440 relationships, 392 resource pairs,
+  one connected component when direction is ignored, Tier 1 326 / Tier 2 114, Q = 0.608), distinct-neighbor degree,
+  betweenness on unweighted paths, communities numbered 1-11 as in `rig/topology.md`, neutral community names, and
+  the six coordination patterns described as in the Review.
+- `rig/make_figure.py` reads the data files in this repository, uses the stored layout
+  (`figures/rig_layout.json`, spring layout with seed 42), and writes the Plotly view without the
+  Python plotly package. `figures/figure_8_rig.{pdf,png}` and `figures/rig_interactive.html` regenerated.
+- Notebook and example headers: no references to sections of earlier drafts; corrected the category of
+  PharmGKB/ClinPGx and the type of OREGANO.
+
+### Unchanged
+- Data files are byte-identical to commit 2a144fd.
 
 ## [1.5.0] — 2026-10-19
 
@@ -26,7 +46,7 @@ No changes yet.
 
 ### Removed
 - `supplementary_data/SupplementaryData_DR100.xlsx`, the tables of an earlier draft's
-  supplementary material, which the Review no longer has.
+  supplementary material. The Review's Supplementary Data is distributed with the article.
 
 ### Unchanged
 - Data files (`registry/*.json`, `registry/*.tsv`, `rig/edges.csv`, `rig/edges.tsv`,

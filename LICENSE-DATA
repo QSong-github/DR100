@@ -1,6 +1,6 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-The DR100 registry data — all files under registry/ and schema/ — are licensed under
+The DR100 resource table and schema (all files under registry/ and schema/) are licensed under
 the Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
 You are free to:
@@ -17,9 +17,9 @@ Under the following terms:
 Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Recommended citation:
-  Wang Q., Tang D., Liang J., Wang G., Su J., Song Q. (2026).
-  DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents.
-  https://github.com/QSong-github/DR100
+  Wang Q., Gu S., Tang D., Lan Q., Jiang X., Su J., Yang B., Song Q. (2026).
+  Mapping the drug knowledge ecosystem for AI agents through resources, interfaces,
+  and interconnections. https://github.com/QSong-github/DR100 (see CITATION.cff)
 
 Note: Individual resources catalogued by DR100 retain their original licenses.
 The `access` field per record reflects each resource's own terms.

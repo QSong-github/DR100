@@ -1,6 +1,6 @@
 """
 PharmGKB/ClinPGx - Pharmacogenomics Knowledge Curation
-Category: Drug-related (indirect) | Type: DB | Subcategory: Pharmacogenomics
+Category: Drug-centric | Type: DB | Subcategory: Pharmacogenomics
 Link: https://www.pharmgkb.org/
 Paper: https://academic.oup.com/nar/article/30/1/163/1332715
 

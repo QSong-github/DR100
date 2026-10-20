@@ -1,9 +1,9 @@
-# DR100 Resource Interconnection Graph (RIG) — v1.0 Summary
+# Resource Interconnection Graph (RIG) summary
 
 **Nodes**: 177 resources (105 drug-centric + 29 drug-related + 43 auxiliary)
-**Edges**: 440 typed edges (after validation)
+**Edges**: 440 relationships of six types
 
-## Edge type distribution
+## Relationship types
 
 | Edge type | Count | %  |
 |---|---|---|

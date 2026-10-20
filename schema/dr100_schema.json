@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://github.com/QSong-github/DR100/raw/main/schema/dr100_schema.json",
   "title": "DR100 Resource Record",
-  "description": "Schema for a single drug-resource record in the DR100 registry. Designed to be consumed by LLM-driven drug agents.",
+  "description": "Schema for one record of the DR100 resource table (registry/*.json).",
   "type": "object",
   "required": ["name", "category", "type", "subcategory", "paradigm", "description", "link"],
   "additionalProperties": false,
@@ -20,7 +20,7 @@
     },
     "category": {
       "type": "string",
-      "description": "Top-level resource category in DR100.",
+      "description": "Primary category, by how directly the resource concerns drugs. Drug-centric: focuses directly on drugs. Drug-related (stored as Drug-related (indirect)): broader biological or clinical information that also includes drugs. Auxiliary (stored as auxiliary): general biomedical information or evaluation material not specific to drugs.",
       "enum": ["Drug-centric", "Drug-related (indirect)", "auxiliary"]
     },
     "type": {

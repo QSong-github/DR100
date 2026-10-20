@@ -1,6 +1,6 @@
 ---
 name: Propose a new resource
-about: Suggest a drug-centric, drug-related, or auxiliary resource for inclusion
+about: Suggest a Drug-centric, Drug-related, or Auxiliary resource for inclusion
 title: "[New resource] <resource name>"
 labels: new-resource
 ---
@@ -15,9 +15,9 @@ labels: new-resource
 
 ## Category
 
-- [ ] Drug-centric — primary organizational axis is a drug entity
-- [ ] Drug-related (indirect) — drug-relevant but organized around another entity (gene, trial, disease)
-- [ ] Auxiliary — general biomedical, but routinely used by drug agents
+- [ ] Drug-centric: focuses directly on drugs, including datasets, benchmarks, text corpora, and tools built specifically around drugs
+- [ ] Drug-related: broader biological or clinical information that also includes drugs (for example knowledge graphs, chemical text-mining corpora, clinical trials, medical terminology)
+- [ ] Auxiliary: general biomedical information or evaluation material not specific to drugs (for example disease, gene, and pathway resources, clinical datasets, text collections, benchmarks)
 
 ## Type
 
@@ -25,14 +25,15 @@ labels: new-resource
 - [ ] Dataset (curated, possibly static)
 - [ ] Knowledge Graph (KG)
 
-## Proposed annotation (best guess)
+## Proposed description (best guess)
 
-- **Subcategory:** _(see paper Figure 4 for vocabulary)_
-- **Paradigm:** LLM-Friendly / Tool-Mediated
-- **Pathway:** Direct Prompt / RAG / Graph Query / REST / Computational / Hybrid
-- **Primary identifier:** _(DrugBank ID / RxNorm / ChEMBL ID / name only / …)_
-- **Access class:** Open API / Open Download / Academic API / Academic Download / Web Only / Commercial
-- **Update cadence:** Continuous / Periodic Recent / Periodic Moderate / Periodic Stale / Abandoned Static
+- **Subcategory:** _(use an existing value from `registry/*.json`; 32 labels are in use)_
+- **Knowledge consumption mode** (`paradigm`): LLM-Friendly / Tool-Mediated
+- **Knowledge interface** (`pathway`): Direct Prompt / RAG / Graph Query / REST / Computational / Hybrid
+- **Main identifier system** (`identifier`): _(DrugBank ID / RxNorm / ChEMBL ID / name only / …)_
+- **Access approach** (`access`): Open API / Open Download / Academic API / Academic Download / Web Only
+- **Resource update status** (`update_cadence`): Continuous / Periodic Recent / Periodic Moderate / Periodic Stale / Abandoned Static / Static
+- **Task tags** (`task_tags`, Drug-centric only): T1 identification, T2 labeling, T3 mechanism, T4 safety, T5 drug–drug interaction, T6 target binding, T7 response, T8 repurposing, T9 combination
 
 ## Why include it?
 
