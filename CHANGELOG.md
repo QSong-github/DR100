@@ -6,13 +6,31 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-### Planned for v1.1
-- Resolve all `data_quality: "needs_review"` records (target: 0 in drug_centric)
-- Add `license` field per resource (CC-BY, custom academic, etc.)
-- Populate `task_tags` (T1–T9) per resource
-- Add 2 supplementary drug-related records currently in paper but missing from registry
-  (Hetionet data download, KEGG DRUG / MEDICUS)
-- Resolve PharmGKB/ClinPGx categorization (drug-centric vs drug-related)
+No changes yet.
+
+## [1.5.0] — 2026-10-19
+
+### Changed
+- Documentation aligned with the Review "Mapping the drug knowledge ecosystem for AI agents
+  through resources, interfaces, and interconnections". README, CITATION.cff, index.html, and the
+  figure and notebook text now use its title, authors, and terminology (primary category,
+  knowledge consumption mode, knowledge interface, resource update status, status labels).
+- README counts corrected to the data (relationship types 163 / 100 / 83 / 43 / 43 / 8;
+  17 Drug-centric subcategories).
+- `rig/topology.py` rewritten with the Review's definitions (distinct-neighbor degree, normalized
+  betweenness on unweighted paths, greedy modularity with multiplicity weights and resolution 1,
+  plus equal-weight and Tier 1 sensitivity analyses). `rig/topology.md` regenerated.
+- `schema/dr100_schema.json`: task-tag values now match the data (T1–T9), `Static` added to the
+  update status values, `task_tags_verified` allowed, descriptions updated. All 177 records
+  validate, so the CI check passes again.
+
+### Removed
+- `supplementary_data/SupplementaryData_DR100.xlsx`, the tables of an earlier draft's
+  supplementary material, which the Review no longer has.
+
+### Unchanged
+- Data files (`registry/*.json`, `registry/*.tsv`, `rig/edges.csv`, `rig/edges.tsv`,
+  `rig/rig_edges_v1.csv`) are byte-identical to commit 2a144fd, which the Review cites.
 
 ## [1.4.0] — 2026-05-24
 

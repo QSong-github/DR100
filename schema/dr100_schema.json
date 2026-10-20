@@ -25,21 +25,21 @@
     },
     "type": {
       "type": "string",
-      "description": "Resource modality.",
+      "description": "Resource type: knowledge graph (KG), database (DB), or dataset.",
       "enum": ["DB", "Dataset", "KG"]
     },
     "subcategory": {
       "type": "string",
-      "description": "Fine-grained subcategory; see docs/subcategories.md for the controlled vocabulary."
+      "description": "Content subcategory within the primary category (32 distinct labels in the current table)."
     },
     "paradigm": {
       "type": "string",
-      "description": "Cognitive paradigm of agent data consumption (§2.4 of the paper).",
+      "description": "Knowledge consumption mode in the Review. LLM-Friendly: information can mainly be interpreted after retrieval. Tool-Mediated: specialized computation is needed first.",
       "enum": ["LLM-Friendly", "Tool-Mediated"]
     },
     "pathway": {
       "type": ["string", "null"],
-      "description": "Operational integration pathway (§3.3 of the paper). Authoritatively annotated for Drug-centric resources only; null for Drug-related / auxiliary.",
+      "description": "Main knowledge interface in the Review (historical field name). Direct Prompt = Direct Prompting, RAG = Retrieval-Augmented Generation, Graph Query = Graph Queries, REST = Structured REST APIs, Computational = Computational Tool Invocation, Hybrid = Hybrid Interfaces. Null when unassigned.",
       "enum": [
         "Direct Prompt",
         "RAG",
@@ -52,7 +52,7 @@
     },
     "identifier": {
       "type": ["string", "null"],
-      "description": "Primary drug-identifier namespace. Authoritative for Drug-centric only.",
+      "description": "Main identifier system recorded for the resource ('name only' when no structured identifier was recorded). Null when unassigned.",
       "examples": [
         "DrugBank ID", "ChEMBL ID", "PubChem CID", "RxNorm", "ATC",
         "InChIKey", "SMILES", "CAS", "NDC", "UNII", "UMLS CUI",
@@ -63,7 +63,7 @@
     },
     "access": {
       "type": ["string", "null"],
-      "description": "Access class (§3.4 Axis C).",
+      "description": "Main access approach recorded for the resource. Null when unassigned.",
       "enum": [
         "Open API",
         "Open Download",
@@ -81,35 +81,32 @@
     },
     "update_cadence": {
       "type": ["string", "null"],
-      "description": "Update pattern (§3.4 Axis D).",
+      "description": "Resource update status. Periodic Recent, Moderate, and Stale correspond to about one year, one to two years, and two to five years since the last update; Static marks a deliberately fixed release. Null when unassigned.",
       "enum": [
         "Continuous",
         "Periodic Recent",
         "Periodic Moderate",
         "Periodic Stale",
         "Abandoned Static",
+        "Static",
         null
       ]
     },
     "task_tags": {
       "type": "array",
-      "description": "Canonical drug-science tasks covered by this resource (§3.4 Axis A).",
+      "description": "Task tags, recorded for Drug-centric resources only. T1 identification, T2 labeling, T3 mechanism, T4 safety, T5 drug-drug interaction, T6 target binding, T7 response, T8 repurposing, T9 combination.",
       "items": {
         "type": "string",
         "enum": [
-          "T1_identification",
-          "T2_labeling",
-          "T3_mechanism",
-          "T4_safety",
-          "T5_interaction",
-          "T6_target",
-          "T7_response",
-          "T8_repurposing",
-          "T9_combination"
+          "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9"
         ]
       },
       "uniqueItems": true,
       "default": []
+    },
+    "task_tags_verified": {
+      "type": "boolean",
+      "description": "True for broad knowledge bases whose task tags were checked individually."
     },
     "aim": {
       "type": ["string", "null"],
@@ -136,7 +133,7 @@
     },
     "data_quality": {
       "type": "string",
-      "description": "Provenance / quality flag. 'authoritative' = cross-checked between Excel and Supplementary Table; 'needs_review' = mismatch flagged in v1.0 release.",
+      "description": "Status label from the construction script. authoritative: exact name match with accepted annotations. needs_review: approximate or missing name match, or default-looking annotations. Describes the construction process, not an independent validation.",
       "enum": ["authoritative", "needs_review"],
       "default": "authoritative"
     },

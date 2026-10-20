@@ -16,6 +16,9 @@
 
 ## Top 20 hub resources (by total degree)
 
+Total = number of typed relationships incident to the resource, counting parallel relationships.
+The Review's degree counts distinct neighbors instead (for example, DrugBank 34); see `rig/topology.md`.
+
 | Rank | Resource | In-deg | Out-deg | Total | Category |
 |---|---|---|---|---|---|
 | 1 | DrugBank | 34 | 9 | 43 | drug_centric |

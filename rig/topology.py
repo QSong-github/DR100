@@ -1,108 +1,137 @@
 """
-Topology analysis on the DR100 RIG (v1.0).
+Graph analysis of the DR100 Resource Interconnection Graph (RIG), using the
+definitions reported in the Review.
 
-Computes:
-  - degree / weighted degree centrality
-  - betweenness centrality (bridges)
-  - community detection (Louvain modularity) on undirected projection
-  - connected component analysis
-  - per-cluster characterization
+Inputs (read directly, no serialized Python objects):
+  registry/{drug_centric,drug_related,auxiliary}.json   the 177 resources (nodes)
+  rig/edges.csv                                          the 440 typed, directed relationships
+  rig/rig_edges_v1.csv                                   the same relationships with provenance_tier
 
-Output: main/rig_outputs/rig_topology.md
+Definitions:
+  * Undirected projection: each connected resource pair appears once. Its weight
+    is the number of directed relationships between the pair (multiplicity), which
+    measures multiplicity only, not confidence or travel cost.
+  * Degree: number of distinct neighbors.
+  * Betweenness: normalized betweenness centrality on unweighted shortest paths.
+  * Communities: greedy modularity optimization (Clauset, Newman & Moore 2004)
+    with multiplicity weights and resolution 1.
+  * Sensitivity analyses: equal pair weights; Tier 1 relationships only.
+All 177 resources are kept as nodes, including resources that become isolated.
+
+Run from the repository root:  python rig/topology.py   (writes rig/topology.md)
 """
-
-import pickle
+import csv
 import json
+from collections import Counter
 from pathlib import Path
-from collections import Counter, defaultdict
 
 import networkx as nx
+from networkx.algorithms.community import greedy_modularity_communities, modularity
 
-ROOT = Path.home() / "Desktop/DrugResource100/main/rig_outputs"
-GPICKLE = ROOT / "rig_networkx.gpickle"
-OUT = ROOT / "rig_topology.md"
+ROOT = Path(__file__).resolve().parents[1]
+CATS = ("drug_centric", "drug_related", "auxiliary")
+records = [r for c in CATS for r in json.loads((ROOT / "registry" / f"{c}.json").read_text(encoding="utf-8"))]
+names = [r["name"] for r in records]
+category = {r["name"]: r["category"] for r in records}
 
-with open(GPICKLE, "rb") as f:
-    G = pickle.load(f)
 
-# Undirected projection for community detection (treat edges as bi-directional links)
-UG = nx.Graph()
-for n, d in G.nodes(data=True):
-    UG.add_node(n, **d)
-for u, v, k, d in G.edges(keys=True, data=True):
-    if UG.has_edge(u, v):
-        UG[u][v]["weight"] = UG[u][v].get("weight", 0) + 1
-    else:
-        UG.add_edge(u, v, weight=1, edge_type=d["edge_type"])
+def read_csv(path):
+    with open(path, newline="", encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
 
-# Drop isolated nodes for component analysis
-nz_nodes = [n for n in UG.nodes() if UG.degree(n) > 0]
-H = UG.subgraph(nz_nodes).copy()
 
-# Connected components
-comps = sorted(nx.connected_components(H), key=len, reverse=True)
-giant = H.subgraph(comps[0]).copy()
+edges = read_csv(ROOT / "rig" / "edges.csv")
+tiered = read_csv(ROOT / "rig" / "rig_edges_v1.csv")
+key = lambda r: (r["source"], r["edge_type"], r["target"])
+tier = {key(r): r["provenance_tier"] for r in tiered}
 
-# Centrality on giant component
-deg_cent = nx.degree_centrality(giant)
-bet_cent = nx.betweenness_centrality(giant, weight="weight")
-eig_cent = nx.eigenvector_centrality(giant, weight="weight", max_iter=500)
+assert {key(r) for r in edges} == set(tier), "edges.csv and rig_edges_v1.csv differ"
+assert len({key(r) for r in edges}) == len(edges), "duplicate source-type-target rows"
+assert not [r for r in edges if r["source"] == r["target"]], "self-links present"
+assert {n for r in edges for n in (r["source"], r["target"])} <= set(names), "unknown resource names"
 
-# Community detection - greedy modularity (no extra deps needed)
-from networkx.algorithms.community import greedy_modularity_communities
-communities = list(greedy_modularity_communities(giant, weight="weight"))
-mod_score = nx.algorithms.community.modularity(giant, communities, weight="weight")
 
-# Per-cluster summary: dominant category + theme
-def cluster_theme(nodes):
-    cats = Counter(G.nodes[n].get("category", "?") for n in nodes)
-    # Look at outgoing edge_types from members
-    return dict(cats)
+def project(rows):
+    g = nx.Graph()
+    g.add_nodes_from(names)
+    for r in rows:
+        u, v = r["source"], r["target"]
+        if g.has_edge(u, v):
+            g[u][v]["weight"] += 1
+        else:
+            g.add_edge(u, v, weight=1)
+    return g
 
-# ---- WRITE REPORT ----
-with open(OUT, "w") as f:
-    f.write("# DR100 RIG Topology Analysis (v1.0)\n\n")
-    f.write(f"**Graph**: directed multigraph, **{G.number_of_nodes()}** nodes, **{G.number_of_edges()}** edges\n")
-    f.write(f"**Undirected projection** (for community detection): {UG.number_of_nodes()} nodes, {UG.number_of_edges()} unique edges\n")
-    f.write(f"**Nodes with ≥1 connection**: {len(nz_nodes)} ({len(nz_nodes)/G.number_of_nodes()*100:.0f}%)\n")
-    f.write(f"**Connected components**: {len(comps)}; giant component covers **{len(comps[0])}** nodes ({len(comps[0])/G.number_of_nodes()*100:.0f}% of all DR100 resources)\n\n")
 
-    f.write("## Connectivity by component (Top 8)\n\n")
-    f.write("| Component | Size | Sample members |\n|---|---|---|\n")
-    for i, c in enumerate(comps[:8], 1):
-        sample = sorted(c)[:6]
-        f.write(f"| {i} | {len(c)} | {', '.join(sample)} |\n")
-    f.write("\n")
+G = project(edges)
+deg = dict(G.degree())
+bet = nx.betweenness_centrality(G, normalized=True, weight=None)
+comm_w = list(greedy_modularity_communities(G, weight="weight", resolution=1))
+q_w = modularity(G, comm_w, weight="weight", resolution=1)
+comm_u = list(greedy_modularity_communities(G, weight=None, resolution=1))
+q_u = modularity(G, comm_u, weight=None, resolution=1)
+same_membership = {frozenset(c) for c in comm_w} == {frozenset(c) for c in comm_u}
 
-    f.write("## Top 15 by betweenness centrality (bridge resources)\n\n")
-    f.write("Betweenness = fraction of shortest paths in the giant component that pass through this node.\n")
-    f.write("High-betweenness nodes are **structural bridges** — agents whose query crosses many resource boundaries must route through them.\n\n")
-    f.write("| Rank | Resource | Betweenness | Category |\n|---|---|---|---|\n")
-    for i, (n, c) in enumerate(sorted(bet_cent.items(), key=lambda x: -x[1])[:15], 1):
-        f.write(f"| {i} | {n} | {c:.3f} | {G.nodes[n].get('category')} |\n")
-    f.write("\n")
+T1 = project([r for r in edges if tier[key(r)] == "1"])
+comps = sorted((len(c) for c in nx.connected_components(T1)), reverse=True)
+largest = comps[0]
 
-    f.write("## Top 15 by eigenvector centrality (importance hubs)\n\n")
-    f.write("Eigenvector centrality favors nodes connected to other well-connected nodes — the 'central elite' of the registry.\n\n")
-    f.write("| Rank | Resource | Eigenvector | Category |\n|---|---|---|---|\n")
-    for i, (n, c) in enumerate(sorted(eig_cent.items(), key=lambda x: -x[1])[:15], 1):
-        f.write(f"| {i} | {n} | {c:.3f} | {G.nodes[n].get('category')} |\n")
-    f.write("\n")
+etype = Counter(r["edge_type"] for r in edges)
+conf = Counter(r["confidence"] for r in edges)
+tiers = Counter(tier.values())
+top = lambda d, k: sorted(d.items(), key=lambda kv: (-kv[1], kv[0]))[:k]
 
-    f.write(f"## Community structure (greedy modularity, Q = {mod_score:.3f})\n\n")
-    f.write(f"Detected **{len(communities)}** communities in the giant component.\n\n")
-    for i, c in enumerate(sorted(communities, key=len, reverse=True), 1):
-        cats = cluster_theme(c)
-        f.write(f"### Cluster {i}: {len(c)} resources | category mix: {cats}\n\n")
-        # Order members within cluster by their internal degree
-        internal = sorted(c, key=lambda n: -giant.degree(n))
-        for n in internal[:20]:
-            f.write(f"- {n} (deg {giant.degree(n)})\n")
-        if len(c) > 20:
-            f.write(f"- ... ({len(c)-20} more)\n")
-        f.write("\n")
-
-print(f"Wrote: {OUT}")
-print(f"Modularity Q: {mod_score:.3f}")
-print(f"Giant component covers {len(comps[0])}/{G.number_of_nodes()} ({len(comps[0])/G.number_of_nodes()*100:.0f}%) resources")
-print(f"Detected {len(communities)} communities")
+lines = []
+w = lines.append
+w("# DR100 RIG topology")
+w("")
+w("Generated by `rig/topology.py` with the definitions used in the Review (see the script header).")
+w("")
+w("## Graph")
+w("")
+w(f"- Nodes: {len(names)} resources")
+w(f"- Directed relationships: {len(edges)} (" + ", ".join(f"{t} {etype[t]}" for t in
+  ["incorporates", "complements", "bridges", "derived_from", "feeds_pipeline", "mirrors"]) + ")")
+w("- No duplicate source-type-target combinations and no self-links; all names match the resource table")
+w(f"- Distinct connected resource pairs (undirected): {G.number_of_edges()}")
+w(f"- Connected components (undirected): {nx.number_connected_components(G)}")
+w(f"- Confidence labels: high {conf['high']}, medium {conf['medium']}, low {conf['low']}")
+w(f"- Provenance tiers (`rig/rig_edges_v1.csv`): Tier 1 {tiers['1']}, Tier 2 {tiers['2']}")
+w("")
+w("## Degree (distinct neighbors), top 15")
+w("")
+w("| Rank | Resource | Degree | Category |")
+w("|---|---|---|---|")
+for i, (n, d) in enumerate(top(deg, 15), 1):
+    w(f"| {i} | {n} | {d} | {category[n]} |")
+w("")
+w("## Normalized betweenness (unweighted paths), top 15")
+w("")
+w("| Rank | Resource | Betweenness | Category |")
+w("|---|---|---|---|")
+for i, (n, b) in enumerate(top(bet, 15), 1):
+    w(f"| {i} | {n} | {b:.4f} | {category[n]} |")
+w("")
+w("Degree and betweenness describe positions in the graph. They do not measure scientific quality, ")
+w("how often agents use a resource, or whether a resource is essential for a particular question.")
+w("")
+w("## Communities (multiplicity weights, resolution 1)")
+w("")
+w(f"{len(comm_w)} communities, modularity Q = {q_w:.7f} ({q_w:.3f} rounded).")
+w("Sizes: " + ", ".join(str(len(c)) for c in comm_w) + ".")
+w("")
+for i, c in enumerate(comm_w, 1):
+    w(f"- Community {i} ({len(c)}): " + "; ".join(sorted(c)))
+w("")
+w("## Sensitivity analyses")
+w("")
+w(f"- Equal pair weights: {len(comm_u)} communities, Q = {q_u:.3f}, sizes "
+  + ", ".join(str(len(c)) for c in comm_u)
+  + (", same membership as the weighted analysis." if same_membership else ", membership differs from the weighted analysis."))
+w(f"- Tier 1 relationships only ({tiers['1']}): {T1.number_of_edges()} distinct pairs, {len(comps)} connected components "
+  f"(largest {largest} resources, {100 * largest / len(names):.1f}%; components of two resources: {comps.count(2)}; "
+  f"isolated resources: {comps.count(1)}).")
+w("")
+(ROOT / "rig" / "topology.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+print("\n".join(lines[:16]))
+print(f"communities {len(comm_w)} Q={q_w:.7f} | equal-weight Q={q_u:.3f} | Tier1 pairs={T1.number_of_edges()} comps={len(comps)} largest={largest}")

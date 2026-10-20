@@ -1,63 +1,67 @@
 cff-version: 1.2.0
-title: "DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents"
-message: "If you use DR100, please cite both the registry and the accompanying paper."
-type: software
+title: "DR100: resource table and Resource Interconnection Graph for Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"
+message: "If you use DR100, please cite the accompanying Review."
+type: dataset
 authors:
   - family-names: Wang
     given-names: Qing
     email: wang.qing@ufl.edu
-    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Department of Health Outcomes and Biomedical Informatics, College of Medicine, University of Florida"
+  - family-names: Gu
+    given-names: Sipei
+    affiliation: "Department of Health Outcomes and Biomedical Informatics, College of Medicine, University of Florida"
   - family-names: Tang
     given-names: Dingyi
-    affiliation: "Department of Medicine, University of Florida"
-  - family-names: Liang
-    given-names: Jialu
-    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
-  - family-names: Wang
-    given-names: Guangyu
-    affiliation: "Center for Bioinformatics and Computational Biology, Houston Methodist Research Institute; Department of Cardiothoracic Surgery, Weill Cornell Medicine"
+    affiliation: "Department of Information Systems and Operations Management, Warrington College of Business, University of Florida"
+  - family-names: Lan
+    given-names: Qizhen
+    affiliation: "Department of Health Data Science and Artificial Intelligence, McWilliams School of Biomedical Informatics, The University of Texas Health Science Center at Houston"
+  - family-names: Jiang
+    given-names: Xiaoqian
+    affiliation: "Department of Health Data Science and Artificial Intelligence, McWilliams School of Biomedical Informatics, The University of Texas Health Science Center at Houston"
   - family-names: Su
     given-names: Jing
     affiliation: "Department of Biostatistics and Health Data Science, Indiana University School of Medicine"
+  - family-names: Yang
+    given-names: Baijian
+    affiliation: "School of Applied and Creative Computing, Purdue Polytechnic Institute, Purdue University"
   - family-names: Song
     given-names: Qianqian
-    email: qsong1@ufl.edu
-    affiliation: "Department of Health Outcomes and Biomedical Informatics, University of Florida"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    email: song1081@purdue.edu
+    affiliation: "School of Applied and Creative Computing, Purdue Polytechnic Institute, Purdue University"
 repository-code: "https://github.com/QSong-github/DR100"
 url: "https://github.com/QSong-github/DR100"
 license: CC-BY-4.0
 license-url: "https://creativecommons.org/licenses/by/4.0/"
 keywords:
   - drug discovery
-  - large language models
-  - LLM agents
+  - AI agents
+  - knowledge interface
+  - Resource Interconnection Graph
   - retrieval-augmented generation
   - knowledge graph
-  - drug reasoning
-  - resource annotation
-  - integration pathway
-version: "1.0.0"
-date-released: "2026-05-23"
+  - biomedical resources
+version: "1.5.0"
+date-released: "2026-10-19"
 preferred-citation:
   type: article
-  title: "DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents"
+  title: "Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"
   authors:
     - family-names: Wang
       given-names: Qing
+    - family-names: Gu
+      given-names: Sipei
     - family-names: Tang
       given-names: Dingyi
-    - family-names: Liang
-      given-names: Jialu
-    - family-names: Wang
-      given-names: Guangyu
+    - family-names: Lan
+      given-names: Qizhen
+    - family-names: Jiang
+      given-names: Xiaoqian
     - family-names: Su
       given-names: Jing
+    - family-names: Yang
+      given-names: Baijian
     - family-names: Song
       given-names: Qianqian
   year: 2026
-  # volume:
-  # issue:
-  # doi:
-  notes: "Companion machine-readable registry at https://github.com/QSong-github/DR100"
+  notes: "Quantitative results in the Review use repository commit 2a144fd6d129af0273d6145fd21498aaa7ac0bb7."

@@ -59,9 +59,11 @@ for fn in ['drug_centric', 'drug_related', 'auxiliary']:
 
 Each record has a `data_quality` field:
 
-- `"authoritative"` — cross-validated against multiple sources at the v1.0 build.
-- `"needs_review"` — flagged for follow-up. Common reasons: name mismatch between
-  source files, missing annotation axes, or a default placeholder value.
+- `"authoritative"` — the construction script matched the record's name exactly and
+  accepted its annotations. This describes the construction process, not an
+  independent validation of every field.
+- `"needs_review"` — flagged for follow-up. Common reasons: an approximate or missing
+  name match between source files, missing annotation axes, or a default-looking value.
 
 When you correct a record, you may flip `needs_review` → `authoritative` if you
 have a citable source for every populated field.
@@ -69,7 +71,7 @@ have a citable source for every populated field.
 ## Subcategory vocabulary
 
 The `subcategory` field is a controlled vocabulary. For drug-centric resources,
-the 15 valid values are listed in the paper's Figure 4 caption. Proposing a new
+the 17 values in use are those found in `registry/drug_centric.json`. Proposing a new
 subcategory requires opening an issue first — we keep the vocabulary tight to
 preserve the cross-resource analyses.
 

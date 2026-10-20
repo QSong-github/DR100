@@ -1,93 +1,120 @@
 # DR100
 
-**A review of 177 drug-relevant data resources (105 drug-centric, 29 drug-related, 43 auxiliary) for large language model agents, organized by integration pathway with a Resource Interconnection Graph.**
+Companion data and code for the Review **"Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"** by Qing Wang, Sipei Gu, Dingyi Tang, Qizhen Lan, Xiaoqian Jiang, Jing Su, Baijian Yang, and Qianqian Song.
 
-The registry annotates **177 resources** (105 drug-centric + 29 drug-related + 43
-auxiliary) along 10 fields that an LLM-agent engineer actually needs at build time:
-integration pathway, identifier vocabulary, access class, update cadence, and more.
+The Review examines **177 resources** that can support drug-related tasks of AI agents. This repository holds the two data products it analyses:
+
+- the **resource table**, which describes one resource at a time (primary category, subcategory, knowledge consumption mode, knowledge interface, identifiers, access, update status, and task tags), and
+- the **Resource Interconnection Graph (RIG)**, in which each of the 177 resources is a node and 440 typed, directed relationships describe how pairs of resources are connected.
+
+DR100 is the repository name. It is not another name for the RIG, and the Review covers 177 resources, not 100.
 
 ---
 
-## What's in here
+## Version used in the Review
+
+All quantitative results in the Review were computed from commit
+[`2a144fd6d129af0273d6145fd21498aaa7ac0bb7`](https://github.com/QSong-github/DR100/commit/2a144fd6d129af0273d6145fd21498aaa7ac0bb7).
+Later commits change documentation and analysis scripts only. The data files below are byte-identical to that commit.
+
+| Data file | Content |
+|---|---|
+| `registry/drug_centric.json` (+ `.tsv`) | 105 Drug-centric resources |
+| `registry/drug_related.json` (+ `.tsv`) | 29 Drug-related resources |
+| `registry/auxiliary.json` (+ `.tsv`) | 43 Auxiliary resources |
+| `rig/edges.csv` (+ `.tsv`) | 440 RIG relationships with evidence reference, confidence label, and note |
+| `rig/rig_edges_v1.csv` | The same 440 relationships with their provenance tier |
+
+## Repository contents
 
 | Path | What it is |
 |---|---|
-| `schema/dr100_schema.json` | JSON Schema 7 specification for a single resource record |
-| `registry/drug_centric.{json,tsv}` | 105 drug-centric resources, fully annotated |
-| `registry/drug_related.{json,tsv}` | 29 indirect drug-related resources |
-| `registry/auxiliary.{json,tsv}` | 43 general biomedical resources used by drug agents |
-| 🌟 `rig/edges.{csv,tsv}` | **Resource Interconnection Graph: 440 typed edges across 6 relation types** |
-| 🌟 `rig/summary.md` + `rig/topology.md` | RIG stats: hubs, clusters, modularity (Q = 0.608) |
-| 🌟 `rig/build_rig.py` | Reproducible RIG construction with 326 Tier 1 web-verified evidence URLs |
-| 🌟 `rig/networkx.gpickle` | NetworkX MultiDiGraph for downstream analysis |
-| 🌟 `figures/figure_8_rig.{pdf,png}` | Static publication-quality RIG visualization |
-| 🌟 `figures/rig_interactive.html` | Interactive RIG (Plotly) — pan/zoom/hover/legend toggle |
-| 🌟 `index.html` | GitHub Pages landing page (live at https://qsong-github.github.io/DR100/) |
-| **`examples/01–68_*.py`** | **68 runnable Python access scripts for LLM-Friendly resources** |
-| `notebooks/01_quickstart.ipynb` | Load + filter + select resources for an agent |
-| `scripts/build_registry.py` | Rebuild JSON/TSV from source files |
-| `68DrugResources.xlsx` | Source spreadsheet for the 68 example scripts (curator working copy) |
-| `docs/data_quality_report.md` | Discrepancy log between source files (v1.0) |
-| `docs/contribution_guide.md` | How to propose new resources |
+| `schema/dr100_schema.json` | JSON Schema for one resource record (checked by CI on every push) |
+| `rig/topology.py`, `rig/topology.md` | Graph analysis with the definitions used in the Review |
+| `rig/summary.md` | Relationship-type counts and a typed-edge degree table |
+| `rig/build_rig.py`, `rig/verification_plan.json`, `rig/verify_logs/` | Original RIG construction script and checking logs |
+| `scripts/build_registry.py`, `scripts/apply_provenance_tier.py`, `scripts/apply_verifications.py` | Original scripts used to build the resource table and assign provenance tiers |
+| `rig/networkx.gpickle` | The RIG as a NetworkX MultiDiGraph |
+| `figures/`, `index.html` | Static RIG overview and interactive views (open `index.html` in a browser) |
+| `examples/01–68_*.py`, `68DrugResources.xlsx` | Access scripts for 68 resources and their source spreadsheet |
+| `notebooks/01_quickstart.ipynb` | Loading and filtering the resource table |
+| `docs/` | Contribution guide and the construction log of the resource table |
 
-## 🌐 Live interactive RIG visualization
+---
 
-**[https://qsong-github.github.io/DR100/](https://qsong-github.github.io/DR100/)** — pan/zoom the 177-resource graph, hover for resource details, click legend entries to toggle edge types.
+## Resource table
 
-## 🔗 Resource Interconnection Graph (RIG) at a glance
+Each resource has one primary category and one main value per field. The field names predate the Review's terminology. The mapping is:
 
-The 177 DR100 resources form a **single fully-connected typed multigraph** with **440 inter-resource edges**:
-
-| Edge type | Count | What it means |
+| Review term | Field | Values (counts over all 177 resources unless noted) |
 |---|---|---|
-| `incorporates` | 162 | A integrates B's data (e.g., DRKG incorporates DrugBank, Hetionet, STRING) |
-| `derived_from` | 43 | A's content is extracted from B (e.g., SIDER from FDA SPL labels) |
-| `mirrors` | 8 | A and B are alternative interfaces to same data (e.g., openFDA mirrors DailyMed) |
-| `bridges` | 83 | A normalizes IDs across B and others (e.g., RxNorm bridges DrugBank, ATC, SNOMED) |
-| `complements` | 97 | A and B are used together for full coverage (e.g., DDInter + MecDDI) |
-| `feeds_pipeline` | 41 | A's output is B's typical input (e.g., LINCS L1000 → CLUE.io) |
+| Primary category | `category` | `Drug-centric` 105, `Drug-related (indirect)` 29, `auxiliary` 43 |
+| Subcategory | `subcategory` | 32 distinct labels (17 within Drug-centric, 9 within Drug-related, 8 within Auxiliary) |
+| Knowledge consumption mode | `paradigm` | `LLM-Friendly` 134, `Tool-Mediated` 43 |
+| Knowledge interface | `pathway` | `Direct Prompt` 6, `RAG` 91, `Graph Query` 9, `REST` 14, `Computational` 38, `Hybrid` 18, missing 1 |
+| Main identifier system | `identifier` | `name only` 91, `DrugBank ID` 29, `InChIKey` 9, `SMILES` 7, `RxNorm` 7, `ChEMBL ID` 6, `ATC` 4, `PubChem CID` 3, 17 other systems 20, missing 1 |
+| Access approach | `access` | `Open Download` 124, `Open API` 33, `Academic Download` 12, `Academic API` 3, `Web Only` 4, missing 1 |
+| Resource update status | `update_cadence` | `Continuous` 11, `Periodic Recent` 38, `Periodic Moderate` 94, `Periodic Stale` 10, `Abandoned Static` 21, `Static` 2, missing 1 |
+| Task tags (Drug-centric only) | `task_tags` | T1 identification 39, T2 labeling 36, T3 mechanism 20, T4 safety 31, T5 drug–drug interaction 8, T6 target binding 41, T7 response 23, T8 repurposing 25, T9 combination 9 (232 assignments) |
+| Status label | `data_quality` | `authoritative` 99, `needs_review` 78 (7 Drug-centric, 28 Drug-related, 43 Auxiliary) |
+| License | `license` | Populated for 3 resources |
 
-**Top hubs by betweenness centrality:** UMLS (0.28), PubMed Central (0.21), DailyMed (0.19), DrugBank (0.18), LINCS L1000 (0.16), ChEMBL (0.14)
-**Top hubs by eigenvector centrality:** DrugBank (0.52), Hetionet (0.24), ChEMBL (0.21), PrimeKG (0.20), DrugCentral (0.20)
-**Modularity Q = 0.608** across **11 communities** (chemoinformatics, KG aggregators, FDA labels/PV, biomedical NLP, evidence integration, identifier bridges, drug-target evidence, drug combination, disease ontology, cancer PGx, EHR-NLP)
+Other fields are `name`, `type` (KG, DB, or Dataset), `aim`, `source`, `description`, `link`, `paper_link`, `notes`, and, for 11 broad knowledge bases whose task tags were checked individually, `task_tags_verified`.
 
-326 of 440 edges carry directly-fetched (Tier 1) provenance URLs to authoritative integration documentation; the remaining 114 (Tier 2) are panel-curated over primary source publications.
+Notes on interpretation:
 
-> The 68 example scripts demonstrate the *LLM-Friendly* subset (paradigm = LLM-Friendly,
-> 70 of 105 drug-centric resources) with realistic access patterns:
-> download URLs, API endpoints, fallback mirrors, and minimal parsing. Use them as
-> reference implementations when wiring resources into an agent's tool registry.
+- **Status labels** come from the construction script (`scripts/build_registry.py`). A record is `authoritative` when its name matched the annotation tables exactly and its annotations were accepted. It is `needs_review` when the name matched only approximately (similarity threshold 0.88) or not at all, or when a Drug-related or Auxiliary record carried default-looking annotations (RAG with name-only identifiers). The labels describe the construction process, not an independent validation of each field.
+- **Update status** follows the original classification (Recent about one year, Moderate one to two years, Stale two to five years since the last update). The files do not store update dates.
+- **Task tags** were first assigned from subcategories and keyword matches in `aim` and `description`, then checked for selected broad knowledge bases. A tag marks a possible use, not a task an agent has completed with that resource.
+- The record `i2b2/VA 2010 Concepts/Assertions/Relations` has no interface, identifier, access, or update value.
+
+---
+
+## Resource Interconnection Graph
+
+| Type | Count | Meaning |
+|---|---|---|
+| `incorporates` | 163 | The source integrates content supplied by the target (for example, DRKG incorporates DrugBank, Hetionet, and STRING) |
+| `complements` | 100 | The two resources provide information that may be useful together; no fixed order of operations |
+| `bridges` | 83 | A mapping that can help connect resources using different identifiers or terminology |
+| `derived_from` | 43 | The source was created by selecting, transforming, or reorganizing the target's content (for example, PLINDER from the Protein Data Bank) |
+| `feeds_pipeline` | 43 | The source's output can serve as the target's input (for example, Open TG-GATEs feeds TOXRIC) |
+| `mirrors` | 8 | One resource redistributes the other's content with minimal change (for example, openFDA and DailyMed serve the same structured product labels) |
+
+**Labels on relationships.** Confidence (`confidence` in `rig/edges.csv`) is high for 211, medium for 226, and low for 3 relationships. The provenance tier (`provenance_tier` in `rig/rig_edges_v1.csv`) is Tier 1 for 326 relationships (supported by retrieved external evidence) and Tier 2 for 114 (curator-interpreted). These are the project's recorded classifications, not probabilities of correctness. Thirty evidence references point to notes in the manuscript (`DR100-§…`) rather than to external documentation, the checking logs in `rig/verify_logs/` do not cover all 440 relationships, and 23 relationships labeled weak in `rig/verify_logs/audit_v2.json` are Tier 1 in `rig/rig_edges_v1.csv`.
+
+**Structure** (as reported in the Review; reproduce with `python rig/topology.py`, which writes `rig/topology.md`):
+
+- The directed multigraph has no duplicate source-type-target rows and no self-links. Ignoring direction, the 440 relationships connect 392 distinct resource pairs, and all 177 resources form one connected component.
+- Degree (distinct neighbors): DrugBank 34, PubMed Central Open Access Subset 20, UMLS 18, ChEMBL 17, ROBOKOP 16.
+- Normalized betweenness on unweighted paths is highest for DrugBank, the PubMed Central Open Access Subset, UMLS, DailyMed, and LINCS L1000.
+- Greedy modularity with relationship multiplicity as pair weight and resolution 1 gives 11 communities, Q = 0.608 (sizes 36, 28, 21, 20, 14, 12, 12, 11, 10, 8, 5). Equal pair weights also give 11 communities, Q = 0.588, with different membership.
+- Keeping only the 326 Tier 1 relationships leaves 294 resource pairs and 42 connected components (one of 134 resources, two of two resources, and 39 isolated resources).
+
+An undirected path between two resources does not mean an agent can follow it as a sequence of available operations.
 
 ---
 
 ## Quick start
 
-```bash
-pip install jsonschema pandas
-```
-
 ```python
 import json
 from pathlib import Path
 
-registry = json.loads(Path("registry/drug_centric.json").read_text())
+tables = {f: json.loads(Path(f"registry/{f}.json").read_text())
+          for f in ("drug_centric", "drug_related", "auxiliary")}
+print(sum(len(t) for t in tables.values()))  # 177
 
-# All 105 drug-centric resources
-print(f"{len(registry)} resources")
-
-# Filter: agent needs Drug-Drug Interaction tools with Open API access,
-# updated within the last 2 years
-ddi_tools = [
-    r for r in registry
-    if r["subcategory"] == "Drug-Drug Interaction (DDI)"
-    and r["access"] == "Open API"
-    and r["update_cadence"] in ("Continuous", "Periodic Recent")
-]
-for r in ddi_tools:
-    print(f"  {r['name']:30s} | {r['pathway']:15s} | {r['identifier']}")
+# Drug-centric drug-drug interaction resources with an open API and a recent update status
+ddi = [r for r in tables["drug_centric"]
+       if r["subcategory"] == "Drug-Drug Interaction (DDI)"
+       and r["access"] == "Open API"
+       and r["update_cadence"] in ("Continuous", "Periodic Recent")]
+for r in ddi:
+    print(r["name"], r["pathway"], r["identifier"], sep=" | ")
 ```
 
-Or via pandas:
+Or with pandas:
 
 ```python
 import pandas as pd
@@ -97,85 +124,28 @@ df.query("pathway == 'Hybrid' and access == 'Open API'")[["name", "subcategory",
 
 ---
 
-## Schema overview
-
-Each resource record carries:
-
-**Identity** &nbsp;`name`, `aliases`, `link`, `paper_link`
-
-**Categorical** &nbsp;`category` (drug-centric / related / auxiliary), `type` (DB / Dataset / KG), `subcategory` (15 / 9 / 8 controlled values)
-
-**Cognitive paradigm** &nbsp;`paradigm`: **LLM-Friendly** (70 of 105 drug-centric) vs **Tool-Mediated** (35 of 105)
-
-**Operational integration pathway** &nbsp;`pathway`: one of
-&nbsp;&nbsp; **Direct Prompt** (6) · **RAG** (21) · **Graph Query** (9) · **REST** (14) · **Computational** (38) · **Hybrid** (17)
-
-**Implementation axes** &nbsp;`identifier`, `access`, `update_cadence`, `license`, `task_tags` (T1-T9)
-
-**Provenance** &nbsp;`aim`, `source`, `description`, `data_quality`, `notes`
-
-See [`schema/dr100_schema.json`](schema/dr100_schema.json) for the formal spec.
-
----
-
-## Pathway taxonomy at a glance
-
-| Pathway | Definition | When to use |
-|---|---|---|
-| **Direct Prompt** | < 4K-token curated text, loaded once into context | Small fixed reference (EML, ATC, CPIC tables) |
-| **RAG** | Long-form text, chunked + embedded + retrieved | Drug labels, monographs, literature corpora |
-| **Graph Query** | Typed entities/relations, LLM generates Cypher/SPARQL | Multi-hop reasoning over KGs |
-| **REST** | Documented JSON/XML APIs, wrapped as function calls | Fresh structured records (FAERS, Open Targets) |
-| **Computational** | Cheminformatics / ML pipelines, out-of-process tools | SMILES libraries, bioactivity matrices, signatures |
-| **Hybrid** | Provides multiple of the above in one resource | DrugBank, ChEMBL, PharmGKB |
-
-Full taxonomy and decision tree: see §2.3 and Figure 3 (decision tree: Supplementary Figure SF3) of the paper.
-
----
-
-## Contributing
-
-We welcome PRs that:
-- Add new drug-centric / drug-related / auxiliary resources
-- Correct annotations on existing records
-- Improve schema coverage (e.g., richer task tagging)
-- Add demo notebooks for additional case studies
-
-See [`docs/contribution_guide.md`](docs/contribution_guide.md). All PRs are validated
-against the JSON Schema automatically.
-
----
-
-## Citing DR100
-
-If you use the registry or the survey, please cite:
+## Citation
 
 ```bibtex
-@article{wang2026dr100,
-  title   = {DR100: A Review of Drug-Centric Data Resources for Large Language Model Agents},
-  author  = {Wang, Qing and Tang, Dingyi and Liang, Jialu and Wang, Guangyu and Su, Jing and Song, Qianqian},
-  year    = {2026},
-  note    = {Registry: \url{https://github.com/QSong-github/DR100}}
+@article{wang2026mapping,
+  title  = {Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections},
+  author = {Wang, Qing and Gu, Sipei and Tang, Dingyi and Lan, Qizhen and Jiang, Xiaoqian and Su, Jing and Yang, Baijian and Song, Qianqian},
+  year   = {2026},
+  note   = {Data and code: \url{https://github.com/QSong-github/DR100}}
 }
 ```
 
-Citation metadata is also provided in [CITATION.cff](CITATION.cff) for tools that
-support the Citation File Format.
+Citation metadata is also provided in [CITATION.cff](CITATION.cff).
 
 ---
 
 ## License
 
-- **Data** (everything under `registry/` and `schema/`): [CC BY 4.0](LICENSE-DATA)
-- **Code** (everything under `scripts/`, `notebooks/`): [MIT](LICENSE-CODE)
+- Resource-table data and schema (`registry/`, `schema/`): [CC BY 4.0](LICENSE-DATA)
+- Code (`scripts/`, `notebooks/`): [MIT](LICENSE-CODE)
 
-Individual resources catalogued by DR100 retain their original licenses; the
-`access` field per record reflects each resource's own terms.
-
----
+Each catalogued resource keeps its own license and terms of use.
 
 ## Contact
 
-Correspondence: **Qianqian Song, PhD** — `qsong1@ufl.edu`
-First author: **Qing Wang** — `wang.qing@ufl.edu`
-Department of Health Outcomes and Biomedical Informatics, University of Florida
+Correspondence: Qianqian Song (song1081@purdue.edu)
