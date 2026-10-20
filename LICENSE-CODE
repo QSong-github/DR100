@@ -1,8 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Qing Wang, Dingyi Tang, Jialu Liang, Guangyu Wang, Jing Su, Qianqian Song
-University of Florida, Houston Methodist Research Institute, Weill Cornell Medicine,
-Indiana University School of Medicine
+Copyright (c) 2026 The DR100 authors
 
 This license applies to code under scripts/ and notebooks/ in this repository.
 Data files under registry/ and schema/ are licensed separately under CC BY 4.0
