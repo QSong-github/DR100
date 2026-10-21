@@ -35,7 +35,6 @@ The Review's counts and graph analyses were computed from the data files below.
 | `scripts/build_registry.py`, `scripts/apply_provenance_tier.py`, `scripts/apply_verifications.py` | Original scripts used to build the resource table and assign provenance tiers |
 | `rig/networkx.gpickle` | The RIG as a NetworkX MultiDiGraph |
 | `figures/`, `index.html` | RIG overview figure and interactive views drawn from the same data (open `index.html` in a browser). The Review's Figure 5 is published with the article |
-| `examples/01–68_*.py`, `68DrugResources.xlsx` | Access scripts for 68 resources and their source spreadsheet |
 | `notebooks/01_quickstart.ipynb` | Loading and filtering the resource table |
 | `docs/` | Contribution guide and the construction log of the resource table |
 

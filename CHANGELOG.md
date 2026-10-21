@@ -7,7 +7,8 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-No changes yet.
+### Removed
+- `examples/` (68 access scripts) and `68DrugResources.xlsx`, written for an earlier draft and not used by the Review.
 
 ## [1.5.1] — 2026-10-20
 
