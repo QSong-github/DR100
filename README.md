@@ -11,11 +11,9 @@ DR100 is the repository name. It is not another name for the RIG, and the Review
 
 ---
 
-## Version used in the Review
+## Data analysed in the Review
 
-All quantitative results in the Review were computed from commit
-[`2a144fd6d129af0273d6145fd21498aaa7ac0bb7`](https://github.com/QSong-github/DR100/commit/2a144fd6d129af0273d6145fd21498aaa7ac0bb7).
-Later commits change documentation, the schema, the RIG overview figure and interactive views, and analysis scripts. The data files below are byte-identical to that commit.
+The Review's counts and graph analyses were computed from the data files below.
 
 | Data file | Content |
 |---|---|

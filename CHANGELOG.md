@@ -26,7 +26,7 @@ No changes yet.
   PharmGKB/ClinPGx and the type of OREGANO.
 
 ### Unchanged
-- Data files are byte-identical to commit 2a144fd.
+- Data files in `registry/` and `rig/`.
 
 ## [1.5.0] — 2026-10-19
 
@@ -50,7 +50,7 @@ No changes yet.
 
 ### Unchanged
 - Data files (`registry/*.json`, `registry/*.tsv`, `rig/edges.csv`, `rig/edges.tsv`,
-  `rig/rig_edges_v1.csv`) are byte-identical to commit 2a144fd, which the Review cites.
+  `rig/rig_edges_v1.csv`), which the Review analyses.
 
 ## [1.4.0] — 2026-05-24
 
