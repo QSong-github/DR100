@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "DR100: resource table and Resource Interconnection Graph for Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"
+title: "DR100 resource table and Resource Interconnection Graph"
 message: "If you use DR100, please cite the accompanying Review."
 type: dataset
 authors:

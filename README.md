@@ -1,6 +1,6 @@
 # DR100
 
-Companion data and code for the Review **"Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"** by Qing Wang, Sipei Gu, Dingyi Tang, Qizhen Lan, Xiaoqian Jiang, Jing Su, Baijian Yang, and Qianqian Song.
+Companion data and code for the Review **"Mapping the drug knowledge ecosystem for AI agents through resources, interfaces, and interconnections"**.
 
 The Review examines **177 resources** that can support drug-related tasks of AI agents. This repository holds the two data products it analyses:
 
